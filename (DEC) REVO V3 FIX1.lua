@@ -691,7 +691,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
     gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.getResults(10)
     gg.editAll('130', gg.TYPE_FLOAT)
-    gg.toast("710 DONE🦇") 
+    gg.toast("🌿710 DONE🦇") 
   end
 	
 	
@@ -704,4 +704,4 @@ gg.setRanges(gg.REGION_ANONYMOUS)
   if XEROX == 1 then
     START()
   end
-end
+end 
