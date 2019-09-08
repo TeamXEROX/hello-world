@@ -100,9 +100,9 @@ os.exit()
     return
   end
   _G["gg"]["removeListItems"](save)
-gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.2\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ʀᴇᴍᴏᴠᴇᴅ ꜰᴜɴᴄᴛɪᴏɴ ᴄʟᴇᴀʀ ʟᴏɢ\n- ʀᴇꜰɪɴᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ & yᴇʟʟᴏᴡ ᴠ2\n- ᴀᴅᴅᴇᴅ 2 ᴅɪꜰꜰᴇʀᴇɴᴛ ᴄᴏʟᴏʀꜱ ꜰᴏʀ ꜱᴅ845\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ ᴄᴏʟᴏʀ ꜰᴏʀ ꜱᴅ 855\n- ɴᴏᴡ ᴛʜɪꜱ ꜱᴄʀɪᴩᴛ ᴡɪʟʟ ᴏɴʟy ʀᴜɴ ɪɴ ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇ™ ɢɢ\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n- ʀᴇꜰʀᴇꜱʜᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ꜱɪᴍᴩʟᴇ ᴜɪ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
+gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.3\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ᴀᴅᴅᴇᴅ ʀᴀᴅᴇʀ ᴇꜱᴩ 200ᴍ\n- ʀᴇᴍᴏᴠᴇᴅ ꜰᴜɴᴄᴛɪᴏɴ ᴄʟᴇᴀʀ ʟᴏɢ\n- ʀᴇꜰɪɴᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ & yᴇʟʟᴏᴡ ᴠ2\n- ᴀᴅᴅᴇᴅ 2 ᴅɪꜰꜰᴇʀᴇɴᴛ ᴄᴏʟᴏʀꜱ ꜰᴏʀ ꜱᴅ845\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ ᴄᴏʟᴏʀ ꜰᴏʀ ꜱᴅ 855\n- ɴᴏᴡ ᴛʜɪꜱ ꜱᴄʀɪᴩᴛ ᴡɪʟʟ ᴏɴʟy ʀᴜɴ ɪɴ ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇ™ ɢɢ\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n- ʀᴇꜰʀᴇꜱʜᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ꜱɪᴍᴩʟᴇ ᴜɪ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
 
-gg.alert(" [🍒] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.2\n [🥑] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🌶️] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🍎] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
+gg.alert(" [🍒] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.3\n [🥑] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🌶️] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🍎] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
 
 
 gg.setVisible(false)
@@ -117,7 +117,7 @@ MN = gg.choice({
 "🥦ANTENNA [GAME]🥦", 
 "🍒VISUAL [GAME]🍒", 
 "♨️ESP [NEW]♨️", 
-"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.2 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
+"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.3 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
 
 	if MN == nil then else
 	if MN == 1 then WLCR() end
@@ -787,12 +787,14 @@ end
 	MNESP = gg.multiChoice ({
 	"♨️TURN ON ESP♨️", 
 	"♨️TURN OFF ESP♨️", 
+	"🛩️RADER ESP 200M🛩️", 
 	"🔙"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 	
 	if MNESP == nil then else 
 	if MNESP[1] == true then esp1() end
 	if MNESP[2] == true then esp2() end
-	if MNESP[3] == true then START() end
+	if MNESP[3] == true then esp3() end
+	if MNESP[4] == true then START() end
 	end
 	
 	XEROX = - 1
@@ -819,6 +821,16 @@ gg.alert("♨️ESP SUCCESSFULLY TURNED OFF BY TeamLTG™♨️")
 end
 	
 	
+	function esp3()
+	gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('-1,901,891,198,734,303,227', gg.TYPE_QWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.getResults(1)
+gg.editAll('-1,901,891,198,902,075,392', gg.TYPE_QWORD)
+gg.clearResults()
+gg.toast("🦇rader esp✅")
+gg.clearResults()
+end
 	
 	while true do
   if gg.isVisible(true) then
