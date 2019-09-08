@@ -37,7 +37,7 @@ if gg.isPackageInstalled("app.greyshirts.sslcapture") then
 if gg.isPackageInstalled('com.ltg.protect') then
 gg.clearResults()
    else
-     print('Device Verification Failed') 
+     print('🌿DRM VERIFICATION FAILED🌿') 
 os.exit() 
      end
 
@@ -93,9 +93,9 @@ os.exit()
     return
   end
   _G["gg"]["removeListItems"](save)
-gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.0\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n- ʀᴇꜰʀᴇꜱʜᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ꜱɪᴍᴩʟᴇ ᴜɪ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
+gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.1\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ᴜᴩᴅᴀᴛᴇᴅ 2 ᴅɪꜰꜰᴇʀᴇɴᴛ ᴠᴀʟᴜᴇꜱ ꜰᴏʀ ꜱᴅ 845\n- ꜰɪxᴇᴅ ᴠᴀʟᴜᴇꜱ ꜱᴅ 855\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n- ʀᴇꜰʀᴇꜱʜᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ꜱɪᴍᴩʟᴇ ᴜɪ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
 
-gg.alert(" [🍒] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.0\n [🥑] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🌶️] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🍎] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
+gg.alert(" [🍒] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.1\n [🥑] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🌶️] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🍎] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
 
 
 gg.setVisible(false)
@@ -110,7 +110,7 @@ MN = gg.choice({
 "🌸MENU GAME🌸", 
 "🥦ANTENNA [GAME]🥦", 
 "🍒VISUAL [GAME]🍒", 
-"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
+"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.1 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
 
 	if MN == nil then else
 	if MN == 1 then CLRLOG() end
@@ -126,12 +126,12 @@ MN = gg.choice({
 	end
 	
 function EXIT() 
-gg.alert(" [⛔] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.0\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
+gg.alert(" [⛔] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🦇\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
   gg.skipRestoreState()
   gg.setVisible(true)
   os.exit()
 end
-print("\n[⛔] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.0\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
+print("\n[⛔] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🦇\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
 print("🍁Contact Us : t.me/ItzXEROX🍁")
 
 	function CLRLOG() 
@@ -154,7 +154,7 @@ end
 	"🎟️WALLHACK SNAPDRAGON🎟️", 
 	"🌈COLORHACK SNAPDRAGON🌈", 
 	"🥝REQUESTED CHIPSET🥝", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎") 
+	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇") 
 	
 	if MNWLCR == nil then else 
 	if MNWLCR == 1 then wall() end
@@ -172,7 +172,7 @@ end
 	"🦇SD 435-835🦇",
 	"🦇SD 845🦇",
 	"🦇SD 855🦇",
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎") 
+	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇") 
 	
 	if mnwall == nil then else 
 	if mnwall[1] == true then sd1() end
@@ -220,90 +220,116 @@ gg.toast("🌫️Wallhack 435-835 Activated!🌫️ By TeamLTG™")
 end
 	
 	function sd3() 
-	gg.setRanges(131072)
-  gg.searchNumber("218D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", 16)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("95D;2;9.2194229e-41", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(15)
-  gg.editAll("130", 16)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", 16)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("1,661,566,999;96;539,246,604;8200::", 4, false, 536870912, 0, -1)
-  gg.searchNumber("8200", 4, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("7", 4)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.toast("🍒Wallhack 845 Activated!💐")
+	mnsd3 = gg.choice({
+	"🦇SMOOTH GRAPHICS🦇", 
+	"🦉HD GRAPHICS🦉", 
+	"🔙"}  , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇") 
+	
+	if mnsd3 == nil then else 
+	if mnsd3 == 1 then SD8451() end
+	if mnsd3 == 2 then SD8452() end
+	if mnsd3 == 3 then WLCR() end
+	end
+	
+	XEROX = - 1
+	end
+	
+	function SD8451()
+	gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("218D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("95D;2;9.2194229e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(15)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("206D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🦇Wallhack 845 v1 Activated🦇")
+end
+
+function SD8452()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2;1.6623054e-19::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("99", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1.391256e-19;2::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("99", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("0;2.0;.0;-127.0::21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(15)
+gg.editAll("99", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2;-1.0;0.04000854492::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("99", gg.TYPE_FLOAT)
+gg.toast("🦉Wallhack 845 HD🦉")
 end
 	
 	function sd4() 
 	gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("-0.01000213623F;2.0F;-1.0F;0.0F;0.04000854492F;0.11999511719F;-0.02749633789F;-0.57177734375F;0.02200317383F;0.04251098633F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(200)
-  gg.editAll("-1000", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("1.3912657e-19F;2.0F;1.6623164e-19F;3.6734353e-39F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(200)
-  gg.editAll("129", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("1.3912525e-19;3.7615819e-37;2;-1::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(200)
-  gg.editAll("129", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("1.3912559e-19;2;1.6623071e-19::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(200)
-  gg.editAll("129", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("1.391256e-19;2;1.6623108e-19::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(200)
-  gg.editAll("129", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("1.5414283e-44;1.1202057e-19;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(200)
-  gg.editAll("129", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.clearResults()
-  gg.searchNumber("1.3912563e-19;2;1.6623075e-19;2.25000858307;1.6643298e10::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(200)
-  gg.editAll("118", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.editAll("6", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.searchNumber("2.6102227e21F;9;45,259.12109375F;34::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("34", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("1", gg.TYPE_DWORD)
-  gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("6.9419832e-29;7.0208711e-29;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.9252942e21;8.3717888e-29;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("6.9814274e-29;5.3680222e21;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.889691e21;2.8866748e-43;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.1835492e21;7.0208759e-29;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("6.488138e-40;1.1202042e-19;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_BAD)
+gg.clearResults()
   gg.toast("😋Wallhack 855 Activated😋")
 end
 
@@ -311,7 +337,7 @@ function color()
 mncolor = gg.choice({
 "🌈SMOOTH GRAPHICS🌈", 
 "🥑HD GRAPHICS🥑",
-"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎")
+"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 if mncolor == nil then else 
 if mncolor == 1 then smooth() end
 if mncolor == 2 then hd() end
@@ -327,7 +353,7 @@ mnsm = gg.multiChoice({
 "🐰RED BODY🐰", 
 "🐣YELLOW CAR🐣", 
 "🐑RED CAR", 
-"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎")
+"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 
 if mnsm == nil then else 
 if mnsm[1] == true then syb() end
@@ -391,7 +417,7 @@ mnhd = gg.multiChoice({
 "🐰RED BODY🐰", 
 "🐣YELLOW CAR🐣", 
 "🐑RED CAR", 
-"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎")
+"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 
 if mnhd == nil then else 
 if mnhd[1] == true then hdyb() end
@@ -453,7 +479,7 @@ end
 	"🦇LESS RECOIL🦇", 
 	"🕸️50% HEADHSOT🕸️", 
 	"🤯BRUTAL HEADHSOT🤯", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎")
+	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 	
 	if mnl == nil then else 
 	if mnl[1] == true then lr() end
@@ -513,7 +539,7 @@ end
 	"🐣ANTENNA FLAIR GUN [GAME]🐣",
 	"🦇ANTENNA 5.56 AMMO [GAME]🦇", 
 	"🥦ANTENNA GHILLE SUIT [GAME]🥦", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎")
+	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 	
 	if mnat == nil then else 
 	if mnat[1] == true then an1() end
@@ -596,7 +622,7 @@ mnvs = gg.multiChoice({
 "❤️RED SKY💋", 
 "🌿NO GRASS🌿",
 "👨CAMERA X5👨",
-"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎")
+"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 
 if mnvs == nil then else 
 if mnvs[1] == true then black() end
@@ -656,7 +682,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
   function other() 
   MNRQ = gg.multiChoice ({
   "🦇WALLHACK 710🦇", 
-  "🔙"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.0 🍎")
+  "🔙"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 	
 	if MNRQ == nil then else 
 	if MNRQ[1] == true then wall710() end
