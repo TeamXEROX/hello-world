@@ -40,6 +40,13 @@ gg.clearResults()
      print('🌿DRM VERIFICATION FAILED🌿') 
 os.exit() 
      end
+     
+if gg.isPackageInstalled('com.teambattleaxe') then
+gg.clearResults()
+   else
+     print('Use TeamBattleAxe GG Otherwise This script will not run😒') 
+os.exit() 
+     end
 
   function Squid(A0_24)
     return (A0_24:gsub("..", function(A0_25)
@@ -93,9 +100,9 @@ os.exit()
     return
   end
   _G["gg"]["removeListItems"](save)
-gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.1\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ᴜᴩᴅᴀᴛᴇᴅ 2 ᴅɪꜰꜰᴇʀᴇɴᴛ ᴠᴀʟᴜᴇꜱ ꜰᴏʀ ꜱᴅ 845\n- ꜰɪxᴇᴅ ᴠᴀʟᴜᴇꜱ ꜱᴅ 855\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n- ʀᴇꜰʀᴇꜱʜᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ꜱɪᴍᴩʟᴇ ᴜɪ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
+gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.2\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ʀᴇᴍᴏᴠᴇᴅ ꜰᴜɴᴄᴛɪᴏɴ ᴄʟᴇᴀʀ ʟᴏɢ\n- ʀᴇꜰɪɴᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ & yᴇʟʟᴏᴡ ᴠ2\n- ᴀᴅᴅᴇᴅ 2 ᴅɪꜰꜰᴇʀᴇɴᴛ ᴄᴏʟᴏʀꜱ ꜰᴏʀ ꜱᴅ845\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ ᴄᴏʟᴏʀ ꜰᴏʀ ꜱᴅ 855\n- ɴᴏᴡ ᴛʜɪꜱ ꜱᴄʀɪᴩᴛ ᴡɪʟʟ ᴏɴʟy ʀᴜɴ ɪɴ ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇ™ ɢɢ\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n- ʀᴇꜰʀᴇꜱʜᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ꜱɪᴍᴩʟᴇ ᴜɪ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
 
-gg.alert(" [🍒] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.1\n [🥑] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🌶️] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🍎] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
+gg.alert(" [🍒] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.2\n [🥑] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🌶️] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🍎] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
 
 
 gg.setVisible(false)
@@ -104,21 +111,21 @@ XEROX = 1
 function START()
 
 MN = gg.choice({
-"🥝CLEAR LOG [BEFORE & AFTER]🥝",
-"🌫️WALL & COLOR MENU🌫️", 
+"🦇WALL & COLOR MENU🦇", 
 "🍓MENU LOBBY🍓", 
 "🌸MENU GAME🌸", 
 "🥦ANTENNA [GAME]🥦", 
 "🍒VISUAL [GAME]🍒", 
-"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.1 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
+"♨️ESP [NEW]♨️", 
+"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.2 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
 
 	if MN == nil then else
-	if MN == 1 then CLRLOG() end
-	if MN == 2 then WLCR() end
-	if MN == 3 then LOBBY() end
-	if MN == 4 then GAME() end
-	if MN == 5 then ANTENNA() end
-	if MN == 6 then VISUAL() end
+	if MN == 1 then WLCR() end
+	if MN == 2 then LOBBY() end
+	if MN == 3 then GAME() end
+	if MN == 4 then ANTENNA() end
+	if MN == 5 then VISUAL() end
+	if MN == 6 then ESP() end
 	if MN == 7 then EXIT() end
 	end
 	
@@ -153,7 +160,7 @@ end
 	MNWLCR = gg.choice({
 	"🎟️WALLHACK SNAPDRAGON🎟️", 
 	"🌈COLORHACK SNAPDRAGON🌈", 
-	"🥝REQUESTED CHIPSET🥝", 
+	"🥝REQUESTED WALL & COLOR🥝", 
 	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇") 
 	
 	if MNWLCR == nil then else 
@@ -478,7 +485,7 @@ end
 	mnl = gg.multiChoice({
 	"🦇LESS RECOIL🦇", 
 	"🕸️50% HEADHSOT🕸️", 
-	"🤯BRUTAL HEADHSOT🤯", 
+	"🤯BRUTAL HEADHSOT [RISK]🤯", 
 	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 	
 	if mnl == nil then else 
@@ -682,11 +689,19 @@ gg.setRanges(gg.REGION_ANONYMOUS)
   function other() 
   MNRQ = gg.multiChoice ({
   "🦇WALLHACK 710🦇", 
+  "🦇COLOR RED & YLW V2🦇", 
+  "💅COLOR SD 845 RED💅",
+  "💅COLOR SD 845 YELLOW🤘", 
+  "🍷COLOR SD 855 RED💕", 
   "🔙"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 	
 	if MNRQ == nil then else 
 	if MNRQ[1] == true then wall710() end
-	if MNRQ[2] == true then WLCR() end
+	if MNRQ[2] == true then color710() end
+	if MNRQ[3] == true then clrr845() end
+	if MNRQ[4] == true then clry845() end
+	if MNRQ[5] == true then clrr855() end
+	if MNRQ[6] == true then WLCR() end
 	end
 	
 	XEROX = - 1
@@ -717,8 +732,92 @@ gg.setRanges(gg.REGION_ANONYMOUS)
     gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.getResults(10)
     gg.editAll('130', gg.TYPE_FLOAT)
-    gg.toast("710 DONE🦇") 
+    gg.toast("😛710 DONE🦇") 
   end
+	
+	function color710() 
+	 gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber('32,769;-2,134,900,722', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('32769', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll('32777', gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber('8,192D;256D;8200D', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('8200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll('7', gg.TYPE_DWORD)
+    gg.toast('😜Color Red Body Yellow Vehicle🇧🇩')
+  end
+	
+	function clrr845() 
+	gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,661,566,999;96;539,246,604;8200::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("7", gg.TYPE_DWORD)
+gg.toast("🦇COLOR 845 RED💓")
+end
+	
+	function clry845() 
+	gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("536887312;539246610;-2128609280;8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("🇧🇩COLOR 845 YELLOW🐊")
+end
+	
+	function clrr855() 
+	gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,661,566,999;8200;1,080,562,176;", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("7", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("🌿COLOR 855 RED🍷")
+end
+	
+	
+	function ESP() 
+	MNESP = gg.multiChoice ({
+	"♨️TURN ON ESP♨️", 
+	"♨️TURN OFF ESP♨️", 
+	"🔙"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
+	
+	if MNESP == nil then else 
+	if MNESP[1] == true then esp1() end
+	if MNESP[2] == true then esp2() end
+	if MNESP[3] == true then START() end
+	end
+	
+	XEROX = - 1
+	end
+	
+	function esp1()
+gg.clearResults()
+gg.setRanges(8)
+gg.searchNumber("-1,901,891,198,734,303,227", 32, false, 536870912, 0, -1)
+gg.getResults(45)
+gg.editAll("-1,901,891,198,902,075,392", 32)
+gg.clearResults()
+gg.alert("♨️ESP SUCCESSFULLY TURNED ON BY TeamLTG™♨️") 
+end
+
+function esp2()
+gg.clearResults()
+gg.setRanges(8)
+gg.searchNumber("-1,901,891,198,902,075,392", 32, false, 536870912, 0, -1)
+gg.getResults(45)
+gg.editAll("-1,901,891,198,734,303,227", 32)
+gg.clearResults()
+gg.alert("♨️ESP SUCCESSFULLY TURNED OFF BY TeamLTG™♨️") 
+end
+	
 	
 	
 	while true do
