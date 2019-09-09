@@ -37,14 +37,14 @@ if gg.isPackageInstalled("app.greyshirts.sslcapture") then
 if gg.isPackageInstalled('com.ltg.protect') then
 gg.clearResults()
    else
-     print('🌿DRM VERIFICATION FAILED🌿') 
+     print('🌿DEVICE VERIFICATION FAILED🌿') 
 os.exit() 
      end
      
-if gg.isPackageInstalled('com.teambattleaxe') then
+if gg.isPackageInstalled('com.ltgconqueror.ja') then
 gg.clearResults()
    else
-     print('Use TeamBattleAxe GG Otherwise This script will not run😒') 
+     print('Use LTG™ Conquerors GG Otherwise This script will not run😒') 
 os.exit() 
      end
 
