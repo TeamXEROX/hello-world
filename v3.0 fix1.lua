@@ -100,7 +100,8 @@ os.exit()
     return
   end
   _G["gg"]["removeListItems"](save)
-gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.4\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ᴀᴅᴅᴇᴅ ʀᴀᴅᴇʀ ᴇꜱᴩ 200ᴍ\n- ʀᴇᴍᴏᴠᴇᴅ ꜰᴜɴᴄᴛɪᴏɴ ᴄʟᴇᴀʀ ʟᴏɢ\n- ʀᴇꜰɪɴᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ & yᴇʟʟᴏᴡ ᴠ2\n- ᴀᴅᴅᴇᴅ 2 ᴅɪꜰꜰᴇʀᴇɴᴛ ᴄᴏʟᴏʀꜱ ꜰᴏʀ ꜱᴅ845\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ ᴄᴏʟᴏʀ ꜰᴏʀ ꜱᴅ 855\n- ɴᴏᴡ ᴛʜɪꜱ ꜱᴄʀɪᴩᴛ ᴡɪʟʟ ᴏɴʟy ʀᴜɴ ɪɴ ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇ™ ɢɢ\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n- ʀᴇꜰʀᴇꜱʜᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ꜱɪᴍᴩʟᴇ ᴜɪ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
+
+gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.4\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ᴀᴅᴅᴇᴅ ᴡᴀʟʟ & ᴄᴏʟᴏʀ ʜᴀᴄᴋ ꜰᴏʀ ᴇxyɴᴏꜱ\n- ᴀᴅᴅᴇᴅ ʀᴀᴅᴇʀ ᴇꜱᴩ 200ᴍ\n- ʀᴇᴍᴏᴠᴇᴅ ꜰᴜɴᴄᴛɪᴏɴ ᴄʟᴇᴀʀ ʟᴏɢ\n- ʀᴇꜰɪɴᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ & yᴇʟʟᴏᴡ ᴠ2\n- ᴀᴅᴅᴇᴅ 2 ᴅɪꜰꜰᴇʀᴇɴᴛ ᴄᴏʟᴏʀꜱ ꜰᴏʀ ꜱᴅ845\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ ᴄᴏʟᴏʀ ꜰᴏʀ ꜱᴅ 855\n- ɴᴏᴡ ᴛʜɪꜱ ꜱᴄʀɪᴩᴛ ᴡɪʟʟ ᴏɴʟy ʀᴜɴ ɪɴ ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇ™ ɢɢ\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
 
 gg.alert(" [🍒] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.4\n [🥑] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🌶️] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🍎] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
 
@@ -839,18 +840,56 @@ end
 function exy1() 
 gg.clearList()
 gg.clearResults()
-gg.setRanges(4)
+gg.setRanges(gg.REGION_C_ALLOC)
 gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", 16, false, 536870912, 0, -1)
-gg.searchNumber("0.5", 16, false, 536870912, 0, -1)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("0", 16)
+gg.editAll("0", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", 16, false, 536870912, 0, -1)
-gg.getResultsCount()
+gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+if gg.getResultCount()==0 then
 gg.toast("Wallhack Exynos 8895")
+else
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+_Count=gg.getResultCount()
+_A=gg.getResults(_Count)
+last_Count=_Count + 1
+w=1
+_T="Wallhack Exynos 8895"
+WHFIX8895()
 end
+end
+function WHFIX8895()
+if w==0 then
+gg.toast("Loading...")
+else
+gg.setVisible(false)
+_CL={}
+for _FORV_3_=1, _Count do
+_CL[_FORV_3_]="Edit Wallhack Value " .. _FORV_3_ .. ""
+end
+_CL[last_Count]="BACK"
+_C_=gg.choice(_CL, nil, A2_2512)
+for _FORV_3_=1, _Count do
+if _C_==_FORV_3_ then
+for _FORV_7_, _FORV_8_ in ipairs(_A) do
+_A[_FORV_7_].freeze=false
+gg.addListItems(_A)
+end
+_A[_FORV_3_].value=1
+_A[_FORV_3_].freeze=true
+gg.addListItems(_A)
+_FORV_3_=_Count
+elseif K_2==_Count + 1 then
+START()
+end
+end
+end
+gg.setVisible(true)
+end
+
 
 function exy2() 
 gg.clearResults()
