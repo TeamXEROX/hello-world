@@ -1,25 +1,25 @@
  if gg.isPackageInstalled("com.gxlkj.bd") then
-    print("Uninstall Log GG to run Script")
+    print("Uninstall Log GG to run Script\n Warn By XEROX🖕")
     os.exit()
   end
 if gg.isPackageInstalled("com.gxlkj.tl") then
-    print("uninstall ur Decrypt GG")
+    print("uninstall ur Decrypt GG\n Warn By XEROX🖕")
     os.exit()
   end
   if gg.isPackageInstalled("com.wtkc.gg") then
-    print("uninstall ur Decrypt GG")
+    print("uninstall ur Decrypt GG\n Warn By XEROX🖕")
     os.exit()
   end
   if gg.isPackageInstalled("sstool.only.com.sstool") then
-    print("uninstall your sstool to Run Script")
+    print("uninstall your sstool to Run Script\n Warn By XEROX🖕")
     os.exit()
   end
 if gg.isPackageInstalled("com.mod.iraq") then
-    print("uninstall all previous gg use only LTG GG")
+    print("uninstall all previous gg use only LTG GG\n Warn By XEROX🖕")
     os.exit()
   end
 if gg.isPackageInstalled("com.cicie") then
-    print("uninstall all previous gg use only LTG GG")
+    print("uninstall all previous gg use only LTG GG\n Warn By XEROX🖕")
     os.exit()
   end
 if gg.isPackageInstalled("app.greyshirts.sslcapture") then
@@ -30,21 +30,21 @@ if gg.isPackageInstalled("app.greyshirts.sslcapture") then
   if gg.getTargetPackage() == "com.tencent.ig" or gg.getTargetPackage() == "com.rekoo.pubgm" or gg.getTargetPackage() == "com.tencent.tmgp.pubgmhd" or gg.getTargetPackage() == "com.pubg.krmobile" or gg.getTargetPackage() == "com.vng.pubgmobile" then
     gg.clearResults()
   else
-    print("Error Detected Run PUBG😒")
+    print("Error Detected Run PUBG😒\n Warn By XEROX🖕")
     os.exit()
   end
 
 if gg.isPackageInstalled('com.ltg.protect') then
 gg.clearResults()
    else
-     print('🌿DEVICE VERIFICATION FAILED🌿') 
+     print('💉DEVICE VERIFICATION FAILED💉\n Warn By XEROX🖕') 
 os.exit() 
      end
      
 if gg.isPackageInstalled('com.ltgconqueror.ja') then
 gg.clearResults()
    else
-     print('Use LTG™ Conquerors GG Otherwise This script will not run😒') 
+     print('Use LTG™ Conquerors GG Otherwise This script will not run😒\n Warn By XEROX🖕') 
 os.exit() 
      end
 
@@ -100,9 +100,9 @@ os.exit()
     return
   end
   _G["gg"]["removeListItems"](save)
-gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.3\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ᴀᴅᴅᴇᴅ ʀᴀᴅᴇʀ ᴇꜱᴩ 200ᴍ\n- ʀᴇᴍᴏᴠᴇᴅ ꜰᴜɴᴄᴛɪᴏɴ ᴄʟᴇᴀʀ ʟᴏɢ\n- ʀᴇꜰɪɴᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ & yᴇʟʟᴏᴡ ᴠ2\n- ᴀᴅᴅᴇᴅ 2 ᴅɪꜰꜰᴇʀᴇɴᴛ ᴄᴏʟᴏʀꜱ ꜰᴏʀ ꜱᴅ845\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ ᴄᴏʟᴏʀ ꜰᴏʀ ꜱᴅ 855\n- ɴᴏᴡ ᴛʜɪꜱ ꜱᴄʀɪᴩᴛ ᴡɪʟʟ ᴏɴʟy ʀᴜɴ ɪɴ ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇ™ ɢɢ\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n- ʀᴇꜰʀᴇꜱʜᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ꜱɪᴍᴩʟᴇ ᴜɪ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
+gg.alert("🥝ʟᴛɢ™ ᴏꜰꜰɪᴄɪᴀʟ ᴄʟᴀɴ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🥝\n ꜱᴄʀɪᴩᴛ ᴠᴇʀꜱɪᴏɴ : 3.4\n ꜱᴄʀɪᴩᴛ ʙy : ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ™\n ᴄᴏᴅᴇᴅ ʙy : @ɪᴛᴢxᴇʀᴏx\n ᴊᴏɪɴ ᴛᴇʟᴇɢʀᴀᴍ :\n 🍅ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ🍅\n \n ᴡʜᴀᴛ'ꜱ ɴᴇᴡ :\n- ᴀᴅᴅᴇᴅ ʀᴀᴅᴇʀ ᴇꜱᴩ 200ᴍ\n- ʀᴇᴍᴏᴠᴇᴅ ꜰᴜɴᴄᴛɪᴏɴ ᴄʟᴇᴀʀ ʟᴏɢ\n- ʀᴇꜰɪɴᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ & yᴇʟʟᴏᴡ ᴠ2\n- ᴀᴅᴅᴇᴅ 2 ᴅɪꜰꜰᴇʀᴇɴᴛ ᴄᴏʟᴏʀꜱ ꜰᴏʀ ꜱᴅ845\n- ᴀᴅᴅᴇᴅ ʀᴇᴅ ᴄᴏʟᴏʀ ꜰᴏʀ ꜱᴅ 855\n- ɴᴏᴡ ᴛʜɪꜱ ꜱᴄʀɪᴩᴛ ᴡɪʟʟ ᴏɴʟy ʀᴜɴ ɪɴ ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇ™ ɢɢ\n- ʙʀᴀɴᴅ ɴᴇᴡ ʀᴇᴠᴏ ɢɢ ꜱᴜᴩᴩᴏʀᴛᴇᴅ ᴠᴀʟᴜᴇ\n- ʀᴇꜰʀᴇꜱʜᴇᴅ ᴀʟʟ ᴏʟᴅ ᴠᴀʟᴜᴇꜱ\n- ꜱɪᴍᴩʟᴇ ᴜɪ\n \n 👉ᴛ.ᴍᴇ/ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ👈 ")
 
-gg.alert(" [🍒] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.3\n [🥑] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🌶️] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🍎] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
+gg.alert(" [🍒] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ ᴠ3.4\n [🥑] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🌶️] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🍎] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
 
 
 gg.setVisible(false)
@@ -117,7 +117,7 @@ MN = gg.choice({
 "🥦ANTENNA [GAME]🥦", 
 "🍒VISUAL [GAME]🍒", 
 "♨️ESP [NEW]♨️", 
-"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.3 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
+"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 3.4 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
 
 	if MN == nil then else
 	if MN == 1 then WLCR() end
@@ -693,6 +693,8 @@ gg.setRanges(gg.REGION_ANONYMOUS)
   "💅COLOR SD 845 RED💅",
   "💅COLOR SD 845 YELLOW🤘", 
   "🍷COLOR SD 855 RED💕", 
+  "🔥WALLHACK EXYNOS🔥", 
+  "🌈COLORHACK EXYNOS🌈", 
   "🔙"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.0 🦇")
 	
 	if MNRQ == nil then else 
@@ -701,7 +703,9 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 	if MNRQ[3] == true then clrr845() end
 	if MNRQ[4] == true then clry845() end
 	if MNRQ[5] == true then clrr855() end
-	if MNRQ[6] == true then WLCR() end
+	if MNRQ[6] == true then exy1() end
+	if MNRQ[7] == true then exy2() end
+	if MNRQ[8] == true then WLCR() end
 	end
 	
 	XEROX = - 1
@@ -829,6 +833,33 @@ gg.getResults(1)
 gg.editAll('-1,901,891,198,902,075,392', gg.TYPE_QWORD)
 gg.clearResults()
 gg.toast("🦇rader esp✅")
+gg.clearResults()
+end
+
+function exy1() 
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults() 
+gg.toast("Wallhack Exynos 8895")
+end
+
+function exy2() 
+gg.clearResults()
+gg.setRanges(4)
+gg.setRanges(4)
+gg.searchNumber("40D;32D;16D;2D::53", 4, false, 536870912, 0, -1)
+gg.refineNumber("40", 4, false, 536870912, 0, -1)
+gg.getResults(4)
+gg.editAll("36", 4)
+gg.toast("Colour Exynos Yellow V2 activated!")
 gg.clearResults()
 end
 	
