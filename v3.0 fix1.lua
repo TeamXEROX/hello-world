@@ -47,6 +47,14 @@ gg.clearResults()
      print('Use LTG™ Conquerors GG Otherwise This script will not run😒\n Warn By XEROX🖕') 
 os.exit() 
      end
+     
+     if gg.isPackageInstalled('com.ltgconqueror.ja2') then
+gg.clearResults()
+   else
+     print('Use LTG™ Conquerors GG Otherwise This script will not run😒\n Warn By XEROX🖕') 
+os.exit() 
+     end
+     
 
   function Squid(A0_24)
     return (A0_24:gsub("..", function(A0_25)
