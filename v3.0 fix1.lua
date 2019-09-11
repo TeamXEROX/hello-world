@@ -757,12 +757,11 @@ gg.setRanges(gg.REGION_ANONYMOUS)
   end
 	
 	function clrr845() 
-	gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("1,661,566,999;96;539,246,604;8200::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("7", gg.TYPE_DWORD)
+	gg.clearResults() 
+gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1) 
+gg.searchNumber("8200", 4, false, 536870912, 0, -1) 
+gg.getResults(10) 
+gg.editAll("7", 4) 
 gg.toast("🦇COLOR 845 RED💓")
 end
 	
