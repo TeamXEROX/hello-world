@@ -1,3 +1,45 @@
+XEROX = {"869720033236541", -- XEROX 
+"355944094524279", 
+"355944094524261", -- matrix 
+"866334045294374", 
+"866334045294382", -- galib Hasan 
+"867194035827842", 
+"867194035827859", -- hasib Reza 
+"865595031988937", -- Kumar OP
+"868936036361331", -- shopon 
+"866761036890507", -- bipul 
+"352205103079363", -- Ritesh 
+
+
+
+
+
+
+
+} --- multiple imei
+table = revo.getPhoneInfo()
+function Tut(t, i)
+    local text = "'"       
+    for k,v in pairs(t) do   
+            text = text .. "'" .. k .. "' ==> "   
+            text = text .. v .. "\n\n\n"       
+    end
+    return text
+end
+p = Tut(table ,1)
+f = assert (io.tmpfile ()) 
+f:write (p)  
+f:seek ("set", 1) 
+s = f:read("*a")
+IMEI = s:match "[+-]?%d+"
+local valid = false
+for x=1,#XEROX do
+if IMEI == XEROX[x] then 
+ valid = true
+break
+end
+end
+if valid then
 if gg.isPackageInstalled("com.gxlkj.bd") then
     print("Uninstall Log GG to run Script\n Warn By XEROX🖕")
     os.exit()
@@ -101,8 +143,6 @@ os.exit()
     return
   end
   _G["gg"]["removeListItems"](save)
-
-
 function Bypass()
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp") 
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.14.5.11182_20190913173659_1446534324_cures.ifs.res") 
@@ -1948,4 +1988,10 @@ end
   if XEROX == 1 then
     START()
   end
+end
+else
+gg.alert("IMEI NOT MATCHED\nContact @ItzXEROX\nSent your IMEI for get access\n\n Powered by @TeamBattleAxeCheats")
+while true do
+os.exit()
+end
 end
