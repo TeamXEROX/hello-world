@@ -1,4 +1,6 @@
-XEROX = {"869720033236541", -- XEROX 
+XEROX = {
+
+"869720033236541", -- XEROX 
 "355944094524279", 
 "355944094524261", -- matrix 
 "866334045294374", 
@@ -9,9 +11,7 @@ XEROX = {"869720033236541", -- XEROX
 "868936036361331", -- shopon 
 "866761036890507", -- bipul 
 "352205103079363", -- Ritesh 
-"861229046566330" -- rayhan 
-
-
+"861229046566330", -- rayhan 
 
 
 
@@ -40,109 +40,6 @@ break
 end
 end
 if valid then
-if gg.isPackageInstalled("com.gxlkj.bd") then
-    print("Uninstall Log GG to run Script\n Warn By XEROX🖕")
-    os.exit()
-  end
-if gg.isPackageInstalled("com.gxlkj.tl") then
-    print("uninstall ur Decrypt GG\n Warn By XEROX🖕")
-    os.exit()
-  end
-  if gg.isPackageInstalled("com.wtkc.gg") then
-    print("uninstall ur Decrypt GG\n Warn By XEROX🖕")
-    os.exit()
-  end
-  if gg.isPackageInstalled("sstool.only.com.sstool") then
-    print("uninstall your sstool to Run Script\n Warn By XEROX🖕")
-    os.exit()
-  end
-if gg.isPackageInstalled("com.mod.iraq") then
-    print("uninstall all previous gg use only LTG GG\n Warn By XEROX🖕")
-    os.exit()
-  end
-if gg.isPackageInstalled("com.cicie") then
-    print("uninstall all previous gg use only LTG GG\n Warn By XEROX🖕")
-    os.exit()
-  end
-if gg.isPackageInstalled("app.greyshirts.sslcapture") then
-    print("Fuck U bitch This Script Not For U🖕\n Warn By XEROX🖕")
-    os.exit()
-  end
-
-  if gg.getTargetPackage() == "com.tencent.ig" or gg.getTargetPackage() == "com.rekoo.pubgm" or gg.getTargetPackage() == "com.tencent.tmgp.pubgmhd" or gg.getTargetPackage() == "com.pubg.krmobile" or gg.getTargetPackage() == "com.vng.pubgmobile" then
-    gg.clearResults()
-  else
-    print("Error Detected Run PUBG😒\n Warn By XEROX🖕")
-    os.exit()
-  end
-
-if gg.isPackageInstalled('com.ltg.protect') then
-gg.clearResults()
-   else
-     print('💉DEVICE VERIFICATION FAILED💉\n Warn By XEROX🖕') 
-os.exit() 
-     end
-     
-if gg.isPackageInstalled('com.ltgconqueror.ja') then
-gg.clearResults()
-   else
-     print('Use LTG™ Conquerors GG Otherwise This script will not run😒\n Warn By XEROX🖕') 
-os.exit() 
-     end
-     
-
-  function Squid(A0_24)
-    return (A0_24:gsub("..", function(A0_25)
-      return string.char((tonumber(A0_25, 16) + 256 - 34 + 255999744) % 256)
-    end))
-  end
-  if _G["debug"]["getinfo"](gg.alert).source == "=[Java]" then
-  else
-    i = 1
-    gg.alert("Auto Decompiler Detected !\n\nYou Noob !! SUCKER MOTHER FUCKER LEECHER !!", "")
-    gg.setVisible(false)
-    while true do
-      i = i + 1
-      gg.toast("Warning, Anti Log Is Activated !!")
-      file = io.open("/storage/emulated/0/" .. i, "w")
-      file:write("noob leecher !")
-      file:close()
-      gg.setVisible(false)
-      gg.processKill()
-      gg.setVisible(true)
-    end
-    return
-  end
-  save = {}
-  for _FORV_27_ = 1, 10000 do
-    table.insert(save, {
-      ["address"] = 0 + _FORV_27_,
-      ["flags"] = 12
-    })
-  end
-  time = _G["os"]["clock"]()
-  for _FORV_27_ = 1, 5 do
-    _G["gg"]["addListItems"](save)
-  end
-  if 2 <= _G["os"]["clock"]() - time then
-    _G["gg"]["removeListItems"](save)
-    i = 1
-    gg.alert("Auto Decompiler Detected !\n\nYou Noob !! SUCKER MOTHER FUCKER LEECHER !!", "")
-    gg.setVisible(false)
-    while true do
-      i = i + 1
-      gg.toast("Warning, Anti Log Is Activated !!")
-      file = io.open("/storage/emulated/0/" .. i, "w")
-      file:write("noob leecher !")
-      file:close()
-      gg.setVisible(false)
-      gg.processKill()
-      gg.setVisible(true)
-    end
-    print("Error Detected")
-    return
-  end
-  _G["gg"]["removeListItems"](save)
 function Bypass()
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp") 
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.14.5.11182_20190913173659_1446534324_cures.ifs.res") 
@@ -1990,7 +1887,7 @@ end
   end
 end
 else
-gg.alert("IMEI NOT MATCHED\nContact @ItzXEROX\nSent your IMEI for get access\n\n Powered by @TeamBattleAxeCheats")
+gg.alert("IMEI Verification Failed\n Sent your IMEI\n 👉 @ItzXEROX\n Sent Sim slot 1 IMEI\n\n Powered by @TeamBattleAxeCheats")
 while true do
 os.exit()
 end
