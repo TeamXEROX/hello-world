@@ -1,3 +1,5 @@
+-- Created by : @ItzXEROX 🖕
+
 XEROX = {
 
 "869720033236541", -- XEROX 
@@ -44,6 +46,8 @@ break
 end
 end
 if valid then
+
+
 function Bypass()
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp") 
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.14.5.11182_20190913173659_1446534324_cures.ifs.res") 
@@ -89,13 +93,13 @@ gg.toast ("Security Successfully Bypassed\n @ItzXEROX 🇧🇩")
  
  
  
- bypassAlert = gg.alert(" [🍣] PUBGM VERSION : 0.14.5\n [🍥] BYPASS YOUR  SECURITY.\n [🥑] DON'T IGNORE BYPASS.\n [🍏] SMART PLAY FOR BETTER RESULT.\n \n", '✔️ACTIVATE✔️')
+ bypassAlert = gg.alert(" [🐙] PUBGM VERSION : 0.14.5\n [🍝] BYPASS YOUR  SECURITY.\n [🍭] DON'T IGNORE BYPASS.\n [🍏] SMART PLAY FOR BETTER RESULT.\n \n", '✔️ACTIVATE✔️')
  
  
  if bypassAlert == 1 then Bypass() end
 
 
-gg.alert("🥝LTG™ OFFICIAL CLAN VIP SCRIPT🥝\n SCRIPT VERSION : 4.0\n SCRIPT BY : TEAMBATTLEAXECHEATS™\n CODED BY : @ItzXEROX\n JOIN TELEGRAM :\n 🍅t.me/TEAMBATTLEAXECHEATS🍅\n \n What's New :\n- Added All New Values\n- Limited & Safe Functions\n \n 👉t.me/ItzXEROX👈")
+gg.alert("🍓LTG™ OFFICIAL CLAN VIP SCRIPT🍓\n SCRIPT VERSION : 4.1\n SCRIPT BY : TEAMBATTLEAXECHEATS™\n CODED BY : @ItzXEROX\n JOIN TELEGRAM :\n 🍅t.me/TEAMBATTLEAXECHEATS🍅\n \n What's New :\n- Added All New Values\n- Limited & Safe Functions\n \n 👉t.me/ItzXEROX👈")
 
 
 gg.setVisible(false)
@@ -112,7 +116,7 @@ MN = gg.choice({
 "[GAME]\n🍒VISUAL🍒", 
 "[GAME]\n♨️ESP [NEW]♨️", 
 "[GAME]\n🍣OTHER FEATURE🍣", 
-"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 4.0 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
+"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 4.1 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
 
 	if MN == nil then else
 	if MN == 1 then CLRLOG() end
@@ -248,130 +252,109 @@ gg.editAll("130", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("🌫️Wallhack 435-835 Activated!🌫️ By TeamLTG™")
 end
-	
-	function sd3() 
-	mnsd3 = gg.choice({
-	"🦇SMOOTH GRAPHICS🦇", 
-	"🦉HD GRAPHICS🦉", 
-	"🔙"}  , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇") 
-	
-	if mnsd3 == nil then else 
-	if mnsd3 == 1 then SD8451() end
-	if mnsd3 == 2 then SD8452() end
-	if mnsd3 == 3 then WLCR() end
-	end
-	
-	XEROX = - 1
-	end
-	
-	function SD8451()
-	gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+function sd3()
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(20)
-gg.editAll("130", gg.TYPE_FLOAT)
+gg.editAll("130", 16)
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("218D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.setRanges(131072)
+gg.searchNumber("218D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
-gg.editAll("130", gg.TYPE_FLOAT)
+gg.editAll("130", 16)
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("95D;2;9.2194229e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.setRanges(131072)
+gg.searchNumber("95D;2;9.2194229e-41", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(15)
-gg.editAll("130", gg.TYPE_FLOAT)
+gg.editAll("130", 16)
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("206D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.setRanges(131072)
+gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
-gg.editAll("130", gg.TYPE_FLOAT)
+gg.editAll("130", 16)
 gg.clearResults()
-gg.toast("🦇Wallhack 845 v1 Activated🦇")
+gg.toast("👽 Wallhack 845 👽")
 end
-
-function SD8452()
+function sd4()
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("2;1.6623054e-19::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.setRanges(131072)
+gg.searchNumber("-0.01000213623F;2.0F;-1.0F;0.0F;0.04000854492F;0.11999511719F;-0.02749633789F;-0.57177734375F;0.02200317383F;0.04251098633F:37", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(200)
+gg.editAll("-1000", 16)
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("1.3912657e-19F;2.0F;1.6623164e-19F;3.6734353e-39F", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(200)
+gg.editAll("129", 16)
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("1.3912525e-19;3.7615819e-37;2;-1::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(200)
+gg.editAll("129", 16)
+gg.clearResults()
+gg.searchNumber("1.3912559e-19;2;1.6623071e-19::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(200)
+gg.editAll("129", 16)
+gg.clearResults()
+gg.searchNumber("1.391256e-19;2;1.6623108e-19::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(200)
+gg.editAll("129", 16)
+gg.clearResults()
+gg.searchNumber("1.5414283e-44;1.1202057e-19;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(200)
+gg.editAll("129", 16)
+gg.clearResults()
+gg.setRanges(131072)
+gg.clearResults()
+gg.searchNumber("1.3912563e-19;2;1.6623075e-19;2.25000858307;1.6643298e10::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(200)
+gg.editAll("118", 16)
+gg.clearResults()
+gg.editAll("6", 4)
+gg.clearResults()
+gg.searchNumber("2.6102227e21F;9;45,259.12109375F;34::", 4, false, 536870912, 0, -1)
+gg.searchNumber("34", 4, false, 536870912, 0, -1)
 gg.getResults(10)
-gg.editAll("99", gg.TYPE_FLOAT)
+gg.editAll("1", 4)
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("1.391256e-19;2::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("99", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("0;2.0;.0;-127.0::21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(15)
-gg.editAll("99", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("2;-1.0;0.04000854492::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("99", gg.TYPE_FLOAT)
-gg.toast("🦉Wallhack 845 HD🦉")
+gg.toast("👹 Wallhack 855 👹")
 end
-	
-	function sd4() 
-	gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("6.9419832e-29;7.0208711e-29;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("4.9252942e21;8.3717888e-29;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("6.9814274e-29;5.3680222e21;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("4.889691e21;2.8866748e-43;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("5.1835492e21;7.0208759e-29;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("6.488138e-40;1.1202042e-19;2.0;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.setRanges(gg.REGION_BAD)
-gg.clearResults()
-  gg.toast("😋Wallhack 855 Activated😋")
-end
-
-function color() 
+function color()
 mncolor = gg.choice({
+"SD 400-835",
+"SD 845",
+"SD 855",
+"🔙 BACK" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+if mncolor == nil then else 
+if mncolor == 1 then clr1() end
+if mncolor == 2 then clr2() end
+if mncolor == 3 then clr855() end
+if mncolor == 4 then WLCR() end
+end
+
+XEROX = -1
+end
+function clr1()
+clr = gg.choice({
 "🌈SMOOTH GRAPHICS🌈", 
 "🥑HD GRAPHICS🥑",
 "🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
-if mncolor == nil then else 
-if mncolor == 1 then smooth() end
-if mncolor == 2 then hd() end
-if mncolor == 3 then WLCR() end
+if clr == nil then else 
+if clr == 1 then smooth() end
+if clr == 2 then hd() end
+if clr == 3 then WLCR() end
 end
 
 XEROX = - 1
@@ -539,33 +522,68 @@ end
   gg.searchNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(800)
   gg.editAll("0", gg.TYPE_DWORD)
-  gg.toast("Less Recoil Done 🐿️")
+  gg.toast("Less Recoil Successful🦉")
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.clearResults()
 end
 	
 	function headl()
-	gg.clearResults()
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-460", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-560", gg.TYPE_FLOAT)
+  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(10)
-  gg.editAll("150", gg.TYPE_FLOAT)
+  gg.editAll("100", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Headshot 50% DONE 🤯")
+  gg.toast("HEADSHOT 50%💀")
 end
 	
 	function headbr()
-	gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("250", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Brutal Headhsot Done 🐾")
-  end
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(92)
+  gg.editAll("-89999960", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(92)
+  gg.editAll("-99999960", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1;20.51941871643;2.04908943176;-86.45767974854;-92.2311706543;16.0", 16, false, 536870912, 0, -1)
+  gg.searchNumber("16", 16, false, 536870912, 0, -1)
+  gg.getResults(100)
+  gg.editAll("100", 16)
+  gg.clearResults()
+  gg.setRanges(32)
+  gg.searchNumber("9.20161819458;23;25;30.5", 16, false, 536870912, 0, -1)
+  gg.searchNumber("25;30.5", 16, false, 536870912, 0, -1)
+  gg.getResults(100)
+  gg.editAll("245", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("150;85;45;-129;-85", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("999999", gg.TYPE_FLOAT)
+  gg.toast("HEADSHOT BRUTAL RISKY")
+end
 	
 	function GAME()
-	gg.alert (" [⛔] Remember, \n Game features are always detectable.\n Use at your own Risk.\n Recommended to use Lobby Features :\n- Less Recoil\n- Headhsot 50%\n- Wall & Color\n \n Thanks 👏") 
 	mng = gg.multiChoice({
 	"🗽AIMBOT SUPER🗽", 
 	"🔒AIM LOCK ULTRA🔒", 
@@ -574,7 +592,7 @@ end
 	"♨️REDUCE LAG♨️", 
 	"🐸HIGH JUMP🐸", 
 	"🐦FAST PARACHUTE🐦 [SPAWN]", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇\n [⛔] FOR RANK PUSH USE ONLY LOBBY FEATURE 🐙")
 	
 	if mng == nil then else 
 	if mng[1] == true then mng1() end
@@ -747,10 +765,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
   function other() 
   MNRQ = gg.multiChoice ({
   "🦇WALLHACK 710🦇", 
-  "🦇COLOR RED & YLW V2🦇", 
-  "💅COLOR SD 845 RED💅",
-  "💅COLOR SD 845 YELLOW🤘", 
-  "🍷COLOR SD 855 RED💕", 
+  "🦇COLOR RED & YLW V2🦇",
   "🔥WALLHACK EXYNOS🔥", 
   "🌈COLORHACK EXYNOS🌈", 
   "🔙"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
@@ -758,12 +773,9 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 	if MNRQ == nil then else 
 	if MNRQ[1] == true then wall710() end
 	if MNRQ[2] == true then color710() end
-	if MNRQ[3] == true then clrr845() end
-	if MNRQ[4] == true then clry845() end
-	if MNRQ[5] == true then clrr855() end
-	if MNRQ[6] == true then exy1() end
-	if MNRQ[7] == true then exy2() end
-	if MNRQ[8] == true then WLCR() end
+	if MNRQ[3] == true then exy1() end
+	if MNRQ[4] == true then exy2() end
+	if MNRQ[5] == true then WLCR() end
 	end
 	
 	XEROX = - 1
@@ -812,28 +824,8 @@ gg.setRanges(gg.REGION_ANONYMOUS)
     gg.toast('😜Color Red Body Yellow Vehicle🇧🇩')
   end
 	
-	function clrr845() 
-	gg.clearResults() 
-gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1) 
-gg.searchNumber("8200", 4, false, 536870912, 0, -1) 
-gg.getResults(10) 
-gg.editAll("7", 4) 
-gg.toast("🦇COLOR 845 RED💓")
-end
-	
-	function clry845() 
-	gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("536887312;539246610;-2128609280;8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(20)
-gg.editAll("6", gg.TYPE_DWORD)
+function clr855() 
 gg.clearResults()
-gg.toast("🇧🇩COLOR 845 YELLOW🐊")
-end
-	
-	function clrr855() 
-	gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("1,661,566,999;8200;1,080,562,176;", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
@@ -997,50 +989,37 @@ gg.toast("⚓Aimbot Ultra⚓")
 end
 
 function AIML() 
-gg.clearResults()
-    gg.setRanges(gg.REGION_BAD)
-    gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(2)
-    gg.editAll("-460", gg.TYPE_FLOAT)
-    gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(2)
-    gg.editAll("-560", gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(10)
-    gg.editAll("250", gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.toast("🔒AimLock🔒")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("0.0001;360.0;0.0;1,478,828,416.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("5000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber(35000, gg.TYPE_FLOAT)
+  gg.searchNumber(35000, gg.TYPE_FLOAT)
+  gg.getResults(20)
+  gg.toast("🔒AimLock🔒")
   end
 
 function mng1() 
 gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("3.5;1.0;0.5;0.10000000149;200.0::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("3.5;1.0;0.5;0.10000000149;200.0::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("999999", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("3.5;1;0.5;200;20::", gg.TYPE_FLOAT)
-gg.getResults(200)
-gg.editAll("999999999", gg.TYPE_FLOAT)
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("6.0;2.0;1.0::99", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("101", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("3.5;1;0.5;200;20::", gg.TYPE_FLOAT)
-gg.getResults(200)
-gg.editAll("999999999", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("🔑Super Aimbot🔑")
+  gg.searchNumber("999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("3.5;1;200;20::999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("3.5;1;200;20", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(300)
+  gg.editAll("-1.0e10", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("3.5;1;200;20::999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("3.5;1;200;20::959", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("-9999999999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("SUPER AIMBOT 🔱")
 end
 
 function mng2() 
@@ -1103,14 +1082,13 @@ end
 
 
 function brutal()
-	gg.alert (" [⛔] Remember, \n Game features are always detectable.\n Use at your own Risk.\n Recommended to use Lobby Features :\n- Less Recoil\n- Headhsot 50%\n- Wall & Color\n \n Thanks 👏") 
 	mngb = gg.multiChoice({
 	"🛶INSTANT HIT🛶", 
 	"🚖SPEED VEHICLE🚖", 
 	"🍥WIDE VIEW MENU🍥", 
 	"♨️FLASH MENU♨️", 
 	"📸SCOPE MENU📸", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇\n [⛔] FOR RANK PUSH USE ONLY LOBBY FEATURE 🐙")
 	
 	if mngb == nil then else 
 	if mngb[1] == true then mngb1() end
@@ -1246,7 +1224,6 @@ function brutal()
     gg.getResults(100)
     gg.editAll("200000", gg.TYPE_FLOAT)
     gg.clearResults()
-    gg.toast("🍣INSTANT HIT ACTIVATED🍣\n t.me/TeamBattleAxeCheats")
     gg.toast("🍣INSTANT HIT ACTIVATED🍣\n t.me/TeamBattleAxeCheats")
   end
   function SPDM4()
@@ -1863,7 +1840,8 @@ end
 
 
 
-function mng7() 
+function mng7()
+gg.clearResults() 
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("0.75;150;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1875,10 +1853,42 @@ gg.searchNumber("0.75;150;30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("0.75", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
 gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults() 
 gg.toast("🍣Fast Parachute🍣")
 end
+function clr2()
+clr = gg.multiChoice({
+"🤡Yellow Body🤡",
+"🤖Red Car🤖",
+"🔙Back" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+if clr == nil then else
+if clr[1] == true then Y845() end
+if clr[2] == true then R845() end
+if clr[3] == true then WLCR() end
+end
 
+XEROX = -1
+end
+function Y845()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("536887312;539246610;-2128609280;8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("🤕🤕Yellow😈😈")
+end
+function R845()
+gg.clearResults() 
+gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1) 
+gg.searchNumber("8200", 4, false, 536870912, 0, -1) 
+gg.getResults(10) 
+gg.editAll("7", 4) 
+gg.toast("🤢🤢Red👽👽")
+end
+function clr3()
 
+end
 
 	while true do
   if gg.isVisible(true) then
@@ -1890,9 +1900,11 @@ end
     START()
   end
 end
+
 else
 gg.alert("IMEI Verification Failed\n Sent your IMEI\n 👉 @ItzXEROX\n Sent Sim slot 1 IMEI\n\n Powered by @TeamBattleAxeCheats")
 while true do
 os.exit()
 end
 end
+-- Created By @ItzXEROX 
