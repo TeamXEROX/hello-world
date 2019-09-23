@@ -1,20 +1,3 @@
-local Text = " gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n" 
-
-local Rep = 777 -- Created By : @ItzXEROX 
-for k,v in pairs(gg) do
-if type(v) == "function" and k ~= "isPackageInstalled" then
-def = function(...)
-
-gg.isPackageInstalled(Text:rep(Rep))
-return v(table.unpack({...}))
-end
-
-_G["gg"][k] = def
-
-end
-end
-
-
 XEROX = {
 
 "869720033236541", -- XEROX 
