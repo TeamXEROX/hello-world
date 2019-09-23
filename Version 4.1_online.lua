@@ -1,49 +1,18 @@
-L0_94 = "🐙 ʟᴏɢ ɢɢ ʙʟᴏᴄᴋᴇʀ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʙʏ @ItzXEROX 🐙️"
-function _()
-if L0_94 == "🐙 ʟᴏɢ ɢɢ ʙʟᴏᴄᴋᴇʀ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʙʏ @ItzXEROX 🐙" then
-else
-print("⚠ ᴇʀʀᴏʀ ᴅᴇᴛᴇᴄᴛᴇᴅ ⚠")
-gg.setVisible(true)
-return
+local Text = " gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n gg.clearResults()\n" 
+
+local Rep = 777 -- Created By : @ItzXEROX 
+for k,v in pairs(gg) do
+if type(v) == "function" and k ~= "isPackageInstalled" then
+def = function(...)
+
+gg.isPackageInstalled(Text:rep(Rep))
+return v(table.unpack({...}))
 end
+
+_G["gg"][k] = def
+
 end
-gg.toast("🐙 ʟᴏɢ ɢɢ ʙʟᴏᴄᴋᴇʀ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʙʏ @ItzXEROX 🐙")
-function M_G(A0_95)
-res = ""
-for _FORV_4_ in ipairs(A0_95) do
-res = res .. string.char(A0_95[_FORV_4_])
-end
-return res
-end
-function getByte(A0_96, A1_97)
-end
-function Mafia(A0_98)
-return (A0_98:gsub("..", function(A0_99)
-return string.char((tonumber(A0_99, 16) + 256 - 34 + 255999744) % 256) end))
-end
-if _G["debug"]["getinfo"](gg.alert).source == "=[Java]" then
-else
-gg.alert("🖕 ғᴜᴄᴋ ʏᴏᴜ ᴅᴇᴄᴏᴅᴇʀ 🖕","[⛔ FUCK OFF ⛔]")
-      return
-end
-    save = {}
-    for _FORV_3_ = 1, 10000 do
-table.insert(save, {
-["address"] = 0 + _FORV_3_, ["flags"] = 12}
-)
-end
-    time = _G["os"]["clock"]()
-    for _FORV_3_ = 1, 5 do
-_G["gg"]["addListItems"](save)
-end
-    if _G["os"]["clock"]() - time >= 2 then
-_G["gg"]["removeListItems"](save)
-      print("I Don't Have Time to fuck Off bitch\n \n For getting dec script - \n Contact Ur Dad : @ItzXEROX")
-      return
-end
-    _G["gg"]["removeListItems"](save)
-    
-      
+end      
 
 
 
