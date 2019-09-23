@@ -44,7 +44,7 @@ break
 end
 end
 if valid then
-
+os.remove("/storage/emulated/0/ᴍᴜʜᴀᴍᴀᴅɢᴀᴍᴇʀ.ʟᴜᴀ")
 function Bypass()
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp") 
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.14.5.11182_20190913173659_1446534324_cures.ifs.res") 
@@ -1895,6 +1895,7 @@ end
 
 
 else
+os.remove("/storage/emulated/0/ᴍᴜʜᴀᴍᴀᴅɢᴀᴍᴇʀ.ʟᴜᴀ")
 gg.alert("IMEI Verification Failed\n Sent your IMEI\n 👉 @ItzXEROX\n Sent Sim slot 1 IMEI\n\n Powered by @TeamBattleAxeCheats")
 while true do
 os.exit()
