@@ -1,4 +1,3 @@
---Dec by ItzXEROX 🇧🇩
 gg.alert("💐【Script By @PsyBD】💐\n♥️This script for ♥️\n💖GG Free Script Member💖\n❣️And LTG™ CQ Member❣️")
 gg.alert("Note: Use execute only in lobby and after every finish match")
 gg.setVisible(false)
