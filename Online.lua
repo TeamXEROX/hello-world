@@ -18,6 +18,7 @@ XEROX = {
 "864132046954570", -- Ridlaan
 "864558048279238", -- Victor 
 "867482040102115", -- Tharun Gupta
+"865221031450923", -- Immortal Chandan
 
 
 
