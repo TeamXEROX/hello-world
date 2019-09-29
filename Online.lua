@@ -98,7 +98,7 @@ gg.toast ("Security Successfully Bypassed\n @ItzXEROX 🇧🇩")
  if bypassAlert == 1 then Bypass() end
 
 
-gg.alert("🥝LTG™ OFFICIAL CLAN VIP SCRIPT🥝\n SCRIPT VERSION : 4.0\n SCRIPT BY : TEAMBATTLEAXECHEATS™\n CODED BY : @ItzXEROX\n JOIN TELEGRAM :\n 🍅t.me/TEAMBATTLEAXECHEATS🍅\n \n What's New :\n- Added All New Values\n- Limited & Safe Functions\n \n 👉t.me/ItzXEROX👈")
+gg.alert("🥝LTG™ OFFICIAL CLAN VIP SCRIPT🥝\n SCRIPT VERSION : 4.1\n SCRIPT BY : TEAMBATTLEAXECHEATS™\n CODED BY : @ItzXEROX\n JOIN TELEGRAM :\n 🍅t.me/TEAMBATTLEAXECHEATS🍅\n \n What's New :\n Updated Script Version to 4.1\n Few Values Fixed & Added Quick Hosted Script to personal Server. \n- Added All New Values\n- Limited & Safe Functions\n \n 👉t.me/ItzXEROX👈")
 
 
 gg.setVisible(false)
@@ -107,15 +107,15 @@ XEROX = 1
 function START()
 
 MN = gg.choice({
-"[LOBBY]\n🐙BYPASS ABNORMALITY🐙", 
-"[LOBBY]\n🦇WALL & COLOR MENU🦇", 
-"[LOBBY]\n🕸️WEAPON HACK🕸️", 
-"[GAME]\n🕷️IN-GAME HACK🕷️", 
-"[GAME]\n🌻ANTENNA🌻", 
-"[GAME]\n🍒VISUAL🍒", 
-"[GAME]\n♨️ESP [NEW]♨️", 
-"[GAME]\n🍣OTHER FEATURE🍣", 
-"EXIT"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] SCRIPT VERSION : 4.0 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
+"[LOBBY]\n[🐙] BYPASS ABNORMALITY", 
+"[LOBBY]\n[🎴] WALL & COLOR MENU", 
+"[LOBBY]\n[🕸️] WEAPON HACK", 
+"[GAME]\n[🕷] ️IN-GAME HACK", 
+"[GAME]\n[🌻] ANTENNA", 
+"[GAME]\n[🍒] VISUAL", 
+"[GAME]\n[♨️] ESP [NEW]", 
+"[GAME]\n[🍣] OTHER FEATURE", 
+"EXIT"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 4.1 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
 
 	if MN == nil then else
 	if MN == 1 then CLRLOG() end
@@ -133,12 +133,12 @@ MN = gg.choice({
 	end
 	
 function EXIT() 
-gg.alert(" [⛔] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🦇\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
+gg.alert(" [🏅] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🎴\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
   gg.skipRestoreState()
   gg.setVisible(true)
   os.exit()
 end
-print("\n[⛔] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🦇\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
+print("\n[🏅] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🎴\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴠɪᴄᴛᴏʀᴍᴀʟʟɪᴄᴋ16\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʟᴇɢɪᴛ_ʜᴀᴄᴋᴇʀ_ᴄʜ\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
 print("🍁Contact Us : t.me/ItzXEROX🍁")
 
 	function CLRLOG() 
@@ -184,10 +184,10 @@ end
 	
 	function WLCR() 
 	MNWLCR = gg.choice({
-	"🎟️WALLHACK SNAPDRAGON🎟️", 
-	"🌈COLORHACK SNAPDRAGON🌈", 
-	"🥝REQUESTED WALL & COLOR🥝", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇") 
+	"[🏅] WALLHACK SNAPDRAGON", 
+	"[🌈] COLORHACK SNAPDRAGON", 
+	"[🥝] REQUESTED WALL & COLOR", 
+	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴") 
 	
 	if MNWLCR == nil then else 
 	if MNWLCR == 1 then wall() end
@@ -201,11 +201,11 @@ end
 	
 	function wall() 
 	mnwall = gg.multiChoice({
-	"🦇SD 400-425🦇", 
-	"🦇SD 435-835🦇",
-	"🦇SD 845🦇",
-	"🦇SD 855🦇",
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇") 
+	"🎴SD 400-425🎴", 
+	"🎴SD 435-835🎴",
+	"🎴SD 845🎴",
+	"🎴SD 855🎴",
+	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴") 
 	
 	if mnwall == nil then else 
 	if mnwall[1] == true then sd1() end
@@ -254,9 +254,9 @@ end
 	
 	function sd3() 
 	mnsd3 = gg.choice({
-	"🦇SMOOTH GRAPHICS🦇", 
+	"🎴SMOOTH GRAPHICS🎴", 
 	"🦉HD GRAPHICS🦉", 
-	"🔙"}  , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇") 
+	"🔙"}  , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴") 
 	
 	if mnsd3 == nil then else 
 	if mnsd3 == 1 then SD8451() end
@@ -293,7 +293,7 @@ gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll("130", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🦇Wallhack 845 v1 Activated🦇")
+gg.toast("🎴Wallhack 845 v1 Activated🎴")
 end
 
 function SD8452()
@@ -370,7 +370,7 @@ function color()
 mncolor = gg.choice({
 "🌈SMOOTH GRAPHICS🌈", 
 "🥑HD GRAPHICS🥑",
-"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 if mncolor == nil then else 
 if mncolor == 1 then smooth() end
 if mncolor == 2 then hd() end
@@ -386,7 +386,7 @@ mnsm = gg.multiChoice({
 "🐰RED BODY🐰", 
 "🐣YELLOW CAR🐣", 
 "🐑RED CAR", 
-"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 
 if mnsm == nil then else 
 if mnsm[1] == true then syb() end
@@ -450,7 +450,7 @@ mnhd = gg.multiChoice({
 "🐰RED BODY🐰", 
 "🐣YELLOW CAR🐣", 
 "🐑RED CAR", 
-"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 
 if mnhd == nil then else 
 if mnhd[1] == true then hdyb() end
@@ -471,7 +471,7 @@ gg.refineNumber("8200",gg.TYPE_DWORD, false,gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll("6",gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("🦇HD Yellow Body Activated!🦇")
+gg.toast("🎴HD Yellow Body Activated!🎴")
 end
 
 function hdrb()
@@ -482,7 +482,7 @@ gg.refineNumber("8200",gg.TYPE_DWORD, false,gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll("7",gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("🦇HD Red Body Activated!🦇")
+gg.toast("🎴HD Red Body Activated!🎴")
 end
 
 function hdyc()
@@ -493,7 +493,7 @@ gg.refineNumber("8200",gg.TYPE_DWORD, false,gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll("6",gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("🦇HD Yellow Car Activated!🦇")
+gg.toast("🎴HD Yellow Car Activated!🎴")
 end
 
 function hdrc()
@@ -509,13 +509,13 @@ end
 	
 	function LOBBY()
 	mnl = gg.multiChoice({
-	"🎪50% LESS RECOIL🎪", 
-	"🦇95% LESS RECOIL🦇", 
-	"🕸️50% HEADHSOT🕸️", 
-	"🤯MAGIC BULLET [RISK]🤯", 
-	"⚓AIMBOT ULTRA⚓", 
-	"🔒AIM LOCK🔒", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+	"[🎪] 50% LESS RECOIL", 
+	"[🎴] 95% LESS RECOIL", 
+	"[🕸] ️50% HEADHSOT", 
+	"[🤯] MAGIC BULLET [RISK]", 
+	"[⚓] AIMBOT ULTRA", 
+	"[🔒] AIM LOCK", 
+	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if mnl == nil then else 
 	if mnl[1] == true then lr5() end
@@ -568,16 +568,15 @@ end
   end
 	
 	function GAME()
-	gg.alert (" [⛔] Remember, \n Game features are always detectable.\n Use at your own Risk.\n Recommended to use Lobby Features :\n- Less Recoil\n- Headhsot 50%\n- Wall & Color\n \n Thanks 👏") 
 	mng = gg.multiChoice({
-	"🗽AIMBOT SUPER🗽", 
-	"🔒AIM LOCK ULTRA🔒", 
-	"🎭☓-EFFECT🎭", 
-	"👣NO FOOT STEP👣", 
-	"♨️REDUCE LAG♨️", 
-	"🐸HIGH JUMP🐸", 
-	"🐦FAST PARACHUTE🐦 [SPAWN]", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+	"[🗽] AIMBOT SUPER", 
+	"[🔒] AIM LOCK ULTRA", 
+	"[🎭] ☓-EFFECT", 
+	"[👣] NO FOOT STEP", 
+	"[♨️] REDUCE LAG", 
+	"[🐸] HIGH JUMP", 
+	"[🐦] FAST PARACHUTE [SPAWN]", 
+	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if mng == nil then else 
 	if mng[1] == true then mng1() end
@@ -602,12 +601,12 @@ end
 	
 	function ANTENNA()
 	mnat = gg.multiChoice({
-	"🐰ANTENNA PLAYER [LOBBY]🐰", 
-	"🐿️ANTENNA DEADBOX [GAME]🐿️", 
-	"🐣ANTENNA FLAIR GUN [GAME]🐣",
-	"🦇ANTENNA 5.56 AMMO [GAME]🦇", 
-	"🥦ANTENNA GHILLE SUIT [GAME]🥦", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+	"[🐰] ANTENNA PLAYER [LOBBY]", 
+	"[🐿] ️ANTENNA DEADBOX [GAME]", 
+	"[🐣] ANTENNA FLAIR GUN [GAME]",
+	"[🎴] ANTENNA 5.56 AMMO [GAME]", 
+	"[🥦] ANTENNA GHILLE SUIT [GAME]", 
+	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if mnat == nil then else 
 	if mnat[1] == true then an1() end
@@ -651,7 +650,7 @@ gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
 gg.editAll("99999", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🦇Antena Flare Gun🦇")
+gg.toast("🎴Antena Flare Gun🎴")
 end
 
 function an4() 
@@ -686,11 +685,11 @@ end
 
 function VISUAL() 
 mnvs = gg.multiChoice({
-"🦇BLACK SKY🦇", 
+"🎴BLACK SKY🎴", 
 "❤️RED SKY💋", 
 "🌿NO GRASS🌿",
 "👨CAMERA X5👨",
-"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 
 if mnvs == nil then else 
 if mnvs[1] == true then black() end
@@ -749,14 +748,14 @@ gg.setRanges(gg.REGION_ANONYMOUS)
   
   function other() 
   MNRQ = gg.multiChoice ({
-  "🦇WALLHACK 710🦇", 
-  "🦇COLOR RED & YLW V2🦇", 
+  "🎴WALLHACK 710🎴", 
+  "🎴COLOR RED & YLW V2🎴", 
   "💅COLOR SD 845 RED💅",
   "💅COLOR SD 845 YELLOW🤘", 
   "🍷COLOR SD 855 RED💕", 
   "🔥WALLHACK EXYNOS🔥", 
   "🌈COLORHACK EXYNOS🌈", 
-  "🔙"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+  "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if MNRQ == nil then else 
 	if MNRQ[1] == true then wall710() end
@@ -797,7 +796,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
     gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.getResults(10)
     gg.editAll('130', gg.TYPE_FLOAT)
-    gg.toast("😛710 DONE🦇") 
+    gg.toast("😛710 DONE🎴") 
   end
 	
 	function color710() 
@@ -821,7 +820,7 @@ gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1)
 gg.searchNumber("8200", 4, false, 536870912, 0, -1) 
 gg.getResults(10) 
 gg.editAll("7", 4) 
-gg.toast("🦇COLOR 845 RED💓")
+gg.toast("🎴COLOR 845 RED💓")
 end
 	
 	function clry845() 
@@ -849,10 +848,10 @@ end
 	
 	function ESP() 
 	MNESP = gg.multiChoice ({
-	"♨️TURN ON ESP♨️", 
-	"♨️TURN OFF ESP♨️", 
-	"🛩️RADER ESP 200M🛩️", 
-	"🔙"} , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+	"[♨️] TURN ON ESP", 
+	"[♨️] TURN OFF ESP", 
+	"[🛩] ️RADER ESP 200M", 
+	"🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if MNESP == nil then else 
 	if MNESP[1] == true then esp1() end
@@ -892,7 +891,7 @@ gg.searchNumber('-1,901,891,198,734,303,227', gg.TYPE_QWORD,false, gg.SIGN_EQUAL
 gg.getResults(1)
 gg.editAll('-1,901,891,198,902,075,392', gg.TYPE_QWORD)
 gg.clearResults()
-gg.toast("🦇rader esp✅")
+gg.toast("🎴rader esp✅")
 gg.clearResults()
 end
 
@@ -1106,14 +1105,13 @@ end
 
 
 function brutal()
-	gg.alert (" [⛔] Remember, \n Game features are always detectable.\n Use at your own Risk.\n Recommended to use Lobby Features :\n- Less Recoil\n- Headhsot 50%\n- Wall & Color\n \n Thanks 👏") 
 	mngb = gg.multiChoice({
-	"🛶INSTANT HIT🛶", 
-	"🚖SPEED VEHICLE🚖", 
-	"🍥WIDE VIEW MENU🍥", 
-	"♨️FLASH MENU♨️", 
-	"📸SCOPE MENU📸", 
-	"🔙" } , nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+	"[🛶] INSTANT HIT", 
+	"[🚖] SPEED VEHICLE", 
+	"[🍥] WIDE VIEW MENU", 
+	"[♨️] FLASH MENU", 
+	"[📸] SCOPE MENU", 
+	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if mngb == nil then else 
 	if mngb[1] == true then mngb1() end
@@ -1140,7 +1138,7 @@ function brutal()
       "VSS",
       "All SMG",
       "🔙"
-    }, nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+    }, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
     if MNSPDWP == nil then
     else
       if MNSPDWP[1] == true then
@@ -1365,7 +1363,7 @@ SPPEDVCH1=gg.multiChoice({
 "Speed Rony",
 "New Speed Van",
 "🔙"
-}, nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+}, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 if SPPEDVCH1==nil then
 else
 if SPPEDVCH1[1]==true then
@@ -1427,7 +1425,7 @@ SPADICIA1=gg.multiChoice({
 "Speed Dacia V1",
 "Speed Dacia V2",
 "🔙"
-}, nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+}, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 if SPADICIA1==nil then
 else
 if SPADICIA1[1]==true then
@@ -1497,7 +1495,7 @@ SPADASKDN1=gg.multiChoice({
 "Speed Jeep V1",
 "Speed Jeep V2",
 "🔙"
-}, nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+}, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 if SPADASKDN1==nil then
 else
 if SPADASKDN1[1]==true then
@@ -1567,7 +1565,7 @@ WIDEVIEW1=gg.multiChoice({
 "Wide View 60%",
 "Wide View 90%",
 "🔙"
-}, nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+}, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 if WIDEVIEW1==nil then
 else
 if WIDEVIEW1[1]==true then
@@ -1625,7 +1623,7 @@ SPPEDHACKS1=gg.multiChoice({
 "New Speed Ultra Fast [ON]",
 "New Speed Ultra Fast [OFF]",
 "🔙"
-}, nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+}, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 if SPPEDHACKS1==nil then
 else
 if SPPEDHACKS1[1]==true then
@@ -1727,7 +1725,7 @@ ZOOMSCOPE1=gg.multiChoice({
 "Zoom Scope 20X [ON]",
 "Zoom Scope 20X [OFF]",
 "🔙"
-}, nil, " [⛔] LTG™ OFFICIAL VIP SCRIPT 🎟️\n [🥑] PUBGM VERSION 0.14.5 🦇")
+}, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 if ZOOMSCOPE1==nil then
 else
 if ZOOMSCOPE1[1]==true then
