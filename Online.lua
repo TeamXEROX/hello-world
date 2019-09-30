@@ -98,7 +98,7 @@ gg.toast ("Security Successfully Bypassed\n @ItzXEROX 🇧🇩")
  if bypassAlert == 1 then Bypass() end
 
 
-gg.alert("🥝LTG™ OFFICIAL CLAN VIP SCRIPT🥝\n SCRIPT VERSION : 4.1\n SCRIPT BY : TEAMBATTLEAXECHEATS™\n CODED BY : @ItzXEROX\n JOIN TELEGRAM :\n 🍅t.me/TEAMBATTLEAXECHEATS🍅\n \n What's New :\n Updated Script Version to 4.1\n Few Values Fixed & Added Quick Hosted Script to personal Server. \n- Added All New Values\n- Limited & Safe Functions\n \n 👉t.me/ItzXEROX👈")
+gg.alert("👨‍🔧LTG™ OFFICIAL CLAN VIP SCRIPT👨‍🔧\n SCRIPT VERSION : 4.2\n SCRIPT BY : TEAMBATTLEAXECHEATS™\n CODED BY : @ItzXEROX\n JOIN TELEGRAM :\n 🍅t.me/TEAMBATTLEAXECHEATS🍅\n \n What's New :\n Updated Script Version to 4.2\n Few Values Fixed & Added Quick Hosted Script to personal Server. \n- Added Beta Codes. \n- Limited & Safe Functions\n \n 👉t.me/ItzXEROX👈")
 
 
 gg.setVisible(false)
@@ -107,15 +107,28 @@ XEROX = 1
 function START()
 
 MN = gg.choice({
-"[LOBBY]\n[🐙] BYPASS ABNORMALITY", 
-"[LOBBY]\n[🎴] WALL & COLOR MENU", 
-"[LOBBY]\n[🕸️] WEAPON HACK", 
-"[GAME]\n[🕷] ️IN-GAME HACK", 
-"[GAME]\n[🌻] ANTENNA", 
-"[GAME]\n[🍒] VISUAL", 
-"[GAME]\n[♨️] ESP [NEW]", 
-"[GAME]\n[🍣] OTHER FEATURE", 
-"EXIT"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 4.1 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
+"┌[Lobby] [Before & After Match]\
+『🐙』BYPASS ABNORMALITY",
+"┌[Lobby] [Once]\
+『🎴』WALL & COLOR MENU",
+"┌[Lobby] [Once]\
+『🔫』WEAPON HACK",
+"┌[Game] [Every]\
+『🎀』IN-GAME HACK",
+"┌[Game] [Every]\
+『📶』ANTENNA MENU",
+"┌[Game] [Every]\
+『🎇』VISUAL MENU",
+"┌[Game] [Every]\
+『🤺』ESP MENU",
+"┌[Game] [Every]\
+『🃏』OTHER FEATURES",
+"┌[Game] [Every]\
+『👨‍🔧』BETA CODES [Safe]",
+
+
+
+"EXIT"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 4.2 🍎\n [✍️] CODED BY : @ItzXEROX 🇧🇩") 
 
 	if MN == nil then else
 	if MN == 1 then CLRLOG() end
@@ -126,7 +139,8 @@ MN = gg.choice({
 	if MN == 6 then VISUAL() end
 	if MN == 7 then ESP() end
 	if MN == 8 then brutal() end
-	if MN == 9 then EXIT() end
+	if MN == 9 then BETA() end
+	if MN == 10 then EXIT() end
 	end
 	
 	XEROX = -1
@@ -184,9 +198,9 @@ end
 	
 	function WLCR() 
 	MNWLCR = gg.choice({
-	"[🏅] WALLHACK SNAPDRAGON", 
-	"[🌈] COLORHACK SNAPDRAGON", 
-	"[🥝] REQUESTED WALL & COLOR", 
+	"🏅 WALLHACK SNAPDRAGON", 
+	"🌈 COLORHACK SNAPDRAGON", 
+	"👨‍🔧 REQUESTED WALL & COLOR", 
 	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴") 
 	
 	if MNWLCR == nil then else 
@@ -201,10 +215,10 @@ end
 	
 	function wall() 
 	mnwall = gg.multiChoice({
-	"🎴SD 400-425🎴", 
-	"🎴SD 435-835🎴",
-	"🎴SD 845🎴",
-	"🎴SD 855🎴",
+	"🎴SD 400-425", 
+	"🎴SD 435-835",
+	"🎴SD 845",
+	"🎴SD 855",
 	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴") 
 	
 	if mnwall == nil then else 
@@ -254,8 +268,8 @@ end
 	
 	function sd3() 
 	mnsd3 = gg.choice({
-	"🎴SMOOTH GRAPHICS🎴", 
-	"🦉HD GRAPHICS🦉", 
+	"🎴SMOOTH GRAPHICS", 
+	"🦉HD GRAPHICS", 
 	"🔙"}  , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴") 
 	
 	if mnsd3 == nil then else 
@@ -368,8 +382,8 @@ end
 
 function color() 
 mncolor = gg.choice({
-"🌈SMOOTH GRAPHICS🌈", 
-"🥑HD GRAPHICS🥑",
+"🌈 SMOOTH GRAPHICS", 
+"🥑 HD GRAPHICS",
 "🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 if mncolor == nil then else 
 if mncolor == 1 then smooth() end
@@ -382,10 +396,10 @@ end
 
 function smooth() 
 mnsm = gg.multiChoice({
-"🐿️YELLOW BODY🐿️", 
-"🐰RED BODY🐰", 
-"🐣YELLOW CAR🐣", 
-"🐑RED CAR", 
+"🐿️ YELLOW BODY", 
+"🐰 RED BODY", 
+"🐣 YELLOW CAR", 
+"🐑 RED CAR", 
 "🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 
 if mnsm == nil then else 
@@ -446,10 +460,10 @@ end
 
 function hd() 
 mnhd = gg.multiChoice({
-"🐿️YELLOW BODY🐿️", 
-"🐰RED BODY🐰", 
-"🐣YELLOW CAR🐣", 
-"🐑RED CAR", 
+"🐿️ YELLOW BODY", 
+"🐰 RED BODY", 
+"🐣 YELLOW CAR", 
+"🐑 RED CAR", 
 "🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 
 if mnhd == nil then else 
@@ -509,12 +523,12 @@ end
 	
 	function LOBBY()
 	mnl = gg.multiChoice({
-	"[🎪] 50% LESS RECOIL", 
-	"[🎴] 95% LESS RECOIL", 
-	"[🕸] ️50% HEADHSOT", 
-	"[🤯] MAGIC BULLET [RISK]", 
-	"[⚓] AIMBOT ULTRA", 
-	"[🔒] AIM LOCK", 
+	"🎪 50% LESS RECOIL", 
+	"🎴 95% LESS RECOIL", 
+	"🕸 ️50% HEADHSOT", 
+	"🤯 MAGIC BULLET [RISK]", 
+	"⚓ AIMBOT ULTRA", 
+	"🔒 AIM LOCK", 
 	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if mnl == nil then else 
@@ -569,13 +583,13 @@ end
 	
 	function GAME()
 	mng = gg.multiChoice({
-	"[🗽] AIMBOT SUPER", 
-	"[🔒] AIM LOCK ULTRA", 
-	"[🎭] ☓-EFFECT", 
-	"[👣] NO FOOT STEP", 
-	"[♨️] REDUCE LAG", 
-	"[🐸] HIGH JUMP", 
-	"[🐦] FAST PARACHUTE [SPAWN]", 
+	"🗽 AIMBOT SUPER", 
+	"🔒 AIM LOCK ULTRA", 
+	"🎭 ☓-EFFECT", 
+	"👣 NO FOOT STEP", 
+	"♨️ REDUCE LAG", 
+	"🐸 HIGH JUMP", 
+	"🐦 FAST PARACHUTE [SPAWN]", 
 	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if mng == nil then else 
@@ -601,11 +615,11 @@ end
 	
 	function ANTENNA()
 	mnat = gg.multiChoice({
-	"[🐰] ANTENNA PLAYER [LOBBY]", 
-	"[🐿] ️ANTENNA DEADBOX [GAME]", 
-	"[🐣] ANTENNA FLAIR GUN [GAME]",
-	"[🎴] ANTENNA 5.56 AMMO [GAME]", 
-	"[🥦] ANTENNA GHILLE SUIT [GAME]", 
+	"🐰 ANTENNA PLAYER [LOBBY]", 
+	"🐿 ️ANTENNA DEADBOX [GAME]", 
+	"🐣 ANTENNA FLAIR GUN [GAME]",
+	"🎴 ANTENNA 5.56 AMMO [GAME]", 
+	"🥦 ANTENNA GHILLE SUIT [GAME]", 
 	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if mnat == nil then else 
@@ -685,10 +699,10 @@ end
 
 function VISUAL() 
 mnvs = gg.multiChoice({
-"🎴BLACK SKY🎴", 
-"❤️RED SKY💋", 
-"🌿NO GRASS🌿",
-"👨CAMERA X5👨",
+"🎴 BLACK SKY", 
+"❤️ RED SKY", 
+"🌿 NO GRASS",
+"👨 CAMERA X5",
 "🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 
 if mnvs == nil then else 
@@ -748,13 +762,13 @@ gg.setRanges(gg.REGION_ANONYMOUS)
   
   function other() 
   MNRQ = gg.multiChoice ({
-  "🎴WALLHACK 710🎴", 
-  "🎴COLOR RED & YLW V2🎴", 
-  "💅COLOR SD 845 RED💅",
-  "💅COLOR SD 845 YELLOW🤘", 
-  "🍷COLOR SD 855 RED💕", 
-  "🔥WALLHACK EXYNOS🔥", 
-  "🌈COLORHACK EXYNOS🌈", 
+  "🎴 WALLHACK 710", 
+  "🤺 COLOR RED & YLW V2", 
+  "💅 COLOR SD 845 RED",
+  "💆 COLOR SD 845 YELLOW", 
+  "🍷 COLOR SD 855 RED", 
+  "🔥 WALLHACK EXYNOS", 
+  "🌈 COLORHACK EXYNOS", 
   "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if MNRQ == nil then else 
@@ -848,9 +862,9 @@ end
 	
 	function ESP() 
 	MNESP = gg.multiChoice ({
-	"[♨️] TURN ON ESP", 
-	"[♨️] TURN OFF ESP", 
-	"[🛩] ️RADER ESP 200M", 
+	"♨️ TURN ON ESP", 
+	"♨️ TURN OFF ESP", 
+	"🛩 ️RADER ESP 200M", 
 	"🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if MNESP == nil then else 
@@ -1106,11 +1120,11 @@ end
 
 function brutal()
 	mngb = gg.multiChoice({
-	"[🛶] INSTANT HIT", 
-	"[🚖] SPEED VEHICLE", 
-	"[🍥] WIDE VIEW MENU", 
-	"[♨️] FLASH MENU", 
-	"[📸] SCOPE MENU", 
+	"🛶 INSTANT HIT", 
+	"🚖 SPEED VEHICLE", 
+	"🍥 WIDE VIEW MENU", 
+	"♨️ FLASH MENU", 
+	"📸 SCOPE MENU", 
 	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
 	
 	if mngb == nil then else 
@@ -1247,7 +1261,6 @@ function brutal()
     gg.getResults(100)
     gg.editAll("200000", gg.TYPE_FLOAT)
     gg.clearResults()
-    gg.toast("🍣INSTANT HIT ACTIVATED🍣\n t.me/TeamBattleAxeCheats")
     gg.toast("🍣INSTANT HIT ACTIVATED🍣\n t.me/TeamBattleAxeCheats")
   end
   function SPDM4()
@@ -1879,7 +1892,28 @@ gg.editAll("0", gg.TYPE_FLOAT)
 gg.toast("🍣Fast Parachute🍣")
 end
 
-
+function BETA()
+	mnbeta = gg.multiChoice({
+	"[🤯] Auto Headshot [Undetected]", 
+	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
+	
+	if mnbeta == nil then else 
+	if mnbeta[1] == true then mnbeta1() end
+	if mnbeta[2] == true then START() end 
+	end 
+	
+	XEROX = - 1
+	end
+		
+	function mnbeta1() 
+	gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("25;23;30.5",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+    gg.getResults(3)
+    gg.editAll("180",gg.TYPE_FLOAT)
+    gg.toast("Undetected Auto Headhsot\n t.me/TeamBattleAxeCheats")
+end
+	
 
 	while true do
   if gg.isVisible(true) then
