@@ -20,6 +20,7 @@ XEROX = {
 "867482040102115", -- Tharun Gupta
 "865221031450923", -- Immortal Chandan
 "863896043273314", -- SakibLTG
+"867224040884650", -- Gaurav 
 
 
 
