@@ -21,8 +21,8 @@ XEROX = {
 "863896043273314", -- SakibLTG
 "867224040884650", -- Gaurav 
 "863312044489479", -- Ar Rahman 
-"866750039037448", -- Killer 2nd device 
-
+"866750039037448", -- Killer 2nd device
+"861067030997107", -- Shark Out
 
 
 } --- multiple imei
