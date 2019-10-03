@@ -220,13 +220,15 @@ end
 	"🏅 WALLHACK SNAPDRAGON", 
 	"🌈 COLORHACK SNAPDRAGON", 
 	"👨‍🔧 REQUESTED WALL & COLOR", 
+	"🧞‍♂️ FIX BLINK SD [GAME]", 
 	"🔙" } , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴") 
 	
 	if MNWLCR == nil then else 
 	if MNWLCR == 1 then wall() end
 	if MNWLCR == 2 then color() end
 	if MNWLCR == 3 then other() end
-	if MNWLCR == 4 then START() end
+	if MNWLCR == 4 then fblink() end
+	if MNWLCR == 5 then START() end
 	end
 	
 	XEROX = - 1
@@ -1976,7 +1978,7 @@ end
   end
 end
 else
-gg.alert("IMEI Verification Failed\n Sent your IMEI\n 👉 @ItzXEROX\n Sent Sim slot 1 IMEI\n\n Powered by @TeamBattleAxeCheats")
+gg.alert(" ❏ IMEI Verification Failed\n ⎚ Sent your IMEI\n ⎚ @ItzXEROX\n ⎚ Sent Sim slot 1 IMEI\n\n ⎚ Powered by @TeamBattleAxeCheats")
 while true do
 os.exit()
 end
