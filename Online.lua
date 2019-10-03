@@ -24,6 +24,7 @@ XEROX = {
 "866750039037448", -- Killer 2nd device
 "861067030997107", -- Shark Out
 "868622035224304", -- MAHIM CHAKMA
+"867805030569184", -- Sourov Kundu
 
 
 } --- IMEI BY @ITZXEROX 
