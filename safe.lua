@@ -15,6 +15,7 @@ XEROX = {
 "869720033236541", -- XEROX 
 "864558048279238", -- Victor 
 "864166034904544", -- LTG Prince
+"352380100615285", -- A K
 
 } --- IMEI BY @ITZXEROX 
 table = revo.getPhoneInfo()
