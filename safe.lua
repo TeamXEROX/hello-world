@@ -13,6 +13,7 @@ if gg.VERSION < '99.0' then gg.alert(" [⛔] ᴛʜɪꜱ ꜱᴄʀɪᴩᴛ ᴄʀ�
 XEROX = {
 
 "869720033236541", -- XEROX 
+"864558048279238", -- Victor 
 
 } --- IMEI BY @ITZXEROX 
 table = revo.getPhoneInfo()
