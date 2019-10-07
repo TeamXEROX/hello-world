@@ -27,6 +27,7 @@ XEROX = {
 "867805030569184", -- Sourov Kundu
 "867495030702785", -- Akash Deadly 
 "864166034904544", -- Tonmoy LTG Prince 
+"869047032850654", -- Shahriyar
 
 
 } --- IMEI BY @ITZXEROX 
