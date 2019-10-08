@@ -1,12 +1,10 @@
 
-if gg.isPackageInstalled('com.teambattleaxe') then
+if gg.isPackageInstalled('com.ltg.paid') then
 gg.clearResults()
    else
-     print('Use TeamBattleAxeCheats™ GG Otherwise This script will not run😒\n Warn By XEROX🖕') 
+     print('Use LTG™ Paid GG Otherwise This script will not run😒\n Warn By XEROX🖕') 
 os.exit() 
      end
-    
-if gg.VERSION < '99.0' then gg.alert(" [⛔] ᴛʜɪꜱ ꜱᴄʀɪᴩᴛ ᴄʀᴇᴀᴛᴇᴅ ꜰᴏʀ ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇ ᴄʜᴇᴀᴛs™ ᴏꜰꜰɪᴄɪᴀʟ ɢᴀᴍᴇɢᴜᴀʀᴅɪᴀɴ\n [🥑] Download TeamBattlAxeCheats™ GG from here... \n 👉 t.me/TeamBattleAxeCheats 👈") return end
 
 
 
