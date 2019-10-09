@@ -1,13 +1,4 @@
 
-if gg.isPackageInstalled('com.ltg.paid') then
-gg.clearResults()
-   else
-     print('Use LTG™ Paid GG Otherwise This script will not run😒\n Warn By XEROX🖕') 
-os.exit() 
-     end
-
-
-
 XEROX = {
 
 "869720033236541", -- XEROX 
