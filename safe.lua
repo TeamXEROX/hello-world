@@ -72,10 +72,11 @@ os.remove("/data/data/com.tencent.ig/files/tss.i.m.dat")
 gg.toast("🔎Abnormalities Removed🔐")
 end
  
- bypassAlert = gg.alert(" ❏ ᏟᎻᎪNᏩᎬᏞᎾᏩᏚ :\n\n  ⎚ sᴄʀɪᴘᴛ ᴜᴘᴅᴀᴛᴇᴅ ᴛᴏ 1.0.4 sᴛᴀʙʟᴇ ʀᴇʟᴇᴀsᴇ.\n  ⎚ ʀᴇғɪɴᴇᴅ ᴠᴀʟᴜᴇs ғᴏʀ ʟᴏʙʙʏ.\n  ⎚ ᴀᴅᴅᴇᴅ ʟᴇss ʀᴇᴄᴏɪʟ ʟᴏɢᴏ ʙᴇᴛᴀ.\n\n 『👨‍🔧』ғᴏʀ ᴀɴʏ ɪssᴜᴇ ᴄᴏɴᴛᴀᴄᴛ : @ItzXEROX\n\n", "🅴🅽🆃🅴🆁")
+ bypassAlert = gg.alert(" ❏ ᏟᎻᎪNᏩᎬᏞᎾᏩᏚ :\n\n  ⎚ sᴄʀɪᴘᴛ ᴜᴘᴅᴀᴛᴇᴅ ᴛᴏ 1.0.5 sᴛᴀʙʟᴇ ʀᴇʟᴇᴀsᴇ.\n  ⎚ ʀᴇғɪɴᴇᴅ ᴠᴀʟᴜᴇs ғᴏʀ ʟᴏʙʙʏ.\n  ⎚ ᴀᴅᴅᴇᴅ ʟᴇss ʀᴇᴄᴏɪʟ ʟᴏɢᴏ ʙᴇᴛᴀ.\n\n 『👨‍🔧』ғᴏʀ ᴀɴʏ ɪssᴜᴇ ᴄᴏɴᴛᴀᴄᴛ : @ItzXEROX\n\n", "🅴🅽🆃🅴🆁")
  
  if bypassAlert == nil then Bypass() end 
  if bypassAlert == 1 then Bypass() end
+
 
 gg.setVisible(false)
 XEROX = 1
@@ -92,13 +93,15 @@ MN = gg.choice({
 "┌[Lobby] [Once]\
 『🤯』ULTRA HEADHSOT",
 "┌[Lobby] [Once]\
-『🎪』ANTENNA LOBBY",
+『🎪』ANTENNA PLAYER",
 "┌[Game] [Every]\
 『🌃』BLACK SKY",
 "┌[Information]\
-『🐙 』ABOUT LTG™",
+『🐙』REQUESTED MENU",
+"┌[Information]\
+『🎯』About Us",
 
-"EXIT"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.1 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
+"ⒺⓍⒾⓉ"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.5 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
 
 	if MN == nil then else
 	if MN == 1 then RECOIL() end
@@ -107,12 +110,18 @@ MN = gg.choice({
 	if MN == 4 then HS() end
 	if MN == 5 then ANTENNA() end
 	if MN == 6 then SKY() end
-	if MN == 7 then DEV() end
-	if MN == 8 then EXIT() end
+	if MN == 7 then REQ() end
+	if MN == 8 then DEV() end
+	if MN == 9 then EXIT() end
+	
 	end
 	
 	XEROX = -1
 	end
+	
+	function DEV() 
+	gg.alert (" ❏ What's LTG™🤔 \n\n LTG™ is collaboration of three channels. \n\n ⎚ @TeamBattleAxeCheats \n ⎚ @blackcop_s \n ⎚ @ggfreescript \n\n Founder of LTG™ : t.me/battlex_ja 👨‍🔬\n\n Co-Partners :\n ⎚ t.me/mrgroot20 \n ⎚ t.me/ItzXEROX \n ⎚ t.me/psybd \n ⎚ t.me/wizardback \n\n ❏ Stay blessed ❤️ from #TeamLTG") 
+    end
 	
 function EXIT() 
 gg.alert(" [🏅] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🎴\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴡɪᴢᴀʀᴅʙᴀᴄᴋ\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʙʟᴀᴄᴋᴄᴏᴘ_s\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
@@ -124,8 +133,132 @@ print("\n[🏅] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🎴\n [🐙] ᴄ
 print("🍁Contact Us : t.me/ItzXEROX🍁")
 
 	
-function DEV() 
-gg.alert (" ❏ What's LTG™🤔 \n\n LTG™ is collaboration of three channels. \n\n ⎚ @TeamBattleAxeCheats \n ⎚ @blackcop_s \n ⎚ @ggfreescript \n\n Founder of LTG™ : t.me/battlex_ja 👨‍🔬\n\n Co-Partners :\n ⎚ t.me/mrgroot20 \n ⎚ t.me/ItzXEROX \n ⎚ t.me/psybd \n ⎚ t.me/wizardback \n\n ❏ Stay blessed ❤️ from #TeamLTG") 
+function REQ() 
+  MNRQ = gg.multiChoice ({
+  "🎴 WALLHACK 710", 
+  "🤺 COLOR RED & YLW V2", 
+  "🔥 WALLHACK EXYNOS", 
+  "🌈 COLORHACK EXYNOS", 
+  "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
+	
+	if MNRQ == nil then else 
+	if MNRQ[1] == true then wall710() end
+	if MNRQ[2] == true then color710() end
+	if MNRQ[3] == true then exy1() end
+	if MNRQ[4] == true then exy2() end
+	if MNRQ[5] == true then START() end
+	end
+	
+	XEROX = - 1
+	end
+	
+	function wall710() 
+	gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber('274,677,779D;2.25000452995;2;1.6623054e-19', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll('130', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber('218D;3.7615819e-37;2;-1;1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll('130', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber('95D;2;9.2194229e-41', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(15)
+    gg.editAll('130', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber('206D;3.7615819e-37;2;-1;1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll('130', gg.TYPE_FLOAT)
+    gg.toast("🎯 WALL HACK 710 🎯") 
+  end
+	
+	function color710() 
+	 gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber('32,769;-2,134,900,722', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('32769', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll('32777', gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber('8,192D;256D;8200D', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('8200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll('7', gg.TYPE_DWORD)
+    gg.toast('🎯 COLOR HACK 710 🎯')
+  end
+
+function exy1() 
+gg.clearList()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+if gg.getResultCount()==0 then
+gg.toast("Wallhack Exynos 8895")
+else
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+_Count=gg.getResultCount()
+_A=gg.getResults(_Count)
+last_Count=_Count + 1
+w=1
+_T="Wallhack Exynos 8895"
+WHFIX8895()
+end
+end
+function WHFIX8895()
+if w==0 then
+gg.toast("Loading...")
+else
+gg.setVisible(false)
+_CL={}
+for _FORV_3_=1, _Count do
+_CL[_FORV_3_]="Edit Wallhack Value " .. _FORV_3_ .. ""
+end
+_CL[last_Count]="BACK"
+_C_=gg.choice(_CL, nil, A2_2512)
+for _FORV_3_=1, _Count do
+if _C_==_FORV_3_ then
+for _FORV_7_, _FORV_8_ in ipairs(_A) do
+_A[_FORV_7_].freeze=false
+gg.addListItems(_A)
+end
+_A[_FORV_3_].value=1
+_A[_FORV_3_].freeze=true
+gg.addListItems(_A)
+_FORV_3_=_Count
+elseif K_2==_Count + 1 then
+START()
+end
+end
+end
+gg.setVisible(true)
+end
+
+
+function exy2() 
+gg.clearResults()
+gg.setRanges(4)
+gg.setRanges(4)
+gg.searchNumber("40D;32D;16D;2D::53", 4, false, 536870912, 0, -1)
+gg.refineNumber("40", 4, false, 536870912, 0, -1)
+gg.getResults(4)
+gg.editAll("36", 4)
+gg.toast("Colour Exynos Yellow V2 activated!")
+gg.clearResults()
 end
 
 function HS() 
@@ -136,7 +269,7 @@ gg.clearResults()
   gg.getResults(10)
   gg.editAll("150", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Headshot 50% DONE 🤯")
+  gg.toast("🎯 Ultimate Headshot Activated 🎯")
   gg.clearResults() 
 end
 
@@ -144,7 +277,7 @@ function RECOIL()
   MNRECOIL = gg.multiChoice ({
   "🥋 Less Recoil [Logo Activation]", 
   "🥋 Less Recoil [Lobby Activation]", 
-  "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.1 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
+  "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.5 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
   
   if MNRECOIL == nil then else 
   if MNRECOIL[1] == true then lrlogo() end
@@ -237,7 +370,7 @@ WALLSNAP = gg.choice({
 "🌷 Wallhack SD 845 [Smooth Graphics]",
 "🌷 Wallhack SD 855",
 "🔙",
-},nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.1 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
+},nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.5 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
 if WALLSNAP == nil then
 else
 if WALLSNAP == 1 then wh1() end
@@ -380,7 +513,7 @@ wh425 = gg.multiChoice({
  "SD425 V1",
  "Sd435 V2",
  "🔙"
-  },nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.1 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
+  },nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.5 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
   if wh425 == nil then 
    else
   if wh425[1] == true then 
@@ -994,7 +1127,7 @@ COLOR = gg.choice({
 "🌈 Color Red Exynos, MTK and Kirin",
 "🌈 Color Yellow Exynos, MTK and Kirin",
 "🔙", 
-},nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.1 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
+},nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.5 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
 
 if COLOR == nil then
 else 
