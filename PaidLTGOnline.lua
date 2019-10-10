@@ -1,3 +1,4 @@
+
 XEROX = {
 
 "869720033236541", -- XEROX 
@@ -167,7 +168,7 @@ XEROX = 1
 function START()
 
 MN = gg.choice({
-"┌[Logo] [Once]\
+"┌[Logo/Lobby] [Once]\
 『👨‍🔧』RECOIL MENU",
 "┌[Lobby] [Once]\
 『🎴』WALL MENU",
@@ -176,7 +177,7 @@ MN = gg.choice({
 "┌[Lobby] [Once]\
 『🤯』ULTRA HEADHSOT",
 "┌[Lobby] [Once]\
-『🎪』ANTENNA PLAYER",
+『🎪』ANTENNA MENU",
 "┌[Game] [Every]\
 『🏝️』VISUAL MENU",
 "┌[Information]\
