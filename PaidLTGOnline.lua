@@ -37,8 +37,6 @@ end
 end
 if valid then
 
-
-
 -- AntiLogger START 
 function split(AobaFullString, AobaSeparator) 
  local nFindStartIndex = 1 
@@ -159,7 +157,7 @@ os.remove("/data/data/com.tencent.ig/files/tss.i.m.dat")
 gg.toast("🔎Abnormalities Removed🔐")
 end
  
- bypassAlert = gg.alert(" ❏ ᏟᎻᎪNᏩᎬᏞᎾᏩᏚ :\n\n  ⎚ sᴄʀɪᴘᴛ ᴜᴘᴅᴀᴛᴇᴅ ᴛᴏ 1.0.6 sᴛᴀʙʟᴇ ʀᴇʟᴇᴀsᴇ.\n  ⎚ ʀᴇғɪɴᴇᴅ ᴠᴀʟᴜᴇs ғᴏʀ ʟᴏʙʙʏ.\n  ⎚ ᴀᴅᴅᴇᴅ ʟᴇss ʀᴇᴄᴏɪʟ ʟᴏɢᴏ ʙᴇᴛᴀ.\n\n 『👨‍🔧』ғᴏʀ ᴀɴʏ ɪssᴜᴇ ᴄᴏɴᴛᴀᴄᴛ : @ItzXEROX\n\n", "🅴🅽🆃🅴🆁")
+ bypassAlert = gg.alert(" ❏ ᏟᎻᎪNᏩᎬᏞᎾᏩᏚ :\n\n  ⎚ Script Updated to 1.0.7\n  ⎚ Added Beta Codes.\n  ⎚ Added Magic Graphics.\n\n 『👨‍🔧』ғᴏʀ ᴀɴʏ ɪssᴜᴇ ᴄᴏɴᴛᴀᴄᴛ : @ItzXEROX\n\n", "🅴🅽🆃🅴🆁")
  
  if bypassAlert == nil then Bypass() end 
  if bypassAlert == 1 then Bypass() end
@@ -174,9 +172,9 @@ MN = gg.choice({
 "┌[Logo/Lobby] [Once]\
 『👨‍🔧』RECOIL MENU",
 "┌[Lobby] [Once]\
-『🎴』WALL MENU",
+『🎴』WALL & COLOR",
 "┌[Lobby] [Once]\
-『🌈』COLOR MENU",
+『🖲️』BETA CODES [New]",
 "┌[Lobby] [Once]\
 『🤯』ULTRA HEADHSOT",
 "┌[Lobby] [Once]\
@@ -184,20 +182,20 @@ MN = gg.choice({
 "┌[Game] [Every]\
 『🏝️』VISUAL MENU",
 "┌[Information]\
-『🐙』REQUESTED MENU",
+『🏮』OTHER FEATURES",
 "┌[Information]\
 『🎯』About Us",
 
-"ⒺⓍⒾⓉ"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.6 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
+"ⒺⓍⒾⓉ"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.7 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
 
 	if MN == nil then else
 	if MN == 1 then RECOIL() end
 	if MN == 2 then WALL() end
-	if MN == 3 then CLR() end
+	if MN == 3 then BETA() end
 	if MN == 4 then HS() end
 	if MN == 5 then ANTENNA() end
 	if MN == 6 then VISUAL() end
-	if MN == 7 then REQ() end
+	if MN == 7 then OTHER() end
 	if MN == 8 then DEV() end
 	if MN == 9 then EXIT() end
 	
@@ -219,26 +217,6 @@ end
 print("\n[🏅] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🎴\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴍʀɢʀᴏᴏᴛ20\n @ᴩꜱyʙᴅ\n @ᴡɪᴢᴀʀᴅʙᴀᴄᴋ\n [🦀] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @ʙʟᴀᴄᴋᴄᴏᴘ_s\n @ɢɢꜰʀᴇᴇꜱᴄʀɪᴩᴛꜱ\n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈") 
 print("🍁Contact Us : t.me/ItzXEROX🍁")
 
-	
-function REQ() 
-  MNRQ = gg.multiChoice ({
-  "🎴 WALLHACK 710", 
-  "🤺 COLOR RED & YLW V2", 
-  "🔥 WALLHACK EXYNOS", 
-  "🌈 COLORHACK EXYNOS", 
-  "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] PUBGM VERSION 0.14.5 🎴")
-	
-	if MNRQ == nil then else 
-	if MNRQ[1] == true then wall710() end
-	if MNRQ[2] == true then color710() end
-	if MNRQ[3] == true then exy1() end
-	if MNRQ[4] == true then exy2() end
-	if MNRQ[5] == true then START() end
-	end
-	
-	XEROX = - 1
-	end
-	
 	function wall710() 
 	gg.clearResults()
     gg.setRanges(gg.REGION_BAD)
@@ -349,6 +327,23 @@ gg.clearResults()
 end
 
 function HS() 
+MNHS = gg.multiChoice ({
+  "⛔ Ultra Headshot [Safe]", 
+  "⛔ Ultra Headshot [Medium]", 
+  "⛔ Ultra Headshot [Brutal]", 
+  "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.7 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
+  
+  if MNHS == nil then else 
+  if MNHS[1] == true then hssafe() end
+  if MNHS[2] == true then hsmd() end
+  if MNHS[3] == true then hsbr() end
+  if MNHS[4] == true then START() end
+  end
+  
+  XEROX = - 1
+  end
+   
+function hsbr() 
 gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -360,16 +355,38 @@ gg.clearResults()
   gg.clearResults() 
 end
 
+function hssafe() 
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("30.5;25", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("220", 16)
+gg.clearResults()
+gg.toast("🎯 Auto Headshot 50% 🎯")
+end
+
+function hsmd() 
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("30.5;25", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("220", 16)
+gg.clearResults()
+gg.toast("🎯 Auto Headshot 75% 🎯")
+end
+
 function RECOIL()
   MNRECOIL = gg.multiChoice ({
-  "🥋 Less Recoil [Logo Activation]", 
-  "🥋 Less Recoil [Lobby Activation]", 
-  "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.6 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
+  "🥋 No Recoil [Logo Activation]", 
+  "🥋 No Recoil [Lobby Activation]", 
+  "🥋 No Recoil [Game Activation]", 
+  "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.7 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
   
   if MNRECOIL == nil then else 
   if MNRECOIL[1] == true then lrlogo() end
   if MNRECOIL[2] == true then lrlobby() end
-  if MNRECOIL[3] == true then START() end
+  if MNRECOIL[3] == true then lrgame() end
+  if MNRECOIL[4] == true then START() end
   end
   
   XEROX = - 1
@@ -384,7 +401,7 @@ gg.clearResults()
   gg.getResults(1)
   gg.editAll("0", 16)
   gg.clearResults()
-  gg.toast("🎯Logo Less Recoil Done🎯")
+  gg.toast("🎯Logo No Recoil Done🎯")
 end
 
 function lrlobby() 
@@ -395,11 +412,21 @@ gg.searchNumber("-6,196,952,597,921,662,448", gg.TYPE_QWORD, false, gg.SIGN_EQUA
 gg.getResults(10)
 gg.editAll("-6,196,952,600,069,146,096", gg.TYPE_QWORD)
 gg.clearResults()
-gg.toast ("🎯Lobby Less Recoil Done🎯")
+gg.toast ("🎯Lobby No Rceoil Done🎯")
 end
 
-
-
+function lrgame() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("176293393;8F;9.5F;15F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.searchNumber("176293393", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("176293392", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("🎯No Recoil Game🎯")
+  gg.clearResults()
+end
 
 function ANTENNA()
 	mnat = gg.multiChoice({
@@ -580,153 +607,241 @@ end
 
 
 function WALL() 
-WALLSNAP = gg.choice({
-"🌷 Wallhack Fix Blink (Game)",
-"🌷 Wallhack SD 400",
-"🌷 Wallhack SD 410",
-"🌷 Wallhack SD 415",
-"🌷 Wallhack SD 425",
-"🌷 Wallhack SD 430",
-"🌷 Wallhack SD 435",
-"🌷 Wallhack SD 450",
-"🌷 Wallhack SD 615",
-"🌷 Wallhack SD 616",
-"🌷 Wallhack SD 625",
-"🌷 Wallhack SD 626",
-"🌷 Wallhack SD 632",
-"🌷 Wallhack SD 636",
-"🌷 Wallhack SD 650",
-"🌷 Wallhack SD 653",
-"🌷 Wallhack SD 660",
-"🌷 Wallhack SD 670",
-"🌷 Wallhack SD 675",
-"🌷 Wallhack SD 710",
-"🌷 Wallhack SD 800",
-"🌷 Wallhack SD 801",
-"🌷 Wallhack SD 815",
-"🌷 Wallhack SD 820",
-"🌷 Wallhack SD 821",
-"🌷 Wallhack SD 835",
-"🌷 Wallhack SD 845 [Smooth Graphics]",
-"🌷 Wallhack SD 855",
-"🔙",
-},nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.6 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
-if WALLSNAP == nil then
-else
-if WALLSNAP == 1 then wh1() end
-if WALLSNAP == 2 then wh2() end
-if WALLSNAP == 3 then wh3() end
-if WALLSNAP == 4 then wh4() end
-if WALLSNAP == 5 then wh5() end
-if WALLSNAP == 6 then wh6() end
-if WALLSNAP == 7 then wh7() end
-if WALLSNAP == 8 then wh8() end
-if WALLSNAP == 9 then wh9() end
-if WALLSNAP == 10 then wh10() end
-if WALLSNAP == 11 then wh11() end
-if WALLSNAP == 12 then wh12() end
-if WALLSNAP == 13 then wh13() end
-if WALLSNAP == 14 then wh14() end
-if WALLSNAP == 15 then wh15() end
-if WALLSNAP == 16 then wh16() end
-if WALLSNAP == 17 then wh17() end
-if WALLSNAP == 18 then wh18() end
-if WALLSNAP == 19 then wh19() end
-if WALLSNAP == 20 then wh20() end
-if WALLSNAP == 21 then wh21() end
-if WALLSNAP == 22 then wh22() end
-if WALLSNAP == 23 then wh23() end
-if WALLSNAP == 24 then wh24() end
-if WALLSNAP == 25 then wh25() end
-if WALLSNAP == 26 then wh26() end
-if WALLSNAP == 27 then wh27() end
-if WALLSNAP == 28 then wh28() end
-if WALLSNAP == 29 then START() end
-end
-
+WLCR = gg.multiChoice({
+ '🛡️ Wallhack Fix Blink (Game)',
+ '🛡️ Wallhack SD 400',
+ '🛡️ Wallhack SD 410',
+ '🛡️ Wallhack SD 415',
+ '🛡️ Wallhack SD 425',
+ '🛡️ Wallhack SD 430',
+ '🛡️ Wallhack SD 435',
+ '🛡️ Wallhack SD 450',
+ '🛡️ Wallhack SD 615',
+ '🛡️ Wallhack SD 616',
+ '🛡️ Wallhack SD 625',
+ '🛡️ Wallhack SD 626',
+ '🛡️ Wallhack SD 632',
+ '🛡️ Wallhack SD 636',
+ '🛡️ Wallhack SD 650',
+ '🛡️ Wallhack SD 653',
+ '🛡️ Wallhack SD 660',
+ '🛡️ Wallhack SD 670',
+ '🛡️ Wallhack SD 675',
+ '🛡️ Wallhack SD 710',
+ '🛡️ Wallhack SD 800',
+ '🛡️ Wallhack SD 801',
+ '🛡️ Wallhack SD 815',
+ '🛡️ Wallhack SD 820',
+ '🛡️ Wallhack SD 821',
+ '🛡️ Wallhack SD 835',
+ '🛡️ Wallhack SD 845 [Smooth Graphics]',
+ '🛡️ Wallhack SD 855',
+ "㊙️ Color Green",
+ "㊙️ Color Mix",
+ "㊙️ Color Purple",
+ "㊙️ Color Rainbow",
+ "㊙️ Color Red [Visible Only]",
+ "㊙️ Color Red [Full Body]",
+ "㊙️ Color Yellow [Visible Only]",
+ "㊙️ Color Yellow [Full Body]",
+ "㊙️ Color Blue HDR",
+ "㊙️ Color Red HDR",
+ "㊙️ Color Yellow HDR",
+ "㊙️ Color 845 Red",
+ "㊙️ Color 845 Yellow",
+ "🎴 WALLHACK 710", 
+ "🤺 COLOR RED & YLW V2", 
+ "🔥 WALLHACK EXYNOS", 
+ "㊙️ COLORHACK EXYNOS", 
+ '🔙',
+}, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.7 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
+  if WLCR == nil then
+  else
+   if WLCR[1] == true then
+   STM_3_1_3()
+    end
+    if WLCR[2] == true then
+    STM_3_1_4()
+    end
+    if WLCR[3] == true then
+    STM_3_1_5()
+    end
+    if WLCR[4] == true then
+   STM_3_1_6()
+    end
+    if WLCR[5] == true then
+  STM_3_1_7()
+    end
+    if WLCR[6] == true then
+   STM_3_1_8()
+    end
+    if WLCR[7] == true then
+    STM_3_1_9()
+    end
+    if WLCR[8] == true then
+   STM_3_1_10()
+    end
+    if WLCR[9] == true then
+    STM_3_1_11()
+    end
+    if WLCR[10] == true then
+    STM_3_1_12()
+    end
+    if WLCR[11] == true then
+   STM_3_1_13()
+    end
+    if WLCR[12] == true then
+  STM_3_1_14()
+    end
+    if WLCR[13] == true then
+   STM_3_1_15()
+    end
+    if WLCR[14] == true then
+    STM_3_1_16()
+    end
+    if WLCR[15] == true then
+   STM_3_1_17()
+    end
+    if WLCR[16] == true then
+    STM_3_1_18()
+    end
+    if WLCR[17] == true then
+    STM_3_1_19()
+    end
+    if WLCR[18] == true then
+   STM_3_1_20()
+    end
+    if WLCR[19] == true then
+  STM_3_1_21()
+    end
+    if WLCR[20] == true then
+   STM_3_1_22()
+    end
+    if WLCR[21] == true then
+    STM_3_1_23()
+    end
+    if WLCR[22] == true then
+    STM_3_1_24()
+    end
+    if WLCR[23] == true then
+    STM_3_1_25()
+    end
+    if WLCR[24] == true then
+   STM_3_1_26()
+    end
+    if WLCR[25] == true then
+  STM_3_1_27()
+    end
+    if WLCR[26] == true then
+   STM_3_1_28()
+    end
+    if WLCR[27] == true then
+    STM_3_1_29()
+    end
+    if WLCR[28] == true then
+   STM_3_1_30()
+    end
+    if WLCR[29] == true then
+    cr1()
+    end
+    if WLCR[30] == true then
+    cr2()
+    end
+    if WLCR[31] == true then
+    cr3()
+    end
+    if WLCR[32] == true then
+    cr4()
+    end
+    if WLCR[33] == true then
+    cr5()
+    end
+    if WLCR[34] == true then
+    cr6()
+    end
+    if WLCR[35] == true then
+    cr7()
+    end
+    if WLCR[36] == true then
+    cr8()
+    end
+    if WLCR[37] == true then
+    cr9()
+    end
+   if WLCR[38] == true then
+    cr10()
+    end
+   if WLCR[39] == true then
+    cr11()
+    end
+    if WLCR[40] == true then
+    cr12()
+    end
+   if WLCR[41] == true then
+    cr13()
+    end
+    if WLCR[42] == true then
+    wall710()
+    end
+    if WLCR[43] == true then
+    color710()
+    end
+    if WLCR[44] == true then
+    exy1()
+    end
+    if WLCR[45] == true then
+    exy2()
+    end
+    if WLCR[46] == true then
+    START()
+    end
+    end
+    
 XEROX = -1
 end
 
-function wh1()
+function STM_3_1_3()
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.setRanges(131072)
+gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(1)
-gg.editAll("99999", gg.TYPE_FLOAT)
-gg.clearResults() 
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function wh2()
-    gg.clearResults()
-
-    gg.setRanges(4)
-
-    gg.searchNumber("228;1,073,741,824;1,073,741,824;229;-1,082,130,432:29", 4, false, 536870912, 0, -1)
-
-    gg.searchNumber("1,073,741,824", 4, false, 536870912, 0, -1)
-
-    gg.getResults(30)
-
-    gg.editAll("1,123,024,896", 4)
-
-    gg.clearResults()
-
-    gg.setRanges(4)
-
-    gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", 16, false, 536870912, 0, -1)
-
-    gg.searchNumber("2", 16, false, 536870912, 0, -1)
-
-    gg.getResults(100)
-
-    gg.editAll("120", 16)
-
-    gg.clearResults()
-
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function wh3()
+gg.editAll("99999", 16)
 gg.clearResults()
-
+gg.toast("TeamBattleaxeCheats™")
+end
+function STM_3_1_4()
+gg.clearResults()
+gg.setRanges(4)
+gg.searchNumber("228;1,073,741,824;1,073,741,824;229;-1,082,130,432:29", 4, false, 536870912, 0, -1)
+gg.searchNumber("1,073,741,824", 4, false, 536870912, 0, -1)
+gg.getResults(30)
+gg.editAll("1,123,024,896", 4)
+gg.clearResults()
+gg.setRanges(4)
+gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.toast("TeamBattleaxeCheats™")
+end
+function STM_3_1_5()
+gg.clearResults()
 gg.setRanges(1)
 gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", 16, false, 536870912, 0, -1)
-
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
-
 gg.getResults(100)
-
 gg.editAll("120", 16)
-
 gg.clearResults()
-
 gg.searchNumber("3.1809475e-43;3.1949605e-43;2.0;3.2089735e-43:53", 16, false, 536870912, 0, -1)
-
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
-
 gg.getResults(100)
-
 gg.editAll("120", 16)
-
 gg.clearResults()
-
-gg.setRanges(1)
-
-gg.searchNumber("3.2229865e-43F;2.0F;-1.0F;-1.0F;2.0F:145", 16, false, 536870912, 0, -1)
-
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-
-gg.getResults(360)
-
-gg.editAll("150", 16)
-
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh4()
+function STM_3_1_6()
 gg.clearResults()
 gg.setRanges(1)
 gg.searchNumber("228;1,073,741,824;1,073,741,824;229;-1,082,130,432:29", 4, false, 536870912, 0, -1)
@@ -740,50 +855,9 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(100)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.searchNumber("3.1809475e-43;3.1949605e-43;2.0;3.2089735e-43:53", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh5()
-wh425 = gg.multiChoice({
- "SD425 V1",
- "Sd435 V2",
- "🔙"
-  },nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.6 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
-  if wh425 == nil then 
-   else
-  if wh425[1] == true then 
-   wh5v1() 
-  end
-  if wh425[2] == true then 
-   wh5v2() 
-  end
-  if wh425[3] == true then 
-  WALL() 
-   end
-  end
-  XEROX = -1 
- end
-function wh5v1()
-gg.setRanges(131072)
-gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-function wh5v2()
+function STM_3_1_7()
 gg.clearResults()
 gg.setRanges(4)
 gg.searchNumber("2.9427268e-44;2.0;3.0828566e-44;-1.0;3.2229865e-44;3.3631163e-44;3.643376e-44:97", 16, false, 536870912, 0, -1)
@@ -796,50 +870,33 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(100)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber("227;1,073,741,824;1,073,741,824;-1,082,130,432;1,073,741,824:49", 4, false, 536870912, 0, -1)
-gg.searchNumber("1,073,741,824", 4, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("1,123,024,896", 4)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.setRanges(131072)
+gg.searchNumber("856,128", 4, false, 536870912, 0, -1)
+gg.getResults(3)
+gg.editAll("856122", 4)
+gg.clearResults()
+gg.searchNumber("196,610;1,280;196,608::25", 4, false, 536870912, 0, -1)
+gg.searchNumber("196608", 4, false, 536870912, 0, -1)
+gg.getResults(5)
+gg.editAll("99459", 4)
+gg.clearResults()
+gg.toast("TeamBattleaxeCheats™")
 end
-function wh6()
-    gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;-127.0F::520", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
+function STM_3_1_8()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("4,141D;4.7408155e21;-5.5693206e-40;4.814603e21;3.7615819e-37;2:", 16, false, 536870912, 0, -1)
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(4)
 gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function wh7()
-    gg.clearResults()
-gg.setRanges(4)
 gg.searchNumber("3.2229865e-43F;2.0F;-1.0F;-1.0F;2.0F:145", 16, false, 536870912, 0, -1)
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(360)
 gg.editAll("150", 16)
-gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber("27;15;26;23;1,073,741,824;24;-1,082,130,432:61", 4, false, 536870912, 0, -1)
-gg.searchNumber("1,073,741,824", 4, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("1,123,024,896", 4)
+gg.toast("TeamBattleaxeCheats™")
+end
+function STM_3_1_9()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("2;3.7615819e-37;4.814603e21;4.7408149e21", 16, false, 536870912, 0, -1)
@@ -854,15 +911,14 @@ gg.getResults(20)
 gg.editAll("120", 16)
 gg.clearResults()
 gg.setRanges(131072)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 4, false, 536870912, 0, -1)
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(20)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh8()
+function STM_3_1_10()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
@@ -900,10 +956,9 @@ gg.searchNumber("4.7961574e21;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
 gg.searchNumber(2, 16, false, 536870912, 0, -1)
 gg.getResults(30)
 gg.editAll("150", 16)
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh9()
+function STM_3_1_11()
 gg.clearResults()
 gg.setRanges(1)
 gg.searchNumber("3.2229865e-43;2.0;-1.0;-1.0;2.0:145", 16, false, 536870912, 0, -1)
@@ -922,26 +977,9 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(100)
 gg.editAll("120", 16)
 gg.clearResults()
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh10()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("2.718519e-43;2.0F;-1.0F;1.0F;-127F;0.24022650719F;-0.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function wh11()
+function STM_3_1_12()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", 16, false, 536870912, 0, -1)
@@ -955,10 +993,24 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(30)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh12()
+function STM_3_1_13()
+gg.setRanges(131072)
+gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("130", 16)
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("130", 16)
+gg.clearResults()
+gg.toast("TeamBattleaxeCheats™")
+end
+function STM_3_1_14()
 gg.setRanges(131072)
 gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
 gg.searchNumber(2, 16, false, 536870912, 0, -1)
@@ -981,11 +1033,10 @@ gg.searchNumber("1.1202013e-19;1.1202017e-19;2::", 16, false, 536870912, 0, -1)
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(3)
 gg.editAll("9999", 16)
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh13()
-ggg.clearResults()
+function STM_3_1_15()
+gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
@@ -998,10 +1049,9 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("130", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh14()
+function STM_3_1_16()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
@@ -1014,10 +1064,9 @@ gg.searchNumber(2, 16, false, 536870912, 0, -1)
 gg.getResults(30)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh15()
+function STM_3_1_17()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
@@ -1030,10 +1079,9 @@ gg.searchNumber(2, 16, false, 536870912, 0, -1)
 gg.getResults(30)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh16()
+function STM_3_1_18()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
@@ -1046,32 +1094,25 @@ gg.searchNumber(2, 16, false, 536870912, 0, -1)
 gg.getResults(30)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh17()
+function STM_3_1_19()
 gg.clearResults()
 gg.setRanges(131072)
-gg.searchNumber("2.718519e-43;3.7615819e-37;2.0;0.00999999978::200", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
+gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
-gg.editAll("120", 16)
+gg.editAll("130", 16)
 gg.clearResults()
-gg.searchNumber("5.8013756e-42;-5.5695588e-40;2.0::100", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
+gg.setRanges(131072)
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
-gg.editAll("120", 16)
+gg.editAll("130", 16)
 gg.clearResults()
-gg.searchNumber("4,140D;4.7408166e21;5.6896623e-29;4.7961574e21;3.7615819e-37;2", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setVisible(false)
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh18()
+function STM_3_1_20()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", 16, false, 536870912, 0, -1)
@@ -1096,9 +1137,9 @@ gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("130", 16)
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-function wh19()
+function STM_3_1_21()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", 16, false, 536870912, 0, -1)
@@ -1123,61 +1164,24 @@ gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("130", 16)
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-function wh20()
+function STM_3_1_22()
 gg.clearResults()
 gg.setRanges(131072)
-gg.searchNumber("5.3680222e21;1.3312335e-43;1.3912563e-19;2", 16, false, 536870912, 0, -1)
+gg.searchNumber("95D;2;9.2194229e-41", 16, false, 536870912, 0, -1)
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
+gg.getResults(15)
+gg.editAll("130", 16)
 gg.clearResults()
 gg.setRanges(131072)
-gg.searchNumber("4.8146053e21;2.8866748e-43;1.3912556e-19;2", 16, false, 536870912, 0, -1)
+gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
 gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("5.201992e21;4.4028356e-29;2.25000452995;2", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("4.9252857e21;6.488138e-40;4.9252863e21;2", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("1.0761972e-42;4.5920551e-41;-1.7632415e-38;2", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("1.0761972e-42;4.5923353e-41;-1.7632457e-38;2", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("5.3311276e21;1.3312335e-43;1.391256e-19;2", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("4.8146041e21;2.8866748e-43;1.3912537e-19;2", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.getResults(10)
+gg.editAll("130", 16)
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh21()
+function STM_3_1_23()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", 16, false, 536870912, 0, -1)
@@ -1190,21 +1194,24 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(30)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh22()
+function STM_3_1_24()
 gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber("3.2369995e-43;3.1389086e-43;2.0;3.1669345e-43:73", 16, false, 536870912, 0, -1)
-gg.searchNumber("2.0", 16, false, 536870912, 0, -1)
-gg.getResults(100)
+gg.setRanges(131072)
+gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(30)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(30)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh23()
+function STM_3_1_25()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
@@ -1218,10 +1225,9 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("130", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh24()
+function STM_3_1_26()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
@@ -1235,10 +1241,9 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("130", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh25()
+function STM_3_1_27()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
@@ -1252,10 +1257,9 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("130", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh26()
+function STM_3_1_28()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("5.1097599e21;2.0;1.6623071e-19::17", 16, false, 536870912, 0, -1)
@@ -1286,10 +1290,9 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(30)
 gg.editAll("120", 16)
 gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.toast("TeamBattleaxeCheats™")
 end
-
-function wh27()
+function STM_3_1_29()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("218D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
@@ -1311,85 +1314,7 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("130", 16)
 gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("1,661,566,999;96;539,246,604;8200::", 4, false, 536870912, 0, -1)
-gg.searchNumber("8200", 4, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("7", 4)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheat")
-end
-
-function wh28()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("218D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("95D;2;9.2194229e-41", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(15)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function CLR() 
-COLOR = gg.choice({
-"🌈 Color Green",
-"🌈 Color Mix",
-"🌈 Color Purple",
-"🌈 Color Rainbow",
-"🌈 Color Red [Visible Only]",
-"🌈 Color Red [Full Body]",
-"🌈 Color Yellow [Visible Only]",
-"🌈 Color Yellow [Full Body]",
-"🌈 Color Blue HDR",
-"🌈 Color Red HDR",
-"🌈 Color Yellow HDR",
-"🌈 Color 845 Red",
-"🌈 Color 845 Yellow",
-"🌈 Color Red Exynos, MTK and Kirin",
-"🌈 Color Yellow Exynos, MTK and Kirin",
-"🔙", 
-},nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.6 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
-
-if COLOR == nil then
-else 
-if COLOR == 1 then cr1() end
-if COLOR == 2 then cr2() end
-if COLOR == 3 then cr3() end
-if COLOR == 4 then cr4() end
-if COLOR == 5 then cr5() end
-if COLOR == 6 then cr6() end
-if COLOR == 7 then cr7() end
-if COLOR == 8 then cr8() end
-if COLOR == 9 then cr9() end
-if COLOR == 10 then cr10() end
-if COLOR == 11 then cr11() end
-if COLOR == 12 then cr12() end
-if COLOR == 13 then cr13() end
-if COLOR == 14 then cr14() end
-if COLOR == 15 then cr15() end
-if COLOR == 16 then START() end
-end
-
-XEROX = -1
+gg.toast("TeamBattleaxeCheats™")
 end
 
 function cr1()
@@ -1568,6 +1493,57 @@ gg.searchNumber("40", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll("36", gg.TYPE_DWORD)
 gg.toast("t.me/TeamBattleAxeCheats")
+end
+
+function OTHER() 
+gg.alert("Coming in Next Update\n For any help : @TeamBattleAxeCheats_bot \n @ItzXEROX \n Powered by : @TeamBattleAxeCheats") 
+end
+
+function BETA() 
+MNBETA = gg.multiChoice ({
+  "💫 Wallhack SD 6++ Series [Lobby]", 
+  "💫 New Green Color [Lobby]", 
+  "💫 Magic Graphics [Game]", 
+  "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.7 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
+  
+  if MNBETA == nil then else 
+  if MNBETA[1] == true then btwall() end
+  if MNBETA[2] == true then btcg() end
+  if MNBETA[3] == true then btmg() end
+  if MNBETA[4] == true then START() end
+  end
+  
+  XEROX = - 1
+  end
+  
+  function btwall()
+  gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("-9,223,372,036,854,775,808;4,611,686,020,574,871,552;1,073,741,824:9", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1,073,741,824", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("1,124,204,544", gg.TYPE_QWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4,611,686,018,427,387,904;-4,647,714,814,372,610,048;3,212,836,864;4,575,657,221,408,423,936;-4,396,076,185,201,672,192;4,500,782,613,132,083,200;4,553,546,146,700,983,792:25", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-4,647,714,814,372,610,048", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("-4,647,714,814,322,147,328", gg.TYPE_QWORD)
+gg.clearResults()
+gg.toast("WH 6++ Beta\n Coded by : @ItzXEROX")
+end
+
+function btcg() 
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("-9,169,328,794,081,656,831", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(4)
+gg.editAll("-9,169,328,794,081,656,818", gg.TYPE_QWORD)
+gg.clearResults()
+gg.toast("✍️ Green Body Beta \n Coded by : @ItzXEROX")
+end
+
+function btmg() 
+AntiFog() 
 end
 
 	while true do
