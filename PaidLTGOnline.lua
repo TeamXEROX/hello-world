@@ -11,6 +11,9 @@ XEROX = {
 "867192039507709", -- Rabby
 "868703031394471", -- Minku
 "868622035224304", -- Mahim
+"868434030338679", -- shopon 2
+
+
 
 } --- IMEI BY @ITZXEROX 
 table = revo.getPhoneInfo()
