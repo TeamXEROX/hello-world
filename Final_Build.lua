@@ -1,9 +1,4 @@
 
-local __ = debug.getinfo(gg.searchNumber).source ~= "=[Java]" or not not debug.getupvalue(gg.searchNumber, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
-local _ = __ == false or (function()
-  gg.alert("🔥DETECTED HOOK🔥", "", "", "")
-  os.exit()
-end)()
 if gg.isPackageInstalled("io.neoterm") then
   gg.alert("⚠️ ERROR :\n\n PLEASE UNINSTALL DECRYPT GG FRIST ")
   os.exit()
