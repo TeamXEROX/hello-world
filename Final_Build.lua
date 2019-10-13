@@ -66,11 +66,7 @@ else
   end
   return
 end
-local __ = debug.getinfo(gg.searchNumber).source ~= "=[Java]" or not not debug.getupvalue(gg.searchNumber, 1, 2)
-local _ = __ == false or (function()
-  gg.alert("🔥DETECTED HOOK🔥", "", "", "")
-  os.exit()
-end)()
+
 save = {}
 do
   do
