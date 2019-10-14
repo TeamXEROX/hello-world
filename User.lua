@@ -60,6 +60,7 @@ MN = gg.choice({
 "💫 XEROX",
 "㊙️ SHOPON",
 "🍾 Mr. Perfect", 
+"🎈 Rabby", 
 "🎄 ADD YOUR PERSONAL", 
 
 "⛔EXIT⛔"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : Final Build 🏆\n [✍️] CODED BY : @ItzXEROX 🔐\n [💫] Daily Online Updates 💝") 
@@ -68,8 +69,9 @@ MN = gg.choice({
 	if MN == 1 then XEROXX() end
 	if MN == 2 then SHOPON() end
 	if MN == 3 then MR() end
-	if MN == 4 then ADDUR() end
-	if MN == 5 then EXIT() end
+	if MN == 4 then RABBY() end
+	if MN == 5 then ADDUR() end
+	if MN == 6 then EXIT() end
 	end
 	
 	XEROX = -1
@@ -301,7 +303,30 @@ gg.setRanges(gg.REGION_BAD)
 end
 
 
+function RABBY()
 
+MNR = gg.choice({
+"💫 LOGO ACTIVATION",
+"㊙️ LOBBY ACTIVATION",
+
+"⛔EXIT⛔"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : Final Build 🏆\n [✍️] CODED BY : @ItzXEROX 🔐\n [💫] Daily Online Updates 💝") 
+
+	if MNR == nil then else
+	if MNR == 1 then shlogo() end
+	if MNR == 2 then rblobby() end
+	if MNS == 3 then EXIT() end
+	
+	end
+	
+	XEROX = -1
+	end
+
+	function rblobby() 
+	wallall() 
+	syb() 
+	src() 
+	hsmd() 
+	end
 
 
 while true do
