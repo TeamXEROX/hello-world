@@ -35,6 +35,13 @@ os.remove("/data/data/com.tencent.ig/files/tpnlcache.data")
 os.remove("/data/data/com.tencent.ig/files/tss_app_915c.dat") 
 os.remove("/data/data/com.tencent.ig/files/tss_cs_stat2.dat") 
 os.remove("/data/data/com.tencent.ig/files/tss.i.m.dat") 
+ProgressBar = '║░░░░░░░░░░░░░░░║'
+      for _FORV_3_ = 1, 15 do
+        gg.sleep(100)
+        ProgressBar = ProgressBar:gsub('░', '▓', 1)
+        gg.toast(ProgressBar)
+      end
+          gg.toast('Processing...🎯')
 gg.toast("🔎Abnormalities Removed🔐")
 end
  
@@ -50,8 +57,9 @@ XEROX = 1
 function START()
 
 MN = gg.choice({
-"💫 PERSONAL XEROX",
-"㊙️ PERSONAL SHOPON",
+"💫 XEROX",
+"㊙️ SHOPON",
+"🍾 Mr. Perfect", 
 "🎄 ADD YOUR PERSONAL", 
 
 "⛔EXIT⛔"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : Final Build 🏆\n [✍️] CODED BY : @ItzXEROX 🔐\n [💫] Daily Online Updates 💝") 
@@ -59,9 +67,9 @@ MN = gg.choice({
 	if MN == nil then else
 	if MN == 1 then XEROXX() end
 	if MN == 2 then SHOPON() end
-	if MN == 3 then ADDUR() end
-	if MN == 4 then EXIT() end
-	
+	if MN == 3 then MR() end
+	if MN == 4 then ADDUR() end
+	if MN == 5 then EXIT() end
 	end
 	
 	XEROX = -1
@@ -178,11 +186,22 @@ print("\n[🏅] ʟᴛɢ™ ᴠɪᴩ ᴄʟᴀɴ ꜱᴄʀɪᴩᴛ🎴\n [🐙] ᴄ
 print("🍁Contact Us : t.me/ItzXEROX🍁")
 
 function ADDUR() 
-gg.alert ("Inbox What you wanna use in lobby & game to @ItzXEROX for get your personal setup") 
-end
+gg.toast("Coded by : @ItzXEROX")
+gg.alert('Contact On Telegram For Help')
+      revo.goURL('https://t.me/ItzXEROX')
+      ProgressBar = '║░░░░░░░░░░░░░░░║'
+      for _FORV_3_ = 1, 15 do
+        gg.sleep(100)
+        ProgressBar = ProgressBar:gsub('░', '▓', 1)
+        gg.toast(ProgressBar)
+      end
+      gg.alert('Message Me @ItzXEROX For Add Your Pvt. Codes.')
+      gg.toast('Processing...🎯')
+    end
+      
 
 function XEROXX() 
-gg.alert("Only XEROX Can access this Page") 
+gg.alert("Verification Failed\n Not seems that you're @ItzXEROX") 
 end
 
 
@@ -216,8 +235,74 @@ MNS = gg.choice({
 	color710() 
 	end
 
+	function MR()
+
+MNM = gg.choice({
+"㊙️ LOBBY ACTIVATION",
+
+"⛔EXIT⛔"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : Final Build 🏆\n [✍️] CODED BY : @ItzXEROX 🔐\n [💫] Daily Online Updates 💝") 
+
+	if MNM == nil then else
+	if MNM == 1 then mrlobby() end
+	if MNM == 2 then EXIT() end
 	
+	end
 	
+	XEROX = -1
+	end
+	
+	function mrlobby() 
+	wallall() 
+	syb() 
+	src() 
+	hsmd() 
+	lrlobby() 
+	end
+
+
+	function wallall() 
+	gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🌫️Wallhack 435-835 Activated!🌫️ By TeamLTG™")
+end
+	
+function syb()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8,196D;8,192D;8,200D::",gg.TYPE_DWORD, false,gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("8200",gg.TYPE_DWORD, false,gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("090")
+gg.getResults(10)
+gg.editAll("6",gg.TYPE_DWORD)
+gg.toast("😂Yellow Body Activated😋")
+end
+
+
+function src()
+gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("8,196D;8,192D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.refineAddress("0A8")
+    gg.getResults(10)
+    gg.editAll("7", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("😋Red Car Activated😋")
+end
+
+
+
+
 
 while true do
   if gg.isVisible(true) then
