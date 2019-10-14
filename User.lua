@@ -323,8 +323,7 @@ MNR = gg.choice({
 
 	function rblobby() 
 	wallall() 
-	syb() 
-	src() 
+	color710() 
 	hsmd() 
 	end
 
