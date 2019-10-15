@@ -1,4 +1,81 @@
-
+function split(AobaFullString, AobaSeparator) 
+ local nFindStartIndex = 1 
+ local nSplitIndex = 1 
+ local nSplitArray = {} while true do  
+ local nFindLastIndex = string.find(AobaFullString, AobaSeparator, nFindStartIndex) 
+  if not nFindLastIndex then 
+  nSplitArray[nSplitIndex] = string.sub(AobaFullString, nFindStartIndex, string.len(AobaFullString)) 
+ break 
+ end 
+   nSplitArray[nSplitIndex] = string.sub(AobaFullString, nFindStartIndex, nFindLastIndex - 1) 
+   nFindStartIndex = nFindLastIndex + string.len(AobaSeparator) 
+   nSplitIndex = nSplitIndex + 1 
+ end 
+ return nSplitArray 
+ end 
+ function rin(Aobapy, aocchi) for 
+  x = 1, #(aocchi) do 
+  momijipy = Aobapy + aocchi[x]["offset"] 
+  momijilx = aocchi[x]["type"] 
+  momijiAoba = aocchi[x]["value"] 
+  gg.setValues({[1] = {address = momijipy, flags = momijilx, value = momijiAoba}}) 
+  momijisl = momijisl + 1 
+ end 
+end 
+  function aoba(aocchipubg) 
+    gg.clearResults() 
+    gg.setRanges(hifumi[1]["memory"]) 
+    gg.searchNumber(hifumi[3]["value"], hifumi[3]["type"]) 
+  if gg.getResultCount() == 0 then 
+    gg.toast(hifumi[2]["name"] .. " is failed to active!") 
+  else 
+    gg.refineNumber(hifumi[3]["value"], hifumi[3]["type"]) 
+    gg.refineNumber(hifumi[3]["value"], hifumi[3]["type"]) 
+    gg.refineNumber(hifumi[3]["value"], hifumi[3]["type"]) 
+   if gg.getResultCount() == 0 then 
+    gg.toast(hifumi[2]["name"] .. " is failed to active!") 
+   else 
+    sl = gg.getResults(999999) 
+    Aoba = gg.getResultCount() 
+    momijisl = 0 
+   if Aoba > 999999 then 
+     Aoba = 999999 
+   end 
+   for i = 1, Aoba 
+   do pdAoba = true for v = 4, #(hifumi) 
+   do 
+   if pdAoba == true then  
+     pyAoba = {} 
+     pyAoba[1] = {} 
+     pyAoba[1].address = sl[i].address + hifumi[v]["offset"] 
+     pyAoba[1].flags = hifumi[v]["type"] 
+     Aobapy = gg.getValues(pyAoba) 
+     pdpd = hifumi[v]["antilogger"] .. ";" .. Aobapy[1].value 
+     Aobapd = split(pdpd, ";") 
+     tzAobapd = Aobapd[1] 
+     pyAobapd = Aobapd[2] 
+   if tzAobapd == pyAobapd then 
+     yun = true 
+     pdAoba = true  
+   else  
+     yun = false 
+     pdAoba = false 
+   end  
+  end 
+ end 
+   if yun == true then 
+     Aobapy = sl[i].address rin(Aobapy, aocchi) 
+     nene = true 
+   end 
+  end 
+   if nene == true then  
+      gg.toast(hifumi[2]["name"] .. " ACTIVATED\nDATA SET NUMBER #" .. momijisl .. " SUCCESSFUL") 
+   else 
+      gg.toast(hifumi[2]["name"] .. " is failed to active!") 
+   end 
+  end 
+ end 
+end 
 function Bypass()
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp") 
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.14.5.11182_20190913173659_1446534324_cures.ifs.res") 
@@ -203,9 +280,339 @@ gg.alert('Contact On Telegram For Help')
       
 
 function XEROXX() 
-gg.alert("Verification Failed\n Not seems that you're @ItzXEROX") 
+MNX = gg.choice({
+"💫 LOGO ACTIVATION",
+"🌠 WALL & COLOR", 
+"㊙️ HEADSHOT BRUTAL LOBBY",
+"⭐ MAGIC BULLET LOBBY", 
+"💖 SKY & GRAPHICS [GAME]", 
+"🎯 SIT SCOPE [ON]", 
+"⛔ SIT SCOPE [OFF]", 
+"🌠 FLASH V1 [ON]", 
+"🍃 FLASH V1 [OFF]", 
+"🌴 FLASH V2 [ALWAYS]", 
+"🌊 DAMAGE++ MENU", 
+
+
+"⛔EXIT⛔"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : Final Build 🏆\n [✍️] CODED BY : @ItzXEROX 🔐\n [💫] Don't Use Hacks From Here [--High Ban Risk--] ") 
+
+	if MNX == nil then else
+	if MNX == 1 then shlogo() end
+	if MNX == 2 then xwlcr() end
+	if MNX == 3 then hsbr() end
+	if MNX == 4 then magicb() end
+	if MNX == 5 then AntiFog() end
+	if MNX == 6 then siton() end
+	if MNX == 7 then sitoff() end
+	if MNX == 8 then flashon() end
+	if MNX == 9 then flashoff() end
+	if MNX == 10 then xflash() end
+	if MNX == 11 then xdmg() end
+	if MNX == 12 then EXIT() end
+	end
+	
+	XEROX = -1
+	end
+	
+	function xdmg() 
+XLNB1 = gg.multiChoice({
+    "⚒Fɪx Nᴏ Dᴀᴍᴀɢᴇ M➃➀➅",
+    "⚒ Fɪx Nᴏ Dᴀᴍᴀɢᴇ Sᴄᴀʀ-",
+    " ⚒ Fɪx Nᴏ Dᴀᴍᴀɢᴇ M➀➅ᴀ➃ ",
+    "⚒Fɪx Nᴏ Dᴀᴍᴀɢᴇ Aᴋᴍ",
+    "⚒Fɪx Nᴏ Dᴀᴍᴀɢᴇ Kᴀʀ➈➇",
+    "⚒Fɪx Nᴏ Dᴀᴍᴀɢᴇ Aᴡᴍ",
+    "⚒Fɪx Nᴏ Dᴀᴍᴀɢᴇ Sᴋs",
+    "⚒ Fɪx Nᴏ Dᴀᴍᴀɢᴇ Mɪɴɪ ➀➃",
+    "⚒Fɪx Nᴏ Dᴀᴍᴀɢᴇ M➁➃➈",
+    '⚒Fɪx Nᴏ Dᴀᴍᴀɢᴇ Dᴘ-➁➇',
+"🔙"
+} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : Final Build 🏆\n [✍️] CODED BY : @ItzXEROX 🔐\n [💫] Don't Use Hacks From Here [--High Ban Risk--] ") 
+  if XLNB1 == nil then
+  else
+    if XLNB1[1] == true then
+      O1()
+    end
+    if XLNB1[2] == true then
+      O2()
+    end
+    if XLNB1[3] == true then
+      O3()
+    end
+    if XLNB1[4] == true then
+     O4()
+    end
+    if XLNB1[5] == true then
+      O5()
+    end
+    if XLNB1[6] == true then
+      O6()
+    end
+    if XLNB1[7] == true then
+      O7()
+    end
+    if XLNB1[8] == true then
+      O8()
+    end
+    if XLNB1[9] == true then
+    O9()
+    end
+    if XLNB1[10] == true then
+    O10()
+    end
+    if XLNB1[11] == true then
+    START()
+    end
+  end
+  
+ XEROX = -1
 end
 
+function O1()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("88000;0.08600000292", 16, false, 536870912, 0, -1)
+gg.searchNumber("88000", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.clearResults()
+gg.toast("M➃➀➅ Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+function O2()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("87000;0.09600000083", 16, false, 536870912, 0, -1)
+gg.searchNumber("87000", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.clearResults()
+gg.toast("Sᴄᴀʀ-ʟ Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+function O3()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("90000;0.07500000298", 16, false, 536870912, 0, -1)
+gg.searchNumber("90000", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.clearResults()
+gg.toast("M➀➅ᴀ➃ Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+function O4()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("71500;0.10000000149", 16, false, 536870912, 0, -1)
+gg.searchNumber("71500", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.clearResults()
+gg.toast("Aᴋᴍ Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+function O5()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("76000", 16, false, 536870912, 0, -1)
+gg.searchNumber("76000", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.toast("Kᴀʀ➈➇ Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+function O6()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("91000;2.2;2.5::", 16, false, 536870912, 0, -1)
+gg.searchNumber("91000", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.toast("Aᴡᴍ Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+function O7()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("80000", 16, false, 536870912, 0, -1)
+gg.searchNumber("80000", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.clearResults()
+gg.toast("Sᴋs Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+function O8()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("99000", 16, false, 536870912, 0, -1)
+gg.searchNumber("99000", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.toast("Mɪɴɪ ➀➃ Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+function O9()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("91500;0.07500000298", 16, false, 536870912, 0, -1)
+gg.searchNumber("91500", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.clearResults()
+gg.toast("M➁➃➈ Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+function O10()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("71500;0.109", 16, false, 536870912, 0, -1)
+gg.searchNumber("71500", 16, false, 536870912, 0, -1)
+gg.getResults(1401)
+gg.editAll("37401", 16)
+gg.clearResults()
+gg.toast("Dᴘ-➁➇ Fɪx Nᴏ Dᴀᴍᴀɢᴇ")
+end
+
+	
+	
+	function xflash()
+gg.alert("Must Use Damage++ For Damage Enemy") 
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1,296,744,149,883,614,555", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99)
+gg.editAll(" -1,296,744,153,870,237,696", gg.TYPE_QWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('-1,904,987,454,010,553,855', gg.TYPE_QWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.getResults(99)
+gg.editAll('-1,904,987,454,002,165,247', gg.TYPE_QWORD)
+gg.clearResults()
+end
+
+
+	function flashon()
+  gg.alert("Must Use Damage++ For Damage Enemy") 
+  gg.clearResults()
+gg.setRanges(8)
+gg.searchNumber("-8.795458e22;-3.693674e20;-1.2382424e28", 16, false, 536870912, 0, -1)
+gg.searchNumber("-1.2382424e28", 16, false, 536870912, 0, -1)
+gg.getResults(1)
+gg.editAll("1.2382424e28", 16)
+gg.clearResults()
+gg.searchNumber("-6.1526231e27;-1.0070975e28::", 16, false, 536870912, 0, -1)
+gg.searchNumber("-6.1526231e27", 16, false, 536870912, 0, -1)
+gg.getResults(1)
+gg.editAll("0", 16)
+gg.clearResults()
+gg.toast("Coded by @ItzXEROX")
+end
+
+function flashoff()
+gg.clearResults()
+gg.setRanges(8)
+gg.searchNumber("-8.795458e22;-3.693674e20;1.2382424e28", 16, false, 536870912, 0, -1)
+gg.searchNumber("1.2382424e28", 16, false, 536870912, 0, -1)
+gg.getResults(1)
+gg.editAll("-1.2382424e28", 16)
+gg.clearResults()
+gg.toast ("Flash Off Done") 
+end
+
+	function siton()
+gg.clearResults() 
+  gg.setRanges(gg.REGION_ANONYMOUS)  
+  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+  gg.getResults(100) 
+  gg.editAll("1,135,081,726", gg.TYPE_DWORD) 
+  gg.clearResults() 
+  gg.toast("Lift Sit Down Aim has been active") 
+end
+		function sitoff()
+gg.clearResults() 
+  gg.setRanges(gg.REGION_ANONYMOUS)  
+  gg.searchNumber("1,135,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+  gg.searchNumber("1,135,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+  gg.getResults(100) 
+  gg.editAll("1,092,081,726", gg.TYPE_DWORD) 
+  gg.clearResults() 
+  gg.toast("Lift Sit Down OFF") 
+end
+				
+function xwlcr() 
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
+gg.searchNumber(2, 16, false, 536870912, 0, -1)
+gg.getResults(30)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", 16, false, 536870912, 0, -1)
+gg.searchNumber(2, 16, false, 536870912, 0, -1)
+gg.getResults(30)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.toast("WALL HACK 636™")
+
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8200;96", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("090")
+gg.getResults(9999)
+gg.editAll("8198", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Yellow Color Visible Only")
+end
+
+
+function hsbr() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("150", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("🎯 Ultimate Headshot Activated 🎯")
+  gg.clearResults() 
+end
+
+function magicb()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("250", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Headshot 100% Has Been Activated..")
+end
+
+function AntiFog() 
+  hifumi = { 
+{["memory"] = gg.REGION_ANONYMOUS}, 
+{["name"] = "Remove Fog"}, 
+{["value"] = 100000, ["type"] = gg.TYPE_FLOAT}, 
+{["antilogger"] = 1000, ["offset"] = 4, ["type"] = gg.TYPE_FLOAT}, 
+{["antilogger"] = 10000, ["offset"] = -28, ["type"] = gg.TYPE_FLOAT}, 
+} 
+aocchi = { 
+{["value"] = 1000088888888, ["offset"] = -60, ["type"] = gg.TYPE_FLOAT}, 
+} 
+aoba(aocchipubg) 
+
+gg.clearResults() 
+gg.setRanges(gg.REGION_BAD)
+gg.clearResults()
+gg.searchNumber("100F;1F;1,008,981,770D:99", gg.TYPE_FLOAT, false)
+gg.searchNumber("100", gg.TYPE_FLOAT, false)
+gg.getResults(100)
+gg.editAll("-90", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🕸️BLACK SKY🕸️")
+end
 
 function SHOPON()
 
