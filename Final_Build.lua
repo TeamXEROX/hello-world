@@ -620,7 +620,6 @@ WLCR = gg.multiChoice({
  "🤺 COLOR RED & YLW V2", 
  "🔥 WALLHACK EXYNOS", 
  "㊙️ COLORHACK EXYNOS", 
- "💪 NEW YELLOW COLOR [NEW]", 
  '🔙',
 }, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.7 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
   if WLCR == nil then
