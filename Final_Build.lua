@@ -760,7 +760,7 @@ WLCR = gg.multiChoice({
     exy2()
     end
     if WLCR[46] == true then
-    EXIT()
+    START()
     end
  
     end
