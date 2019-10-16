@@ -26,6 +26,8 @@ os.remove("/data/data/com.tencent.ig/app_appcache")
 os.remove("/data/data/com.tencent.ig/app_bugly") 
 os.remove("/data/data/com.tencent.ig/app_crashrecord") 
 os.remove("/data/data/com.tencent.ig/cache") 
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.15.0.11272_20191012040942_1692028119_cures.ifs.res") 
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.14.5.11184_20190924095428_548156081_cures.ifs.res") 
 os.remove("/data/data/com.tencent.ig/code_cache") 
 os.remove("/data/data/com.tencent.ig/files/iMSDK") 
 os.remove("/data/data/com.tencent.ig/files/ss_tmp") 
@@ -35,10 +37,17 @@ os.remove("/data/data/com.tencent.ig/files/tpnlcache.data")
 os.remove("/data/data/com.tencent.ig/files/tss_app_915c.dat") 
 os.remove("/data/data/com.tencent.ig/files/tss_cs_stat2.dat") 
 os.remove("/data/data/com.tencent.ig/files/tss.i.m.dat") 
+ProgressBar = '║░░░░░░░░░░░░░░░║'
+      for _FORV_3_ = 1, 15 do
+        gg.sleep(100)
+        ProgressBar = ProgressBar:gsub('░', '▓', 1)
+        gg.toast(ProgressBar)
+      end
+          gg.toast('Processing...🎯')
 gg.toast("🔎Abnormalities Removed🔐")
 end
  
- bypassAlert = gg.alert(" ❏ ᏟᎻᎪNᏩᎬᏞᎾᏩᏚ :\n\n  ⎚ Script Updated to 1.0.8\n ⎚ Added New One Click Mode. \n ⎚ Added Personal Menu.\n  ⎚ Added Magic Graphics.\n\n 『👨‍🔧』ғᴏʀ ᴀɴʏ ɪssᴜᴇ ᴄᴏɴᴛᴀᴄᴛ : @ItzXEROX\n\n", "🅴🅽🆃🅴🆁")
+ bypassAlert = gg.alert(" ❏ ᏟᎻᎪNᏩᎬᏞᎾᏩᏚ :\n\n  ⎚ New Less Rceoil Value \n ⎚ New Yellow Color \n ⎚ New Ar No lag Flash \n\n 『👨‍🔧』ғᴏʀ ᴀɴʏ ɪssᴜᴇ ᴄᴏɴᴛᴀᴄᴛ : @ItzXEROX\n\n", "🅴🅽🆃🅴🆁")
  
  if bypassAlert == nil then Bypass() end 
  if bypassAlert == 1 then Bypass() end
@@ -50,13 +59,13 @@ XEROX = 1
 function START()
 
 MN = gg.choice({
-"💫 PERSONAL MENU",
+"💫 SELF MENU",
 "㊙️ ONE CLICK MENU",
-"🎯 ALL FUNCTIONS",
+"🎯 ALL MENU",
 "🎄 GAME INFO", 
-"🔐 JOIN OUR COMMUNITY",
+"🔐 JOIN US",
 
-"⛔ EXIT ⛔"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : Final Build 🏆\n [✍️] CODED BY : @ItzXEROX 🔐\n [💫] Daily Online Updates 💝") 
+"⛔--EXIT--⛔"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : Final Build 🏆\n [✍️] CODED BY : @ItzXEROX 🔐\n [💫] Daily Online Updates 💝") 
 
 	if MN == nil then else
 	if MN == 1 then USER() end
