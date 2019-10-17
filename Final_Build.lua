@@ -1,8 +1,4 @@
 
-if gg.isPackageInstalled("app.greyshirts.sslcapture") then
-    print("Fuck U bitch This Script Not For U🖕\n Warn By XEROX🖕")
-    os.exit()
-  end
 
 Variable = {}
 Variable["XeroxURL"]= "https://tbcofficial737.000webhostapp.com/Login.php"
