@@ -1,5 +1,4 @@
 
--- AntiLogger START 
 function split(AobaFullString, AobaSeparator) 
  local nFindStartIndex = 1 
  local nSplitIndex = 1 
@@ -132,21 +131,21 @@ function START()
 
 MN = gg.choice({
 "┌[Logo/Lobby] [Once]\
-『👨‍🔧』RECOIL MENU",
-"┌[Lobby] [Once]\
-『🎴』WALL & COLOR",
-"┌[Lobby] [Once]\
-『🖲️』BETA CODES [New]",
-"┌[Lobby] [Once]\
-『🤯』ULTRA HEADHSOT",
-"┌[Lobby] [Once]\
-『🎪』ANTENNA MENU",
+『👨‍🔧』Recoil Menu [New]",
 "┌[Game] [Every]\
-『🏝️』VISUAL MENU",
+『🍃』Wall & Color [NEW]",
+"┌[Lobby] [Once]\
+『🖲️』Beta Codes [Optional]",
+"┌[Lobby/Game] [Once]\
+『🤯』Headshot Menu",
+"┌[Game] [Once]\
+『🎪』Antenna Menu",
+"┌[Game] [Every]\
+『🏝️』Visual Menu",
 "┌[Information]\
-『🏮』OTHER FEATURES",
+『👽』Extra Menu",
 "┌[Information]\
-『🎯』About Us",
+『🤖』About LTG™",
 
 "ⒺⓍⒾⓉ"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.7 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
 
@@ -576,199 +575,102 @@ end
 function WALL() 
 WLCR = gg.multiChoice({
  '🛡️ Wallhack Fix Blink (Game)',
- '🛡️ Wallhack SD 400',
- '🛡️ Wallhack SD 410',
- '🛡️ Wallhack SD 415',
- '🛡️ Wallhack SD 425',
- '🛡️ Wallhack SD 430',
- '🛡️ Wallhack SD 435',
- '🛡️ Wallhack SD 450',
- '🛡️ Wallhack SD 615',
- '🛡️ Wallhack SD 616',
  '🛡️ Wallhack SD 625',
- '🛡️ Wallhack SD 626',
- '🛡️ Wallhack SD 632',
  '🛡️ Wallhack SD 636',
- '🛡️ Wallhack SD 650',
- '🛡️ Wallhack SD 653',
  '🛡️ Wallhack SD 660',
- '🛡️ Wallhack SD 670',
- '🛡️ Wallhack SD 675',
  '🛡️ Wallhack SD 710',
- '🛡️ Wallhack SD 800',
- '🛡️ Wallhack SD 801',
- '🛡️ Wallhack SD 815',
- '🛡️ Wallhack SD 820',
- '🛡️ Wallhack SD 821',
- '🛡️ Wallhack SD 835',
- '🛡️ Wallhack SD 845 [Smooth Graphics]',
- '🛡️ Wallhack SD 855',
- "㊙️ Color Green",
- "㊙️ Color White [Compatible in 0.15.0]",
- "㊙️ Color Purple",
- "㊙️ Color Rainbow",
- "㊙️ Color Red [Visible Only]",
- "㊙️ Color Red [Full Body]",
- "㊙️ Color Yellow [Visible Only]",
- "㊙️ Color Yellow [Full Body]",
- "㊙️ Color Blue HDR",
- "㊙️ Color Red HDR",
- "㊙️ Color Yellow HDR",
- "㊙️ Color 845 Red",
- "㊙️ Color 845 Yellow",
- "🎴 WALLHACK 710", 
- "🤺 COLOR RED & YLW V2", 
- "🔥 WALLHACK EXYNOS", 
- "㊙️ COLORHACK EXYNOS", 
- '🔙',
+ '🛡️ Wallhack SD 845',
+ '🛡 Wallhack Exynos', 
+   "🍃 Red HDR",
+    "🍃 White",
+    "🍃 Gray",
+    "🍃 Green",
+    "🍃 Blue",
+    "🍃 Yellow",
+    "🍃 Pink",
+    "🍃 Black",
+    "🍃 Yellow v2",
+    "🍃 Green v2",
+    "🍃 Red [NEW]",
+    "🍃 Yellow v3",
+    "🍃 Rainbow",
+ '🍃 Color Exynos', 
+ '🔙'
 }, nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.7 🏆\n [✍️] CODED BY : @ItzXEROX 🔐")
   if WLCR == nil then
   else
    if WLCR[1] == true then
-   STM_3_1_3()
+   fixblink()
     end
     if WLCR[2] == true then
-    STM_3_1_4()
+    wl625()
     end
     if WLCR[3] == true then
-    STM_3_1_5()
+    wl636()
     end
     if WLCR[4] == true then
-   STM_3_1_6()
+   wl660()
     end
-    if WLCR[5] == true then
-  STM_3_1_7()
+    if WLCR[5] == true then 
+    wl710()
     end
     if WLCR[6] == true then
-   STM_3_1_8()
+   wl845()
     end
     if WLCR[7] == true then
-    STM_3_1_9()
+    wlexy()
     end
-    if WLCR[8] == true then
-   STM_3_1_10()
-    end
-    if WLCR[9] == true then
-    STM_3_1_11()
-    end
-    if WLCR[10] == true then
-    STM_3_1_12()
-    end
-    if WLCR[11] == true then
-   STM_3_1_13()
-    end
-    if WLCR[12] == true then
-  STM_3_1_14()
-    end
-    if WLCR[13] == true then
-   STM_3_1_15()
-    end
-    if WLCR[14] == true then
-    STM_3_1_16()
-    end
-    if WLCR[15] == true then
-   STM_3_1_17()
-    end
-    if WLCR[16] == true then
-    STM_3_1_18()
-    end
-    if WLCR[17] == true then
-    STM_3_1_19()
-    end
-    if WLCR[18] == true then
-   STM_3_1_20()
-    end
-    if WLCR[19] == true then
-  STM_3_1_21()
-    end
-    if WLCR[20] == true then
-   STM_3_1_22()
-    end
-    if WLCR[21] == true then
-    STM_3_1_23()
-    end
-    if WLCR[22] == true then
-    STM_3_1_24()
-    end
-    if WLCR[23] == true then
-    STM_3_1_25()
-    end
-    if WLCR[24] == true then
-   STM_3_1_26()
-    end
-    if WLCR[25] == true then
-  STM_3_1_27()
-    end
-    if WLCR[26] == true then
-   STM_3_1_28()
-    end
-    if WLCR[27] == true then
-    STM_3_1_29()
-    end
-    if WLCR[28] == true then
-   STM_3_1_30()
-    end
-    if WLCR[29] == true then
+   if WLCR[8] == true then
     cr1()
     end
-    if WLCR[30] == true then
+     if WLCR[9] == true then
     cr2()
     end
-    if WLCR[31] == true then
-    cr3()
+     if WLCR[10] == true then
+    cr3() 
     end
-    if WLCR[32] == true then
+     if WLCR[11] == true then
     cr4()
     end
-    if WLCR[33] == true then
+     if WLCR[12] == true then
     cr5()
     end
-    if WLCR[34] == true then
+     if WLCR[13] == true then
     cr6()
     end
-    if WLCR[35] == true then
+     if WLCR[14] == true then
     cr7()
     end
-    if WLCR[36] == true then
+     if WLCR[15] == true then
     cr8()
     end
-    if WLCR[37] == true then
+     if WLCR[16] == true then
     cr9()
     end
-   if WLCR[38] == true then
+     if WLCR[17] == true then
     cr10()
     end
-   if WLCR[39] == true then
+     if WLCR[18] == true then
     cr11()
     end
-    if WLCR[40] == true then
+     if WLCR[19] == true then
     cr12()
     end
-   if WLCR[41] == true then
+     if WLCR[20] == true then
     cr13()
     end
-    if WLCR[42] == true then
-    wall710()
+     if WLCR[21] == true then
+    cr14() 
     end
-    if WLCR[43] == true then
-    color710()
+     if WLCR[22] == true then
+    START() 
     end
-    if WLCR[44] == true then
-    exy1()
-    end
-    if WLCR[45] == true then
-    exy2()
-    end
-    if WLCR[46] == true then
-    START()
-    end
- 
     end
     
 XEROX = -1
 end
 
-function STM_3_1_3()
+function fixblink()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
@@ -776,692 +678,361 @@ gg.searchNumber("2", 16, false, 536870912, 0, -1)
 gg.getResults(1)
 gg.editAll("99999", 16)
 gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_4()
-gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber("228;1,073,741,824;1,073,741,824;229;-1,082,130,432:29", 4, false, 536870912, 0, -1)
-gg.searchNumber("1,073,741,824", 4, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("1,123,024,896", 4)
-gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_5()
-gg.clearResults()
-gg.setRanges(1)
-gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.searchNumber("3.1809475e-43;3.1949605e-43;2.0;3.2089735e-43:53", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_6()
-gg.clearResults()
-gg.setRanges(1)
-gg.searchNumber("228;1,073,741,824;1,073,741,824;229;-1,082,130,432:29", 4, false, 536870912, 0, -1)
-gg.searchNumber("1,073,741,824", 4, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("1,123,024,896", 4)
-gg.clearResults()
-gg.setRanges(1)
-gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_7()
-gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber("2.9427268e-44;2.0;3.0828566e-44;-1.0;3.2229865e-44;3.3631163e-44;3.643376e-44:97", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.searchNumber("3.1529215e-43;2.0F;3.1669345e-43F;3.1809475e-43:49", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("856,128", 4, false, 536870912, 0, -1)
-gg.getResults(3)
-gg.editAll("856122", 4)
-gg.clearResults()
-gg.searchNumber("196,610;1,280;196,608::25", 4, false, 536870912, 0, -1)
-gg.searchNumber("196608", 4, false, 536870912, 0, -1)
-gg.getResults(5)
-gg.editAll("99459", 4)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_8()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("4,141D;4.7408155e21;-5.5693206e-40;4.814603e21;3.7615819e-37;2:", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(4)
-gg.editAll("120", 16)
-gg.searchNumber("3.2229865e-43F;2.0F;-1.0F;-1.0F;2.0F:145", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(360)
-gg.editAll("150", 16)
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_9()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2;3.7615819e-37;4.814603e21;4.7408149e21", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2;3.7615819e-37;1.3912552e-19;4.9252829e21", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 4, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_10()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("1.1202013e-19;1.1202017e-19;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(1)
-gg.editAll("9999", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("150", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("150", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("4.7961574e21;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("150", 16)
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_11()
-gg.clearResults()
-gg.setRanges(1)
-gg.searchNumber("3.2229865e-43;2.0;-1.0;-1.0;2.0:145", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("122", 16)
-gg.clearResults()
-gg.setRanges(1)
-gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.searchNumber("3.1809475e-43;3.1949605e-43;2.0;3.2089735e-43:53", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_12()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2.718519e-43;2.0F;-1.0F;1.0F;-127F;0.24022650719F;-0.0", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_13()
-gg.setRanges(131072)
-gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_14()
-gg.setRanges(131072)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.searchNumber("32769D;32770D;2.0F::200", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(9)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("1.1202013e-19;1.1202017e-19;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(3)
-gg.editAll("9999", 16)
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_15()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_16()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_17()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_18()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", 16, false, 536870912, 0, -1)
-gg.searchNumber(2, 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_19()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_20()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("218D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("95D;2;9.2194229e-41", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(15)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_21()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(20)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("218D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("95D;2;9.2194229e-41", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(15)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_22()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("95D;2;9.2194229e-41", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(15)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_23()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_24()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_25()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_26()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_27()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_28()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("5.1097599e21;2.0;1.6623071e-19::17", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("-0.01000213623;2;-1;0;0.04000854492", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(30)
-gg.editAll("120", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
-end
-function STM_3_1_29()
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("218D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.toast("50%")
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("95D;2;9.2194229e-41", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(15)
-gg.editAll("130", 16)
-gg.toast("75%")
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("206D;3.7615819e-37;2;-1;1", 16, false, 536870912, 0, -1)
-gg.searchNumber("2", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("130", 16)
-gg.clearResults()
-gg.toast("TeamBattleaxeCheats™")
+gg.toast("Blink Fixed by TBC™")
 end
 
-function cr1()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("32769", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("32769", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineAddress("518")
-gg.getResults(9999)
-gg.editAll("32772", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+
+function wl625() 
+ gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("🎃625 ⁻ 636🎃")
+  end
+
+function wl636() 
+wl625() 
 end
 
-function cr2()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("1.3912525e-19F;8200;96", gg.TYPE_DWORD, false)
-gg.searchNumber("8200", gg.TYPE_DWORD, false)
-gg.getResults(10)
-gg.editAll("8202", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+
+function wl660() 
+ gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("4,140D;4.7408166e21;5.6896623e-29;4.7961574e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(3)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("200,866D;0.24022650719;0.69314718246;0.00999999978;1;-1;2;-127:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("32,770D;0.01799999923;0.29907226562;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(4)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("50,331,648D;0.01799999923;0.29907226562;0.5869140625;0.11401367188;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("50,331,648D;0.04000854492;0.11999511719;-0.02749633789;-0.57177734375;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("266,400D;0.24022650719;0.69314718246;0.00999999978;1;-1;-127;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("50,331,648D;0.04000854492;0.11999511719;-0.02749633789;-0.57177734375;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("4,140D;4.7408149e21;-5.5695588e-40;4.814603e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.toast("🎃ᴡʜ 660🎃")
+  end
+
+function wl710() 
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("218D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("95D;2;9.2194229e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(15)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("206D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.toast("🎃ᴡʜ 670 ⁻ 710🎃")
 end
 
-function cr3()
+
+function wl845() 
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("32769;768;-2134900730", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("32769", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("51781", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("5.3680222e21;1.3312335e-43;1.3912563e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("4.8146053e21;2.8866748e-43;1.3912556e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("5.201992e21;4.4028356e-29;2.25000452995;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.0761972e-42;4.5920551e-41;-1.7632415e-38;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.0761972e-42;4.5923353e-41;-1.7632457e-38;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("5.3311276e21;1.3312335e-43;1.391256e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("4.8146041e21;2.8866748e-43;1.3912537e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.toast("̈🎃ᴡʜ 845🎃")
 end
 
-function cr4()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("4.5926155869782e-41;1.0863202718415e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.0863202718415e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("1.0863202718415e-25", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
 
-function cr5()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("8200;96", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineAddress("090")
-gg.getResults(9999)
-gg.editAll("8199", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr6()
-gg.clearResults()
-gg.searchNumber("8,196D;8,192D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("7", gg.TYPE_DWORD)
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr7()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("8200;96", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineAddress("090")
-gg.getResults(9999)
-gg.editAll("8198", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr8()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("1.3912525e-19F;8200;96", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("6", gg.TYPE_DWORD)
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr9()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.clearResults()
-gg.searchNumber("1,661,337,615D;8,200D;1,194,380,049D:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("66", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr10()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("8.696D;8.692D;8.600D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("7", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr11()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("856128", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(4)
-gg.editAll("856140", gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber("196610;1280;196608:25", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("196608", gg.TYPE_DWORD, false)
-gg.getResults(10)
-gg.editAll("9999", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr12()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("1,661,566,999;96;539,246,604;8200::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("7", gg.TYPE_DWORD)
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr13()
-    gg.clearResults()
-    gg.setRanges(gg.REGION_BAD)
-    gg.searchNumber("1,114,128D;1,661,468,689D;8,200D;1,194,380,054D;41,943,040D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(10)
-    gg.editAll("6", gg.TYPE_DWORD)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_BAD)
-    gg.searchNumber("96D;539,246,604D;8,200D;1,194,380,058D;1,376,273D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(10)
-    gg.editAll("6", gg.TYPE_DWORD)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_BAD)
-    gg.searchNumber(" 1,080,035,863;1,080,033,308;8,200;1,661,702,144:41", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(2)
-    gg.editAll("8198", gg.TYPE_DWORD)
-    gg.clearResults()
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr14()
+function wlexy() 
+gg.clearList()
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("16;32;40;48;40:41", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("40", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("38", gg.TYPE_DWORD)
-gg.toast("t.me/TeamBattleAxeCheats")
-end
-
-function cr15()
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("16;32;40;48;40:41", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("40", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("36", gg.TYPE_DWORD)
-gg.toast("t.me/TeamBattleAxeCheats")
+gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+if gg.getResultCount()==0 then
+gg.toast("Wallhack Exynos 8895")
+else
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+_Count=gg.getResultCount()
+_A=gg.getResults(_Count)
+last_Count=_Count + 1
+w=1
+_T="Wallhack Exynos 8895"
+WHFIX8895()
 end
+end
+function WHFIX8895()
+if w==0 then
+gg.toast("Loading...")
+else
+gg.setVisible(false)
+_CL={}
+for _FORV_3_=1, _Count do
+_CL[_FORV_3_]="Edit Wallhack Value " .. _FORV_3_ .. ""
+end
+_CL[last_Count]="BACK"
+_C_=gg.choice(_CL, nil, A2_2512)
+for _FORV_3_=1, _Count do
+if _C_==_FORV_3_ then
+for _FORV_7_, _FORV_8_ in ipairs(_A) do
+_A[_FORV_7_].freeze=false
+gg.addListItems(_A)
+end
+_A[_FORV_3_].value=1
+_A[_FORV_3_].freeze=true
+gg.addListItems(_A)
+_FORV_3_=_Count
+elseif K_2==_Count + 1 then
+START()
+end
+end
+end
+gg.setVisible(true)
+end
+
+
+function cr1() 
+ gg.clearResults()
+  gg.searchNumber("8,196D;8,192D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("7", gg.TYPE_DWORD)
+  gg.toast("🎃 ʜᴅʀ ʀᴇᴅ🎃")
+end
+
+function cr2() 
+gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("573.70306396484;0.05499718338;1::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1)
+  gg.editAll("999", gg.TYPE_FLOAT)
+  gg.toast("🎃 ᴡʜɪᴛᴇ 🎃")
+end
+
+function cr3() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("252,776,218;253,824,770;252,248,832;201,851,904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("201851904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("17171717", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.searchNumber("252,907,268;50,335,498;3,874;201,851,904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("201851904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("17171717", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.searchNumber("254,283,524;253,038,346;254,018,304;201,851,904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("201851904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("17171717", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.searchNumber("252,776,217;50,335,490;3,846;201,851,904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("201851904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("17171717", gg.TYPE_DWORD)
+  gg.toast("🎃 ɢʀᴀʏ 🎃")
+end
+
+function cr4() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("32769;768;-2134900730", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("32769", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("32781", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("🎃 ɢʀᴇᴇɴ 🎃")
+end
+
+function cr5() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.3912525e-19F;8200;96", gg.TYPE_DWORD, false)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false)
+  gg.getResults(10)
+  gg.editAll("8202", gg.TYPE_DWORD)
+  gg.toast("🎃 ʙʟᴜᴇ 🎃")
+end
+
+function cr6() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("256;8200;13::150", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.toast("🎃 ʏᴇʟʟᴏᴡ 🎃")
+end
+
+function cr7() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.1490647e-41;1.0863203e-19::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1.0863203e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("1.0863203e-25", gg.TYPE_FLOAT)
+  gg.toast("🎃 ᴘɪɴᴋ 🎃")
+end
+
+function cr8() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber(" 573.70306396484;0.05499718338;1 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber(" 1.0 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1200)
+  gg.editAll("-999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("🎃 ʙʟᴀᴄᴋ 🎃")
+end
+
+function cr9() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("3,874;201,851,904;16", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("201,851,904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("683128", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.searchNumber(" 3,846;201,851,904;16", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("201,851,904", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("683128", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("🎃 ʏᴇʟʟᴏᴡ°❷ 🎃")
+end
+
+function cr10() 
+gg.clearResults()
+  gg.searchNumber("69,778D;1,669,332,992D;11D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("11", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("32777", gg.TYPE_DWORD)
+  gg.toast("🎃 ɢʀᴇᴇɴ°❷ 🎃")
+end
+
+function cr11() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("96D;8200;196,615", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("7", gg.TYPE_DWORD)
+  gg.toast("🌹 ʀᴇᴅ 🌹")
+end
+
+function cr12() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("8,192D;256D;65,540D;12D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.toast("🌈 ʏᴇʟʟᴏᴡ°❸ 🌈")
+end
+
+function cr13() 
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.1490647e-41;1.0863203e-19::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1.0863203e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("1.0863203e-25", gg.TYPE_FLOAT)
+  gg.toast("🍃 Color Rainbow 🍃")
+end
+
+function cr14() 
+gg.clearResults()
+gg.setRanges(4)
+gg.setRanges(4)
+gg.searchNumber("40D;32D;16D;2D::53", 4, false, 536870912, 0, -1)
+gg.refineNumber("40", 4, false, 536870912, 0, -1)
+gg.getResults(4)
+gg.editAll("36", 4)
+gg.toast("Colour Exynos Yellow V2 activated!")
+gg.clearResults()
+end
+
+
+
+
+
+
+
 
 function OTHER() 
 gg.alert("Coming in Next Update\n For any help : @TeamBattleAxeCheats_bot \n @ItzXEROX \n Powered by : @TeamBattleAxeCheats") 
