@@ -338,16 +338,12 @@ end
 
 function RECOIL()
   MNRECOIL = gg.multiChoice ({
-  "🥋 No Recoil [Logo Activation]", 
   "🥋 No Recoil [Lobby Activation]", 
-  "🥋 No Recoil [Game Activation]", 
   "🔙"} , nil, " [🏅] LTG™ OFFICIAL VIP SCRIPT 🏅\n [🥑] SCRIPT VERSION : 1.0.7 🏆\n [✍️] CODED BY : @ItzXEROX 🔐") 
   
   if MNRECOIL == nil then else 
-  if MNRECOIL[1] == true then lrlogo() end
-  if MNRECOIL[2] == true then lrlobby() end
-  if MNRECOIL[3] == true then lrgame() end
-  if MNRECOIL[4] == true then START() end
+  if MNRECOIL[1] == true then lrlobby() end
+  if MNRECOIL[2] == true then START() end
   end
   
   XEROX = - 1
@@ -367,17 +363,18 @@ end
 
 function lrlobby() 
 gg.clearResults()
-gg.setRanges(32)
-gg.searchNumber("1.5584387e28", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("0", 16)
-gg.clearResults()
-gg.setRanges(32)
-gg.searchNumber("1D;0.05000000075F;0.10000000149F;0.55000001192F;9.5F;15.0F", 16, false, 536870912, 0, -1)
-gg.searchNumber("1", 4, false, 536870912, 0, -1)
-gg.getResults(800)
-gg.editAll("0", 4)
-gg.clearResults() 
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber('1.5584387e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('1.5584387e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll('0', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber('1D;0.05000000075F;0.10000000149F;0.55000001192F;9.5F;15.0F', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll('0', gg.TYPE_DWORD)
+    gg.clearResults()
 gg.toast ("🎯Lobby No Rceoil Done🎯")
 end
 
