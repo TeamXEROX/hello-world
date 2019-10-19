@@ -1,1 +1,1 @@
-gg.alert (F"uck ur mom leaker ") 
+gg.alert ("Fuck ur mom leaker ") 
