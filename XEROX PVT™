@@ -1,0 +1,195 @@
+gg.setVisible(false)
+
+
+function Bypass()
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.15.0.11182_20190913173659_1446534324_cures.ifs.res") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist") 
+os.remove("/storage/emulated/0/Tencent") 
+os.remove("/storage/emulated/0/tencent") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/cache") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/ca-bundle.pem") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/tbslog")   	  
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/login-identifier.txt") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt") 	
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/vmpcloudconfig.json") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/Engine") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag") 
+os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir") 
+os.remove("/data/data/com.vng.pubgmobile/app_appcache") 
+os.remove("/data/data/com.vng.pubgmobile/app_bugly") 
+os.remove("/data/data/com.vng.pubgmobile/app_crashrecord") 
+os.remove("/data/data/com.vng.pubgmobile/cache") 
+os.remove("/data/data/com.vng.pubgmobile/code_cache") 
+os.remove("/data/data/com.vng.pubgmobile/files/iMSDK") 
+os.remove("/data/data/com.vng.pubgmobile/files/ss_tmp") 
+os.remove("/data/data/com.vng.pubgmobile/files/tss_tmp") 
+os.remove("/data/data/com.vng.pubgmobile/files/AppEventsLogger.persistedevents") 
+os.remove("/data/data/com.vng.pubgmobile/files/tpnlcache.data") 
+os.remove("/data/data/com.vng.pubgmobile/files/tss_app_915c.dat") 
+os.remove("/data/data/com.vng.pubgmobile/files/tss_cs_stat2.dat") 
+os.remove("/data/data/com.vng.pubgmobile/files/tss.i.m.dat") 
+gg.toast("XEROX VIP SCRIPT") 
+end
+ 
+ bypassAlert = gg.alert(" ❏ XEROX Official VIP Script SD 636\n\n", "🅴🅽🆃🅴🆁")
+ 
+ if bypassAlert == nil then Bypass() end 
+ if bypassAlert == 1 then Bypass() end
+XEROX = 1
+
+function START()
+MNX = gg.choice({
+"『🔐』 LOGO/LOBBY",
+"『🎁』 LOBBY ACT.",
+"『⛄』 SPAWN ACT.",
+"『⛄』 LAND ACT.",
+"EXIT"}, nil, " ❏ XEROX™ OFFICIAL VIP SCRIPT v1.0 ☃️\n ❏ PUBGM VERSION : 0.15.0 ⛄\n ❏ SCRIPT BY @TEAMBATTLEAXECHEATS 🎁\n")
+if MNX == nil then
+else
+if MNX == 1 then
+logo()
+end
+if MNX == 2 then
+lobby()
+end
+if MNX == 3 then
+spawn()
+end
+if MNX == 4 then
+game()
+end
+if MNX == 5 then
+EXIT()
+end
+end
+XEROX = -1
+end
+
+
+function logo() 
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-2.83335944e28;-5.73426691e27;-1.99678278e28;-1.32431779e28;-5.80435509e27;-5.84545857e27:21",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("-2.83335944e28",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(6281913639784)
+gg.editAll("-2.83335992e28",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast ('🍳Long Jump🍳') 
+end
+
+
+
+function EXIT()
+gg.alert(" ❏ TBC™ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🎴\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴡɪᴢᴀʀᴅʙᴀᴄᴋ\n [⛄] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @TBCBYPASSOFFICIAL \n 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
+gg.skipRestoreState()
+gg.setVisible(true)
+os.exit()
+end
+print("\n❏ TBC™ ᴠɪᴩ ꜱᴄʀɪᴩᴛ🎴\n [🐙] ᴄᴏᴅᴇᴅ ʙY ɪᴛᴢxᴇʀᴏx™\n [🎭] ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ :\n @ʙᴀᴛᴛʟᴇx_ᴊᴀ\n @ᴡɪᴢᴀʀᴅʙᴀᴄᴋ\n [⛄] ꜱᴜᴩᴩᴏʀᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ :\n @TBCBYPASSOFFICIAL 👉ᴊᴏɪɴ ɴᴏᴡ : ᴛ.ᴍᴇ/ᴛᴇᴀᴍʙᴀᴛᴛʟᴇᴀxᴇᴄʜᴇᴀᴛꜱ👈")
+print("🍁Contact Us : t.me/ItzXEROX🍁")
+
+
+function lobby()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber('1,348,759,109;1953067887;1,634,692,166;1,920,287,604::28', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber('1634692166', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll('1634692266', gg.TYPE_DWORD)
+  gg.toast('🐾 Less Recoil Done 🐾')
+ 
+ 
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("250", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast('🤯 Auto Headshot 99% 🤯')
+ 
+ gg.clearResults()
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber('360;0.0001;1478828288', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber('0.0001', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll('9999', gg.TYPE_FLOAT)
+  gg.clearResults()
+gg.toast("🏛️ Aimbot Activated 🏛️")
+end
+
+
+function spawn()
+
+  gg.clearResults()
+  gg.setRanges(131072)
+  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", 16, false, 536870912, 0, -1)
+  gg.searchNumber("2", 16, false, 536870912, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120.10", 16)
+  gg.clearResults()
+  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", 16, false, 536870912, 0, -1)
+  gg.searchNumber("2", 16, false, 536870912, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120.10", 16)
+  gg.clearResults()
+  gg.toast(' 『🐾』 Perspective 636 『🐾』 ')
+
+gg.clearResults()
+   gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1073938433;1073938432;1073938434;200795;-2134900724;1073741824;1016296636::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1073938432;1073938434::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  RBlueV2 = gg.getResults(100)
+  gg.editAll("12", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast(' 『🐾』 Charms Blue 『🐾』 ')
+  end
+ 
+ function game()
+ 
+ 
+ gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber('5.2806111e-40;6.50000333786;3.7615819e-37;2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll('9999', gg.TYPE_FLOAT)
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber('1.1202011e-19;1.1202015e-19;3.7615819e-37;255.0;2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll('9999', gg.TYPE_FLOAT)
+  gg.toast(' 『🐾』 Perspective Fix Blink 430-835 『🐾』 ')
+ 
+ gg.setRanges(gg.REGION_BAD)
+  gg.clearResults()
+  gg.searchNumber('100F;1F;1,008,981,770D:99', gg.TYPE_FLOAT, false)
+  gg.searchNumber('100', gg.TYPE_FLOAT, false)
+  gg.getResults(100)
+  gg.editAll('-90', gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast('🖤 Black Sky 🖤') 
+end
+
+
+while true do
+if gg.isVisible(true) then
+XEROX = 1
+gg.setVisible(false)
+end
+gg.clearResults()
+if XEROX == 1 then
+START()
+end
+end
