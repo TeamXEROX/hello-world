@@ -1,32 +1,4 @@
-XEROX = {
 
-"869720033236541", -- XEROX 
-"866114043641598", -- Pradyumna
-
-} --- multiple imei
-table = revo.getPhoneInfo()
-function Tut(t, i)
-    local text = "'"       
-    for k,v in pairs(t) do   
-            text = text .. "'" .. k .. "' ==> "   
-            text = text .. v .. "\n\n\n"       
-    end
-    return text
-end
-p = Tut(table ,1)
-f = assert (io.tmpfile ()) 
-f:write (p)  
-f:seek ("set", 1) 
-s = f:read("*a")
-IMEI = s:match "[+-]?%d+"
-local valid = false
-for x=1,#XEROX do
-if IMEI == XEROX[x] then 
- valid = true
-break
-end
-end
-if valid then
 -- Coded by @ItzXEROX
 -- Telegram : t.me/TeamBattleAxeCheats
 
@@ -492,9 +464,3 @@ if XEROX == 1 then
 START()
 end
 end
-else
-gg.alert(" ❏ IMEI Verification Failed\n\n ⎚ Sent your IMEI to :\n 👉 t.me/ItzXEROX\n ⎚ Sent Sim slot 1 IMEI\n\n ⎚ Powered by @TeamBattleAxeCheats")
-while true do
-os.exit()
-end
-end 
