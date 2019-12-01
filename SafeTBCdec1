@@ -1,0 +1,155 @@
+function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) break end nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len(szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end function xgxc(szpy, qmxg) for x = 1, #(qmxg) do xgpy = szpy + qmxg[x]["offset"] xglx = qmxg[x]["type"] xgsz = qmxg[x]["value"] gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) xgsl = xgsl + 1 end end function xqmnb(qmnb) gg.clearResults() gg.setRanges(qmnb[1]["memory"]) gg.searchNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "Faild") else gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "Faild") else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(qmnb) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + qmnb[v]["offset"] pysz[1].flags = qmnb[v]["type"] szpy = gg.getValues(pysz) pdpd = qmnb[v]["lv"] .. ";" .. szpy[1].value szpd = split(pdpd, ";") tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, qmxg) xgjg = true end end if xgjg == true then gg.toast(qmnb[2]["name"] .. "Dsniper Success,Modified" .. xgsl .. "codes") else gg.toast(qmnb[2]["name"] .. "Failed") end end end end
+gg.setVisible(false)
+XEROX = 1
+function START()
+S = gg.multiChoice({
+"🎒 Small Crosshair [Logo]",
+"🎒 Perspectives all sd [game]",
+"🎒 AntiShake [Logo]",
+"🎒 Fast Shoot [Logo]",
+"🎒 No Recoil [Logo]",
+"🎒 Invisible [Game]",
+"🎒 Green all sd [Game]",
+"🎒 Aim Lock [Lobby]",
+"🎒 x3 Head [Game]",
+"Exit"
+},nil, "🤪 SCRIPT : v1.0\n Codes : @SudzyXVI & @ItzXEROX\n Channel : TeamBattleAxeCheats")
+if S == nil then else
+if S[1] == true then small() end
+if S[2] == true then p1() end
+if S[3] == true then antishake() end
+if S[4] == true then fast() end
+if S[5] == true then n7() end
+if S[6] == true then off() end
+if S[7] == true then b() end
+if S[8] == true then a1() end
+if S[9] == true then x3() end
+if S[10] == true then EXIT() end
+end
+XEROX = - 1
+end
+function x3() 
+i=1--(瀹氫箟)
+while true do--(Full)
+qmnb = {
+{["memory"] = gg.REGION_ANONYMOUS},
+{["name"] = "3xHead"},
+{["value"] = 7.13140678406, ["type"] = gg.TYPE_FLOAT},
+{["lv"] = 1, ["offset"] = 12, ["type"] = gg.TYPE_FLOAT},
+{["lv"] = 1, ["offset"] = 16, ["type"] = gg.TYPE_FLOAT},
+{["lv"] = 1, ["offset"] = 20, ["type"] = gg.TYPE_FLOAT},
+}
+qmxg = {
+{["value"] =3, ["offset"] = 12, ["type"] = gg.TYPE_FLOAT},
+{["value"] = 3, ["offset"] = 16, ["type"] = gg.TYPE_FLOAT},
+{["value"] = 3, ["offset"] = 20, ["type"] = gg.TYPE_FLOAT},
+}
+xqmnb(qmnb)
+  i=i+1
+  if i>999--(璁剧疆寰幆娆℃暟)
+  then break--(閫�鍑哄惊鐜�)
+  end
+ end
+end 
+function a1() 
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("953267991", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("953267991", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("6A0", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("1203982208", gg.TYPE_QWORD)
+gg.processResume()
+gg.clearResults()
+gg.toast ("Aim Lock Activated") 
+end
+function b()
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("32,769;-2,134,900,724:21", gg.TYPE_DWORD, false)
+  gg.searchNumber("32,769", gg.TYPE_DWORD, false)
+  gg.getResults(10)
+  gg.editAll("32780", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("200795;32768;32780;32770;-2134900724", gg.TYPE_DWORD, false)
+  gg.refineNumber("200795", gg.TYPE_DWORD, false)
+  gg.getResults(20)
+  gg.editAll("1", gg.TYPE_DWORD)
+  gg.toast("Charms Green All Sd")
+end
+function off()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-6.0900378e31;-1.2174896e21;-6.0939992e31:9",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("-6.0900378e31",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(3)
+gg.editAll("0",gg.TYPE_FLOAT)
+gg.toast("Invisible")
+gg.clearResults()
+end
+function n7()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-9.9065615e27;-3.8685797e25;-5.7270134e27:9",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("-9.9065615e27",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(33)
+gg.editAll("0",gg.TYPE_FLOAT)
+gg.toast("Legit Recoil")
+gg.clearResults()
+end
+function fast()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1.1144502e28;-2.0291021e20;-8.5021476e22:13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Fast Shoot")
+end
+function small()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("4.5122613e-30;3.8126822e-21;-1.1144502e28;-2.0291021e20;-8.5021476e22:17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.toast("Small Crosshair")
+end
+function p1()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Perspectives All Sd")
+end
+function antishake()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-6.1549454e27;1.8638966e-20;-1.1144502e28;0::", 16, false, 536870912, 0, -1)
+gg.searchNumber("-1.1144502e28", 16, false, 536870912, 0, -1)
+gg.getResults(1)
+gg.editAll("0", 16)
+gg.clearResults()
+gg.toast("AntiShake")
+end
+while true do
+  if gg.isVisible(true) then
+    XEROX = 1
+    gg.setVisible(false)
+  end
+  gg.clearResults()
+  if XEROX == 1 then
+    START()
+  end
+end
+ 
+
