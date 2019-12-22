@@ -396,7 +396,6 @@ gg.refineNumber('"0.5"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   end
 ---- Snapdragon Colour & WallHack----
 function WHC()
-gg.alert("🖼️ How to use WallHack & Charms in Lobby:\n\n🌐 First Method:\n1. Go to training and activate the WallHack and Charms.\n2. Return to the Lobby and deactivate the WallHack and Charms that you activated in the training.\n3. Activate the WallHack and Charms in the Lobby.\n\n🌐 Second Method:\n1. Set Balance Graphic, Apply changes and back to Smooth graphic and again apply changes\n2. Activate WallHack & Charms in the Lobby")
 WC = gg.choice({
    "┏[Game]╾[Every] \n┗🖼️ WallHack 400~800",
    "┏[Lobby]╾[Once] \n┗🖼️ WallHack 435~835",
@@ -491,25 +490,25 @@ gg.toast("❤️ Red Charms activated")
 end
 
 function w6()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineAddress("200", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(20)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineAddress("930", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(20)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
+gg["clearResults"]()
+gg["setRanges"](131072)
+gg["searchNumber"]("2.0;-1.0;0.0;1.0;-127.0;0.24022650719;0.69314718246;0.00999999978::29", 16, false, 536870912, 0, -1)
+gg["searchNumber"]("2", 16, false, 536870912, 0, -1)
+gg["getResults"](30)
+gg["editAll"]("120", 16)
+gg["clearResults"]()
+gg["searchNumber"]("2.4382593e-43;1.3312335e-43;2::", 16, false, 536870912, 0, -1)
+gg["searchNumber"]("2", 16, false, 536870912, 0, -1)
+gg["getResults"](30)
+gg["editAll"]("120", 16)
+gg["clearResults"]()
 gg.toast("🖼️ WallHack 845 activated")
 clr6()
 end
 
 function clr6()
 E = gg.choice({
-   "❤️ Red Charms",
+   "💚️ Green Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
 },nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 845 ️\n━━━━━━━━━━━━━━━━━━━━━")
@@ -522,22 +521,35 @@ end
 function yclr6()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineAddress("338")gg.getResults(100)
-gg.editAll("8198", gg.TYPE_DWORD)
+gg.searchNumber("1703959D;8200D;8201D:17", gg.TYPE_DWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.refineNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("7", gg.TYPE_DWORD)
+  gg.clearResults()
+gg.searchNumber("1,661,698,074;8,200;1,194,344,475;7;1,703,961",gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8201",gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("7",gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("💛 Yellow Charms activated")
 end
 
-function bclr6()
+function rclr6()
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineAddress("338")
-gg.getResults(20)
-gg.editAll("8199", gg.TYPE_DWORD)
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress( "0A0")
+gg.getResults(999)
+gg.editAll("8198", gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("❤️ Red Charms activated")
+gg.toast("Blue ")
+gg.clearResults()
+gg.searchNumber("1,661,698,074;8,200;1,194,344,475;7;1,703,961",gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8201",gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("7",gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("💚️ Green Charms activated")
 end
 
 function w5()
