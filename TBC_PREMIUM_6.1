@@ -1,24 +1,25 @@
--- Coded by @BydzNesiaa
+gg.setRanges (gg.REGION_C_DATA | gg.REGION_ANONYMOUS | gg.REGION_BAD | gg.REGION_C_ALLOC)
+-- Coded by @Bydzjayeda
 -- Channel : @tlcesports & @wtkcesports
 
-nesia = {}
+jayed = {}
 for i = 1, 40000 do -- Keep 40000 ! don't change or function not work.
-table.insert(nesia, {address = 127 + i, flags = 12, values = 127})
+table.insert(jayed, {address = 127 + i, flags = 12, values = 127})
 end
 clock = os.clock()
 time = os.time()
-for i = 1, 6 do gg.addListItems(nesia) end
+for i = 1, 6 do gg.addListItems(jayed) end
 if os.clock() - clock > 2 then
-gg.removeListItems(nesia)
-gg.alert("No Log!")
+gg.removeListItems(jayed)
+gg.alert("Warning🧟 \n Script Protected by @ItzXEROX \n Telegram : t.me/teambattleaxecheats \n ")
 os.exit()
 end
 if os.time() - time > 2 then
-gg.removeListItems(nesia)
-gg.alert("No Log!")
+gg.removeListItems(jayed)
+gg.alert("Warning🧟 \n Script Protected by @ItzXEROX \n Telegram : t.me/teambattleaxecheats \n ")
 os.exit()
 end 
-gg.removeListItems(nesia)
+gg.removeListItems(jayed)
 
 -- Coded by @ItzXEROX
 -- Telegram : t.me/TeamBattleAxeCheats
@@ -30,11 +31,11 @@ function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplit
 START = 1
 function START()
 MN = gg.choice({
-"🥳 Perspective & Charms",
-"🥴 Weapon Hacks [Lobby]",
-"🙅 In-Game Hacks [Game]",
- 'Back🧗'
-}, nil,'🏵️ SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX 🏵️\n🔭All Rights Reserved🔭\n © Team TBC 🥴')
+"🌠 Perspective & Charms",
+"🌡️ Weapon Hacks [Lobby]",
+"💫 In-Game Hacks [Game]",
+'『EXIT‍♂️』'
+}, nil,'🏵️ SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX 🏵️\n Developed by TBC™\n © Team TBC 2018-19 💝')
 if MN == 1 then WHC() end
 if MN == 2 then wplobby() end
 if MN == 3 then gameh() end
@@ -52,7 +53,7 @@ MNX = gg.multiChoice({
 "┌[lobby] [Once]\
 『🚇』 Aim Lock", 
  'Back🧗'
-}, nil,'🏵️ SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX 🏵️\n🔭All Rights Reserved © 2019🔭')
+}, nil,'🏵️ SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX 🏵️\n🔭All Rights Reserved © 2019🔭')
 if MNX[1] == true then
 lr()
 end
@@ -219,21 +220,14 @@ gg.toast("Fog Removed")
 end
 
 function ANENVSUPER()
-  qmnb = {
-{["memory"] = 32},
-{["name"] = "Antenna"},
-{["value"] = -100.91194152832, ["type"] = 16},
-{["lv"] = 88.50576019287, ["offset"] = -8, ["type"] = 16},
-{["lv"] = 87.27782440186, ["offset"] = -4, ["type"] = 16},
-{["lv"] = 1, ["offset"] = 4, ["type"] = 16},
-{["lv"] = 4.546653e-41, ["offset"] = 44, ["type"] = 16},
-}
-qmxg = {
-{["value"] = 0, ["offset"] = -8, ["type"] = 16},
-{["value"] = 0, ["offset"] = -4, ["type"] = 16},
-{["value"] = 999, ["offset"] = 4, ["type"] = 16},
-}
-xqmnb(qmnb)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("0.98900693655~0.98900723457;0.14786802232~0.14786840975;1.1920926e-7::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("0.98900693655~0.98900723457", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("16000", gg.TYPE_FLOAT)
+ gg.clearResults()
 end
 
 
@@ -307,108 +301,20 @@ gg.clearResults()
 gg.toast("🚙 Speed Jeep deactivated")
 end
 
-function chuck_6()
-  qmnb = {
-{["memory"] = 32},
-{["name"] = "Fast Parachute"},
-{["value"] = 1.3336157484979284E-41, ["type"] = 16},
-{["lv"] = 1.0, ["offset"] = -8, ["type"] = 16},
-{["lv"] = 1.0, ["offset"] = -4, ["type"] = 16},
-}
-qmxg = {
-{["value"] = 30, ["offset"] = -4, ["type"] = 16},
-
-}
-xqmnb(qmnb)
-
-
-qmnb = {
-{["memory"] = 32},
-{["name"] = "50% Activated"},
-{["value"] = 0.12643200159072876, ["type"] = 16},
-{["lv"] = 0.75, ["offset"] = -4, ["type"] = 16},
-}
-qmxg = {
-{["value"] = 0, ["offset"] = -4, ["type"] = 16},
-
-}
-xqmnb(qmnb)
-end
------ lobby hacks-----
-function lessr()
- gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(20)
-gg.editAll("0", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("1.0F;1D;0.05000000075F;0.10000000149F:57", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(999)
-gg.editAll("0", gg.TYPE_DWORD)
-end
-
-function chuck_4()
-qmnb = {
-{["memory"] = 8},
-{["name"] = "No Recoil"},
-{["value"] = -1.1154172964140308E28, ["type"] = 16},
-{["lv"] = -1.362036392727984E28, ["offset"] = -8, ["type"] = 16},
-{["lv"] = -3.6893509258042357E20, ["offset"] = -4, ["type"] = 16},
-}
-qmxg = {
-{["value"] = 0, ["offset"] = -8, ["type"] = 16},
-
-}
-xqmnb(qmnb)
-qmnb = {
-{["memory"] = 8},
-{["name"] = "No Recoil Activated"},
-{["value"] = -5.729434156878201E27, ["type"] = 16},
-{["lv"] = -5.731852598813241E27, ["offset"] = -8, ["type"] = 16},
-{["lv"] = -1.362036392727984E28, ["offset"] = -4, ["type"] = 16},
-}
-qmxg = {
-{["value"] = 0, ["offset"] = -4, ["type"] = 16},
-
-}
-xqmnb(qmnb)
-end
---- mtk p60 wh colour---
-function WHCS()
- gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber('"4.59177481e-40F;3.85303814e-34F;2.03203972e-39F;3.58732407e-43F;0.5F:293"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber('"0.5"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  if gg.getResultCount() == 4 then
-  var = gg.getResults(6)
-  gg.editAll("1", gg.TYPE_FLOAT)
-  var[4].value = 1
-  var[4].freeze = true
-  var[2].value = 1
-  var[2].freeze = true
-  gg.addListItems(var) else
-  var = gg.getResults(2)
-  gg.editAll("1", gg.TYPE_FLOAT)
-  var[2].value = 1
-  var[2].freeze = true
-  gg.addListItems(var) 
-  end
-  end
----- Snapdragon Colour & WallHack----
+---- Snapdragon Colour & Perspective----
 function WHC()
 WC = gg.choice({
-   "┏[Game]╾[Every] \n┗🖼️ WallHack 400~800",
-   "┏[Lobby]╾[Once] \n┗🖼️ WallHack 435~835",
-   "┏[Lobby]╾[Once] \n┗🖼️ WallHack 660",
-   "┏[Lobby]╾[Once] \n┗🖼️ WallHack 675",
-   "┏[Lobby]╾[Once] \n┗🖼️ WallHack 710",
-   "┏[Lobby]╾[Once] \n┗🖼️ WallHack 845",
-   "┏[Lobby]╾[Once] \n┗🖼️ WallHack 855",
+   "┏[Game]╾[Every] \n┗👩‍🎤 Perspective 400~800",
+   "┏[Game]╾[Once] \n┗👩‍🎤 Perspective 435~835",
+   "┏[Game]╾[Once] \n┗👩‍🎤 Perspective 660",
+   "┏[Game]╾[Once] \n┗👩‍🎤 Perspective 675",
+   "┏[Game]╾[Once] \n┗👩‍🎤 Perspective 710",
+   "┏[Game]╾[Once] \n┗👩‍🎤 Perspective 845",
+   "┏[Game]╾[Once] \n┗👩‍🎤 Perspective 855",
    "┏[Game]╾[Every] \n┗🎇 Fix Blink 625~855",
-   "┏[Lobby]╾[Once] \n┗🖼️ WallHack P60",
    "🚫 Deactivation Menu",
    "↪BACK↩"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┗🖼️ WallHack & Charms\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┗👩‍🎤 Perspective & Charms\n━━━━━━━━━━━━━━━━━━━━━")
 if WC == 1 then w1() end
 if WC == 2 then w2() end
 if WC == 3 then w3() end
@@ -417,9 +323,8 @@ if WC == 5 then w5() end
 if WC == 6 then w6() end
 if WC == 7 then w7() end
 if WC == 8 then fb1() end
-if WC == 9 then WHCS() end
-if WC == 10 then owhcs() end
-if WC == 11 then START() end
+if WC == 9 then owhcs() end
+if WC == 10 then START() end
 end
 
 function fb1()
@@ -451,7 +356,7 @@ gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 855 activated")
+gg.toast("👩‍🎤 Perspective 855 activated")
 clr7()
 end
 
@@ -460,7 +365,7 @@ F = gg.choice({
    "❤️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 855 ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 855 ️\n━━━━━━━━━━━━━━━━━━━━━")
 if F == nil then gg.alert("⚠️ Please Choose Something") clr7() end
 if F == 1 then rclr7() end
 if F == 2 then yclr7() end
@@ -502,7 +407,7 @@ gg["searchNumber"]("2", 16, false, 536870912, 0, -1)
 gg["getResults"](30)
 gg["editAll"]("120", 16)
 gg["clearResults"]()
-gg.toast("🖼️ WallHack 845 activated")
+gg.toast("👩‍🎤 Perspective 845 activated")
 clr6()
 end
 
@@ -511,7 +416,7 @@ E = gg.choice({
    "💚️ Green Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 845 ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 845 ️\n━━━━━━━━━━━━━━━━━━━━━")
 if E == nil then gg.alert("⚠️ Please Choose Something") clr6() end
 if E == 1 then rclr6() end
 if E == 2 then yclr6() end
@@ -565,7 +470,7 @@ gg.refineAddress("930")
 gg.getResults(999)
 gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 710 activated")
+gg.toast("👩‍🎤 Perspective 710 activated")
 clr5()
 end
 
@@ -574,7 +479,7 @@ G = gg.choice({
    "❤️ Red Charms",
    "💛️ Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 710 ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 710 ️\n━━━━━━━━━━━━━━━━━━━━━")
 if G == nil then gg.alert("⚠️ Please Choose Something") clr5() end
 if G == 1 then rclr5() end
 if G == 2 then yclr5() end
@@ -616,7 +521,7 @@ gg.refineAddress("930")
 gg.getResults(20)
 gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 675 activated")
+gg.toast("👩‍🎤 Perspective 675 activated")
 clr4()
 end
 
@@ -625,7 +530,7 @@ D = gg.choice({
    "❤️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 675 ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 675 ️\n━━━━━━━━━━━━━━━━━━━━━")
 if D == nil then gg.alert("⚠️ Please Choose Something") clr4() end
 if D == 1 then rclr4() end
 if D == 2 then yclr4() end
@@ -667,7 +572,7 @@ gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 660 activated")
+gg.toast("👩‍🎤 Perspective 660 activated")
 clr3()
 end
 
@@ -676,7 +581,7 @@ C = gg.choice({
    "❤️️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 660 ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 660 ️\n━━━━━━━━━━━━━━━━━━━━━")
 if C == nil then gg.alert("⚠️ Please Choose Something") clr3() end
 if C == 1 then rclr3() end
 if C == 2 then yclr3() end
@@ -718,7 +623,7 @@ gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 430~835 activated")
+gg.toast("👩‍🎤 Perspective 430~835 activated")
 clr2()
 end
 
@@ -727,7 +632,7 @@ B = gg.choice({
    "❤️ Red Charms",
    "💛️ Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 430~835 ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 430~835 ️\n━━━━━━━━━━━━━━━━━━━━━")
 if B == nil then gg.alert("⚠️ Please Choose Something") clr2() end
 if B == 1 then rclr2() end
 if B == 2 then yclr2() end
@@ -769,7 +674,7 @@ gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 400~800 activated")
+gg.toast("👩‍🎤 Perspective 400~800 activated")
 clr1()
 end
 
@@ -778,7 +683,7 @@ A = gg.choice({
    "❤️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 400~800 ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┗🖼 SnapDragon 400~800 ️\n━━━━━━━━━━━━━━━━━━━━━")
 if A == nil then gg.alert("⚠️ Please Choose Something") clr1() end
 if A == 1 then rclr1() end
 if A == 2 then yclr1() end
@@ -811,15 +716,15 @@ end
 
 function owhcs()
 OWC = gg.choice({
-   "┏[Game] \n┗🖼️ WallHack 400~800",
-   "┏[Wherever] \n┗🖼️ WallHack 430~835",
-   "┏[Wherever] \n┗🖼️ WallHack 660",
-   "┏[Wherever] \n┗🖼️ WallHack 675",
-   "┏[Wherever] \n┗🖼️ WallHack 710",
-   "┏[Wherever] \n┗🖼️ WallHack 845",
-   "┏[Wherever] \n┗🖼️ WallHack 855",
+   "┏[Game] \n┗👩‍🎤 Perspective 400~800",
+   "┏[Wherever] \n┗👩‍🎤 Perspective 430~835",
+   "┏[Wherever] \n┗👩‍🎤 Perspective 660",
+   "┏[Wherever] \n┗👩‍🎤 Perspective 675",
+   "┏[Wherever] \n┗👩‍🎤 Perspective 710",
+   "┏[Wherever] \n┗👩‍🎤 Perspective 845",
+   "┏[Wherever] \n┗👩‍🎤 Perspective 855",
    "↪BACK↩"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┣🖼️ WallHack & Charms\n┗🚫 Deactivation Menu\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┣👩‍🎤 Perspective & Charms\n┗🚫 Deactivation Menu\n━━━━━━━━━━━━━━━━━━━━━")
 if OWC == 1 then ow1() end
 if OWC == 2 then ow2() end
 if OWC == 3 then ow3() end
@@ -843,7 +748,7 @@ gg.refineNumber("120", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("2", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 855 deactivated")
+gg.toast("👩‍🎤 Perspective 855 deactivated")
 oclr7()
 end
 
@@ -852,7 +757,7 @@ OF = gg.choice({
    "❤️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┣🖼️ SnapDragon 855 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┣👩‍🎤 SnapDragon 855 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
 if OF == nil then gg.alert("⚠️ Please Choose Something") oclr7() end
 if OF == 1 then orclr7() end
 if OF == 2 then oyclr7() end
@@ -894,7 +799,7 @@ gg.refineAddress("930", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("2", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 845 deactivated")
+gg.toast("👩‍🎤 Perspective 845 deactivated")
 oclr6()
 end
 
@@ -903,7 +808,7 @@ OE = gg.choice({
    "❤️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┣🖼️ SnapDragon 845 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┣👩‍🎤 SnapDragon 845 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
 if OE == nil then gg.alert("⚠️ Please Choose Something") oclr6() end
 if OE == 1 then orclr6() end
 if OE == 2 then oyclr6() end
@@ -945,7 +850,7 @@ gg.refineAddress("930")
 gg.getResults(999)
 gg.editAll("2", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 710 deactivated")
+gg.toast("👩‍🎤 Perspective 710 deactivated")
 oclr5()
 end
 
@@ -954,7 +859,7 @@ OG = gg.choice({
    "❤️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┣🖼️ SnapDragon 710 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┣👩‍🎤 SnapDragon 710 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
 if OG == nil then gg.alert("⚠️ Please Choose Something") oclr5() end
 if OG == 1 then orclr5() end
 if OG == 2 then oyclr5() end
@@ -996,7 +901,7 @@ gg.refineAddress("930")
 gg.getResults(20)
 gg.editAll("2", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 675 deactivated")
+gg.toast("👩‍🎤 Perspective 675 deactivated")
 oclr4()
 end
 
@@ -1005,7 +910,7 @@ OD = gg.choice({
    "❤️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┣🖼️ SnapDragon 675 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┣👩‍🎤 SnapDragon 675 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
 if OD == nil then gg.alert("⚠️ Please Choose Something") oclr4() end
 if OD == 1 then orclr4() end
 if OD == 2 then oyclr4() end
@@ -1047,7 +952,7 @@ gg.refineNumber("120", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("2", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 660 deactivated")
+gg.toast("👩‍🎤 Perspective 660 deactivated")
 oclr3()
 end
 
@@ -1056,7 +961,7 @@ OC = gg.choice({
    "❤️️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┣🖼️ SnapDragon 660 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┣👩‍🎤 SnapDragon 660 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
 if OC == nil then gg.alert("⚠️ Please Choose Something") oclr3() end
 if OC == 1 then orclr3() end
 if OC == 2 then oyclr3() end
@@ -1098,7 +1003,7 @@ gg.refineNumber("120", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("2", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 430~835 deactivated")
+gg.toast("👩‍🎤 Perspective 430~835 deactivated")
 oclr2()
 end
 
@@ -1107,7 +1012,7 @@ OB = gg.choice({
    "❤️ Red Charms",
    "💛️ Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┣🖼️ SnapDragon 430~835 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┣👩‍🎤 SnapDragon 430~835 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
 if OB == nil then gg.alert("⚠️ Please Choose Something") oclr2() end
 if OB == 1 then orclr2() end
 if OB == 2 then oyclr2() end
@@ -1149,7 +1054,7 @@ gg.refineNumber("120", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("2", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🖼️ WallHack 400~800 deactivated")
+gg.toast("👩‍🎤 Perspective 400~800 deactivated")
 oclr1()
 end
 
@@ -1158,7 +1063,7 @@ OA = gg.choice({
    "❤️ Red Charms",
    "💛 Yellow Charms",
    "🚫️ Without Charms"
-},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.1 \n CODED BY @ItzXEROX\n┣🖼️ SnapDragon 400~800 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
+},nil,"━━━━━━━━━━━━━━━━━━━━━\n┏🎄 SCRIPT VERSION : v6.2 \n CODED BY @ItzXEROX\n┣👩‍🎤 SnapDragon 400~800 \n┗🚫 Deactivation Menu ️\n━━━━━━━━━━━━━━━━━━━━━")
 if OA == nil then gg.alert("⚠️ Please Choose Something") oclr1() end
 if OA == 1 then orclr1() end
 if OA == 2 then oyclr1() end
