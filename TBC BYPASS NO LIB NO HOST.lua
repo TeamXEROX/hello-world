@@ -1,3 +1,23 @@
+gg.setRanges (gg.REGION_C_DATA | gg.REGION_ANONYMOUS | gg.REGION_BAD | gg.REGION_C_ALLOC)
+-- Anti Log Command Start
+jayed = {}
+for i = 1, 40000 do -- Keep 40000 ! don't change or function not work.
+table.insert(jayed, {address = 127 + i, flags = 12, values = 127})
+end
+clock = os.clock()
+time = os.time()
+for i = 1, 6 do gg.addListItems(jayed) end
+if os.clock() - clock > 2 then
+gg.removeListItems(jayed)
+gg.alert("Warning🧟 \n Script Protected by @ItzXEROX \n Telegram : t.me/teambattleaxecheats \n ")
+os.exit()
+end
+if os.time() - time > 2 then
+gg.removeListItems(jayed)
+gg.alert("Warning🧟 \n Script Protected by @ItzXEROX \n Telegram : t.me/teambattleaxecheats \n ")
+os.exit()
+end 
+gg.removeListItems(jayed)
 -- Fast Executive Commands Start #ItzXEROX
 function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) break end nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len(szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end function xgxc(szpy, qmxg) for x = 1, #(qmxg) do xgpy = szpy + qmxg[x]["offset"] xglx = qmxg[x]["type"] xgsz = qmxg[x]["value"] xgdj = qmxg[x]["freeze"] if xgdj == nil or xgdj == "" then gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) else gg.addListItems({[1] = {address = xgpy, flags = xglx, freeze = xgdj, value = xgsz}}) end xgsl = xgsl + 1 xgjg = true end end function xqmnb(qmnb) gg.clearResults() gg.setRanges(qmnb[1]["memory"]) gg.searchNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "Coded by @ItzXEROX") else gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "Coded by @ItzXEROX") else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(qmnb) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + qmnb[v]["offset"] pysz[1].flags = qmnb[v]["type"] szpy = gg.getValues(pysz) pdpd = qmnb[v]["lv"] .. ";" .. szpy[1].value szpd = split(pdpd, ";") tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, qmxg) end end if xgjg == true then gg.toast(qmnb[2]["name"] .. "TeamBattleaxeCheats" .. xgsl .. "@ItzXEROX") else gg.toast(qmnb[2]["name"] .. "TBC BYPASS OFFICIAL") end end end end
 -- Fast Executive Commands End #ItzXEROX
