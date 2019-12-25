@@ -13,19 +13,19 @@ XEROX = gg.multiChoice({
 "Kirin Perspective Gun Color [Training/Game]",
 "855 Perspective [Training/Game]",
 "410 Perspective Coloring [Training/Game]",
-"Single Edition Weeding [Lobby]",
+"Remove Grass [Lobby]",
 "Graphics Clearance [Game]",
 "Perspective Fix Blink/Flash [Game]",
 "Hall without back [Lobby]",
 "M4 single gun without rear [Gun]",
-"Remove Grass & Trees [Game]",
+"Remove Trees [Game]",
 "Aimbot C Data++ [Lobby]",
 "Headshot Limited [Lobby]",
 "Flash No Lag [Game]",
 "Turn Off Flash [Game]",
 "Antenna Enemy Box [Game]",
 "EXIT"
-}, nil, "Antiban Script Pubg 0.16.0 \n No need Modified Data or bypass for Use. \n Coded by @ItzXEROX")
+}, nil, "C Data Values\n Coded by @ItzXEROX \n All Rights Reserved © 2019 TeamTBC")
 if XEROX == nil then else
 if XEROX[1] == true then a1() end
 if XEROX[2] == true then a2() end
