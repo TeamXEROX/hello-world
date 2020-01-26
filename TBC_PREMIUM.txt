@@ -37,3 +37,6 @@
 0.0.0.0 scgt.reverse.com
 0.0.0.0 rpgohsnmh.com
 0.0.0.0 app.adjust.com
+
+## CREATED BY XEROX ##
+## TBC BYPASS ANTIBAN ##
