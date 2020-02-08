@@ -19,7 +19,17 @@ dns.redirect 195.46.39.39
 dns.redirect 198.101.242.72
 dns.redirect 91.239.100.100
 dns.redirect 9.9.9.9
+dns.redirect 216.58.214.227
+dns.redirect 172.217.161.2
+dns.redirect 124.156.12.123
+dns.redirect 119.28.229.113
+dns.redirect 119.28.243.66
+dns.redirect 203.205.219.228
+dns.redirect 216.58.214.227
+dns.redirect 104.108.198.229
+dns.redirect 119.28.242.134 
 
+#localhost1
 0.0.0.0 receiver.sg.tdm.qq.com
 0.0.0.0 napubgm.broker.tplay.qq.com
 0.0.0.0 idcconfig.gcloud.qq.com
@@ -62,3 +72,50 @@ dns.redirect 9.9.9.9
 0.0.0.0 ns2.qq.com
 0.0.0.0 ns3.qq.com
 0.0.0.0 ns4.qq.com
+
+#localhost2
+3.3.3.3 receiver.sg.tdm.qq.com
+3.3.3.3 napubgm.broker.tplay.qq.com
+3.3.3.3 idcconfig.gcloud.qq.com
+3.3.3.3 vmp.qq.com
+3.3.3.3 cdn.wetest.qq.com
+3.3.3.3 intldlgs.qq.com
+3.3.3.3 csoversea.mbgame.gamesafe.qq.com
+3.3.3.3 .weiyun.com
+3.3.3.3 .myapp.com
+3.3.3.3 .qmail.com
+3.3.3.3 .qzone.com
+3.3.3.3 .hk
+3.3.3.3 .qqgames.com
+3.3.3.3 .qqmail.com
+3.3.3.3 .superfix.com
+3.3.3.3 .qq.com
+3.3.3.3 .cnzz.com
+3.3.3.3 .proximabeta.com
+3.3.3.3 .pubgmobile.com
+3.3.3.3 .tencent.com
+3.3.3.3 .sl-reverse.com
+3.3.3.3 .qcloud.com
+3.3.3.3 .twimg.com
+3.3.3.3 .helpshift.com
+3.3.3.3 .fbsbx.com
+3.3.3.3 .userapi.com
+3.3.3.3 scgt.reverse.com
+3.3.3.3 app.adjust.com
+3.3.3.3 file.igamecj.com
+3.3.3.3 .intellitxt.com
+3.3.3.3 .actencent.com
+3.3.3.3 android.bugly.qq.com
+3.3.3.3 api.phenixos.com
+3.3.3.3 www.pubgmobile.com
+3.3.3.3 platform-lookaside.fbsbx.com
+3.3.3.3 scgt.reverse.com
+3.3.3.3 rpgohsnmh.com
+3.3.3.3 app.adjust.com
+3.3.3.3 ns1.qq.com
+3.3.3.3 ns2.qq.com
+3.3.3.3 ns3.qq.com
+3.3.3.3 ns4.qq.com
+#Created by @TeamBattleAxeCheats
+#Coded by @ItzXEROX
+## © 2020 All Rights Reserved. 
