@@ -1,0 +1,555 @@
+if gg.isPackageInstalled("com.cca.bypass") then
+gg.clearResults()
+else
+gg.alert("⚠️ You're not premium user\n For buy contact www.t.me/CCAOfficialBot")
+os.exit()
+end
+
+if gg.getTargetPackage() == "com.tencent.ig" or gg.getTargetPackage() == "com.rekoo.pubgm" or gg.getTargetPackage() == "com.tencent.tmgp.pubgmhd" or gg.getTargetPackage() == "com.pubg.krmobile" or gg.getTargetPackage() == "com.vng.pubgmobile" then
+    gg.clearResults()
+  else
+    print("Run Game First.\n t.me/CarbineCheatingArena")
+    os.exit()
+  end
+  
+gg.setVisible(false)
+function START()
+CCA = gg.choice({
+" Fast ON OFF Data/Wifi",
+" Perspective & Charms",
+" CCA | Cheat-Menu",
+" OneClick Headshot 75% + Blacksky | Spawn 1x",
+"||❎Exit❎||"
+},nil,"Telegram Channel : : CarbineCheatingArena\nCCA Stable | 0.18.0")
+if CCA == nil then else
+if CCA == 1 then data() end
+if CCA == 2 then wh() end
+if CCA == 3 then ssc() end
+if CCA == 4 then mb() bs() end
+if CCA == 5 then exit() end
+end
+CCA = -1
+end
+
+function kedip()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(1)
+gg.editAll("99999", 16)
+gg.clearResults()
+gg.toast("Fix Blink\nTelegram Channel : CarbineCheatingArena")
+end
+
+function bidik()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('6.1630853e-33;-1.0767317e28::', 16)
+gg.refineNumber('-1.0767317e28', 16)
+gg.getResults(1)
+gg.editAll('0', 16)
+gg.clearResults()
+gg.toast('Active\nTelegram Channel : CarbineCheatingArena')
+end
+
+function item()
+gg.setRanges(gg.REGION_VIDEO)
+gg.clearResults()
+gg.searchNumber("8205", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("F8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(73)
+gg.editAll("11", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Done")
+end
+
+function data()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("1.1754945e-37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("9CC", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.sleep(5000)
+gg.setVisible(false)
+gg.editAll("1.1754945e-37", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Telegram : @VolcanoCCA")
+end
+
+function ssc()
+CCA90 = gg.multiChoice({
+" Headshot 75% | Spawn 1x",
+" Headshot 95% | Spawn 1x",
+" Headshot 100% | Spawn 1x",
+" Aimlock | Spawn 1x",
+" Less Recoil | Lobby 1x",
+" Blacksky | Spawn Island (Every Match)",
+" Antena | Spawn Island",
+" Fix Blink Perspective",
+" Perspective Item",
+" Back"
+},nil,"Telegram Channel : : CarbineCheatingArena")
+if CCA90 == nil then else
+if CCA90[1] == true then mb() end
+if CCA90[2] == true then C4() end
+if CCA90[3] == true then C3() end
+if CCA90[4] == true then bidik() end
+if CCA90[5] == true then less() end
+if CCA90[6] == true then bs() end
+if CCA90[7] == true then antena() end
+if CCA90[8] == true then kedip() end
+if CCA90[9] == true then item() end
+if CCA90[10] == true then START() end
+end
+CCA = -1
+end
+
+function wh()
+  VOLCANO = gg.multiChoice({
+    " Perspective SD 625",
+    " Perspective SD 636",
+    " Perspective SD 660",
+    " Perspective SD 665",
+    " Perspective SD 710",
+    " Perspective SD 835",
+    " Perspective SD 845",
+    " Perspective SD 855 V1",
+    " Perspective SD 855 V2",
+    " Charms SDdragon 855 HD Red",
+    " Charms Yellow SD 855 Smooth",
+    " Charms Yellow SD 845 V1",
+    " Charms Yellow SD 845 V2",
+    " Charms Green SD 845",
+    " Charms Yellow SD 710",
+    " Charms SD 665",
+    " Charms Yellow Fix 660",
+    " Charms Yellow Universal",
+    " Charms Red Universal",
+    " Charms Green 660",
+    " Back"
+}, nil, "Telegram Channel : : CarbineCheatingArena\nUse In Spawn Island\nMake Sure Graphic Set To Smooth")
+if VOLCANO == nil then else
+if VOLCANO[1] == true then wh625() end
+if VOLCANO[2] == true then wh636() end
+if VOLCANO[3] == true then wh660() end
+if VOLCANO[4] == true then wh675() end
+if VOLCANO[5] == true then wh710() end
+if VOLCANO[6] == true then wh835() end
+if VOLCANO[7] == true then wh845() end
+if VOLCANO[8] == true then wh855() end
+if VOLCANO[9] == true then wh855v2() end
+if VOLCANO[10] == true then bc855() end
+if VOLCANO[11] == true then kuning855() end
+if VOLCANO[12] == true then kuning845() end
+if VOLCANO[13] == true then kuning845v2() end
+if VOLCANO[14] == true then hijau845() end
+if VOLCANO[15] == true then kuning710() end
+if VOLCANO[16] == true then warna675() end
+if VOLCANO[17] == true then kuning660() end
+if VOLCANO[18] == true then kuning() end
+if VOLCANO[19] == true then merah() end
+if VOLCANO[20] == true then green675() end
+if VOLCANO[21] == true then START() end
+end
+CCA = -1
+end
+function kuning710()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.3912525e-19F;8200;96", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Charms Yellow 710")
+end
+
+function bc855()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD or gg.REGION_VIDEO)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("2A0")
+local MM2512 = gg.getResults(1)
+if MM2512[1] ~= nil then
+MM2512[1].address = MM2512[1].address
+MM2512[1].flags = 4
+MM2512[1].value = 7
+gg.setValues(MM2512)
+end
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD or gg.REGION_VIDEO)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("270")
+local MM2512 = gg.getResults(1)
+if MM2512[1] ~= nil then
+MM2512[1].address = MM2512[1].address
+MM2512[1].flags = 4
+MM2512[1].value = 7
+gg.setValues(MM2512)
+gg.toast("Charms HD 855 Red")
+end
+end
+
+function wh855v2()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD or gg.REGION_VIDEO)
+gg.searchNumber("1.33123354e-43;2;1.66231134e-19;9.21942286e-41:21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("WH 855 V2")
+end
+
+function wh625()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Telegram Channel : CarbineCheatingArena ")
+end
+
+function wh675()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("95D;2;9.2194229e-41::100", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(999)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(999)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.toast("Perspective 665")
+end
+
+function warna675()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8201",gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("8201",gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(15)
+gg.editAll("7",gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Colour Green SD665 activated!")
+end
+
+function wh710()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("1.4912565e-19;2.0;1.6623113e-19:9", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(20)
+gg.editAll("138", 16)
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::29", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(20)
+gg.editAll("138", 16)
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("1,081,081,865;8,200;1,446,128;348,401:21", 4, false, 536870912, 0, -1)
+gg.searchNumber("8200", 4, false, 536870912, 0, -1)
+gg.getResults(2)
+gg.editAll("7", 4)
+gg.clearResults()
+gg.toast("Perspective 710 Activated")
+end
+
+function less()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-2.2673448e24;-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.clearResults()
+gg.toast("Fix Less Recoil Activated\nTelegram Channel : CarbineCheatingArena")
+end
+
+function wh845()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0;0.24022650719;0.69314718246;0.00999999978::29",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(30)
+gg.editAll("120",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.4382593e-43;1.3312335e-43;2::",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(30)
+gg.editAll("120",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Telegram Channel : CarbineCheatingArena")
+end
+
+function wh855()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("95D;2;9.2194229e-41::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Perspective 855 V1")
+end
+
+
+function kuning855()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0A8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8198", gg.TYPE_DWORD)
+gg.clearResults()
+gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0B0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8199", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Yellow 855 Activated")
+end
+
+function wh835()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Telegram Channel : CarbineCheatingArena ")
+end
+
+function wh660()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Perspective 660 Activated")
+end
+
+function kuning660()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0B0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("8198", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Yellow Body Fix 660 Activated")
+end
+
+function hijau845()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8201",gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("8201",gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(15)
+gg.editAll("7",gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Green 845 V1")
+end
+ 
+
+function kuning845v2()
+  gg.searchNumber("8,196D;8,192D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Yellow 845 V2")
+  end
+  
+function kuning845()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0A8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8198", gg.TYPE_DWORD)
+gg.clearResults()
+gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0B0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8199", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Telegram Channel : CarbineCheatingArena ")
+end
+
+function kuning()
+gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("256;8200;13::150", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.clearResults()
+gg.toast("Telegram Channel : CarbineCheatingArena ")
+end
+
+
+function merah()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("8,196D;8,192D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("7", gg.TYPE_DWORD)
+  gg.clearResults()
+gg.toast("Telegram Channel : CarbineCheatingArena ")
+end
+
+
+function wh636()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Telegram Channel : CarbineCheatingArena ")
+end
+
+function a()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1,130,852,172;1,852,139,884", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("1,801,989,935;1,919,905,893;1,768,710,958;1,920,233,061", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.toast("Telegram Channel : CarbineCheatingArena")
+  gg.clearResults()
+end
+
+function bs()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.clearResults()
+gg.searchNumber("100F;1F;1,008,981,770D:99",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("100",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(100)
+gg.editAll("-90",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Blacksy\nTelegram Channel : CarbineCheatingArena")
+end
+
+function C3()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("200", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Headshot 50%\nTelegram Channel : CarbineCheatingArena")
+end
+
+function C4()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("100", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Headshot 25%\nTelegram Channel : CarbineCheatingArena")
+end
+
+function mb()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("69.5;35;33", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(6)
+gg.editAll("160;140;230", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("New Magic bullet!\nTelegram Channel : CarbineCheatingArena")
+end
+
+function exit()
+print("Telegram: https://t.me/CarbineCheatingArena")
+print("@CarbineCheatingArena")
+gg.setVisible(true)
+os.exit()
+end
+
+function antena()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("88.50576019287F;87.27782440186F;-100.91194152832F;1F::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("88.50576019287F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6)
+  gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Antenna Activated\nTelegram Channel : CarbineCheatingArena")
+end
+
+function green675()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("69,897;147,457;69,739", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("7", gg.TYPE_DWORD)
+  gg.toast("Charms Green")
+  gg.clearResults()
+end
+
+START() 
+while true do
+  if gg.isVisible(true) then 
+     CCA = 1
+    gg.setVisible(false)
+  end
+  if CCA == 1 then
+    START()
+  end
+ end
+ 
