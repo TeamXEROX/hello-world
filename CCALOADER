@@ -1,21 +1,8 @@
-if gg.isPackageInstalled("com.cca.bypass") then
-gg.clearResults()
-else
-gg.alert("⚠️ You're not premium user\n For buy contact www.t.me/CCAOfficialBot")
-os.exit()
-end
-
-if gg.getTargetPackage() == "com.tencent.ig" or gg.getTargetPackage() == "com.rekoo.pubgm" or gg.getTargetPackage() == "com.tencent.tmgp.pubgmhd" or gg.getTargetPackage() == "com.pubg.krmobile" or gg.getTargetPackage() == "com.vng.pubgmobile" then
-    gg.clearResults()
-  else
-    print("Run Game First.\n t.me/CarbineCheatingArena")
-    os.exit()
-  end
-  
 gg.setVisible(false)
-gg.alert("New Codes Updated on 15 June 2020\n Coded by @VolcanoCCA")
+gg.alert("New Codes Updated on 16 June 2020\n Coded by @VolcanoCCA")
 function START()
 Volcano = gg.choice({
+" Bypass PUBG Mobile Lobby 1x",
 " Fast ON OFF Data (Stable)",
 " Perspective & Charms",
 " CarbineCheatingArena | Menu",
@@ -23,13 +10,83 @@ Volcano = gg.choice({
 "||❎Exit❎||"
 },nil,"Telegram Channel CarbineCheatingArena\nCCA Stable | 0.18.0")
 if Volcano == nil then else
-if Volcano == 1 then data() end
-if Volcano == 2 then wh() end
-if Volcano == 3 then CCA() end
-if Volcano == 4 then C3() bs() end
-if Volcano == 5 then exit() end
+if Volcano == 1 then gg.toast("Make Sure Saved Values 12k +")
+bypass() end
+if Volcano == 2 then data() end
+if Volcano == 3 then wh() end
+if Volcano == 4 then CCA() end
+if Volcano == 5 then C3() bs() end
+if Volcano == 6 then exit() end
 end
 Volcano = -1
+end
+
+function bypass()
+local mem = 0
+function getMemCpp()
+	gg.setRanges(gg.REGION_CODE_APP)
+	local alloc = gg.getRangesList("libUE4.so")
+	for i in ipairs(alloc) do
+		if alloc[i].type == "r-xp" and alloc[i].state == "Xa" then
+			if mem == 0 then
+				mem = alloc[i].start
+				break
+			end
+		end
+	end
+end
+
+getMemCpp()
+if mem == 0 then
+		gg.alert("PUBG Mobile is not running")
+		gg.toast("Carbine Cheating Arena ™")
+		print("www.t.me/CarbineCheatingArena")
+		os.exit()
+end
+-- Volcano CCA
+
+gg.setVisible(false)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber('"2.2958874e-41"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('"2.2958874e-41"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = '"0,5"'
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber('"67109633;67109377"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('"67109633;67109377"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+
+revert = gg.getResults(11084001, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(11084001, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = '"0,5"'
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, i in ipairs((gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil))) do
+  if i.flags == gg.TYPE_DWORD then
+  end
+end
+gg.addListItems((gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)))
+gg.clearResults()
+gg.toast("Coded by @VolcanoCCA")
+gg.alert("Bypass Activated by CCA")
 end
 
 function net()
