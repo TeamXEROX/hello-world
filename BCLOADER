@@ -1,0 +1,668 @@
+gg.setVisible(false)
+gg.alert("New Codes Updated on 18 June 2020\n Coded by @BlackCatOfficial")
+function START()
+Volcano = gg.choice({
+" Bypass PUBG Mobile Lobby 1x",
+" Fast ON OFF Data (Stable)",
+" Perspective & Charms",
+" BlackCatOfficial | Menu",
+" OneClick Headshot50% + Blacksky | Spawn 1x",
+"||❎Exit❎||"
+},nil,"Telegram Channel BlackCatOfficial\nBlackCatOfficial Stable | 0.18.0")
+if Volcano == nil then else
+if Volcano == 1 then gg.toast("Make Sure Saved Values 12k +")
+bypass() end
+if Volcano == 2 then data() end
+if Volcano == 3 then wh() end
+if Volcano == 4 then BlackCatOfficial() end
+if Volcano == 5 then C3() bs() end
+if Volcano == 6 then exit() end
+end
+Volcano = -1
+end
+
+function bypass()
+local mem = 0
+function getMemCpp()
+	gg.setRanges(gg.REGION_CODE_APP)
+	local alloc = gg.getRangesList("libUE4.so")
+	for i in ipairs(alloc) do
+		if alloc[i].type == "r-xp" and alloc[i].state == "Xa" then
+			if mem == 0 then
+				mem = alloc[i].start
+				break
+			end
+		end
+	end
+end
+
+getMemCpp()
+if mem == 0 then
+		gg.alert("PUBG Mobile is not running")
+		gg.toast("Carbine Cheating Arena ™")
+		print("www.t.me/BlackCatOfficial")
+		os.exit()
+end
+-- Volcano BlackCatOfficial
+
+gg.setVisible(false)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber('"2.2958874e-41"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('"2.2958874e-41"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = '"0,5"'
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber('"67109633;67109377"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('"67109633;67109377"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+
+revert = gg.getResults(11084001, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(11084001, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = '"0,5"'
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, i in ipairs((gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil))) do
+  if i.flags == gg.TYPE_DWORD then
+  end
+end
+gg.addListItems((gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)))
+gg.clearResults()
+gg.toast("Coded by @BlackCatOfficial")
+gg.alert("Bypass Activated by BlackCatOfficial\n Click Restart for active script again.")
+os.exit()
+end
+
+function net()
+  gg.clearResults()
+    gg.setRanges(8)
+    gg.searchNumber("1.3132476e-38;1.956023e-35;1.1754945e-37::9", 16, false, 536870912, 0, -1)
+  if gg.getResultCount() == 0 then
+  else
+    gg.searchNumber("1.1754945e-37", 16, false, 536870912, 0, -1)
+    table.insert(ODC, gg.getResults(21))
+    gg.editAll("0", 16)
+    table.insert(EDC, gg.getResults(21))
+    gg.clearResults()
+    gg.sleep(500)
+    for x = #ODC, 1, -1 do
+      gg.setValues(ODC[x])
+    end
+    gg.toast("Success")
+  end
+  end
+
+  function Off2()
+    for x = #EDC, 1, -1 do
+      gg.setValues(EDC[x])
+    end
+    gg.sleep(1000)
+    for x = #ODC, 1, -1 do
+      gg.setValues(ODC[x])
+  end
+end
+  
+  function Off3()
+    for x = #ODC, 1, -1 do
+      gg.setValues(ODC[x])
+  end
+end
+  
+  ODC = {}
+  EDC = {}
+
+function kedip()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(1)
+gg.editAll("99999", 16)
+gg.clearResults()
+gg.toast("Fix Blink\nTelegram Channel BlackCatOfficial")
+end
+
+function bidik()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('6.1630853e-33;-1.0767317e28::', 16)
+gg.refineNumber('-1.0767317e28', 16)
+gg.getResults(1)
+gg.editAll('0', 16)
+gg.clearResults()
+gg.toast('Active\nTelegram Channel BlackCatOfficial')
+end
+
+function item()
+gg.setRanges(gg.REGION_VIDEO)
+gg.clearResults()
+gg.searchNumber("8205", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("F8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(73)
+gg.editAll("11", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Done")
+end
+
+function les2()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377", gg.TYPE_DWORD)
+gg.getResults(50000)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-309056968;-298841599;-309061065", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-298841599", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("10", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Less Activate\nTelegram : @BlackCatOfficial")
+end
+
+function data()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("1.1754945e-37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("9CC", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.sleep(5000)
+gg.setVisible(false)
+gg.editAll("1.1754945e-37", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Telegram : @BlackCatOfficial")
+end
+
+function BlackCatOfficial()
+Volcano90 = gg.multiChoice({
+" Magic Bullet Only No HS | Spawn 1x",
+" Headshot 100% | Spawn 1x",
+" Headshot 95% | Spawn 1x",
+" Aimlock | Spawn 1x",
+" Less Recoil | Lobby 1x",
+" Blacksky | Spawn Island (Every Match)",
+" Antena | Spawn Island",
+" Fix Blink Perspective",
+" Perspective Item",
+" 🔙Back"
+},nil,"Telegram Channel BlackCatOfficial")
+if Volcano90 == nil then else
+if Volcano90[1] == true then mb() end
+if Volcano90[2] == true then C3() end
+if Volcano90[3] == true then C4() end
+if Volcano90[4] == true then bidik() end
+if Volcano90[5] == true then less() end
+if Volcano90[6] == true then bs() end
+if Volcano90[7] == true then antena() end
+if Volcano90[8] == true then kedip() end
+if Volcano90[9] == true then item() end
+if Volcano90[10] == true then START() end
+end
+Volcano = -1
+end
+
+function wh()
+  MASBAN = gg.multiChoice({
+    " Perspective Snap 625",
+    " Perspective Snap 636",
+    " Perspective Snap 660",
+    " Perspective Snap 665",
+    " Perspective Snap 710",
+    " Perspective Snap 835",
+    " Perspective Snap 845",
+    " Perspective Snap 855 V1",
+    " Perspective Snap 855 V2",
+    " Charms Snapdragon 855 HD Red",
+    " Charms Yellow Snap 855 Smooth",
+    " Charms Yellow Snap 845 V1",
+    " Charms Yellow Snap 845 V2",
+    " Charms Green Snap 845",
+    " Charms Yellow Snap 710",
+    " Charms Snap 665",
+    " Charms Yellow Fix 660",
+    " Charms Yellow Universal",
+    " Charms Red Universal",
+    " Charms Green 660",
+    " 🔙Back"
+}, nil, "Telegram Channel BlackCatOfficial\nUse In Spawn Island\nMake Sure Graphic Set To Smooth")
+if MASBAN == nil then else
+if MASBAN[1] == true then wh625() end
+if MASBAN[2] == true then wh636() end
+if MASBAN[3] == true then wh660() end
+if MASBAN[4] == true then wh675() end
+if MASBAN[5] == true then wh710() end
+if MASBAN[6] == true then wh835() end
+if MASBAN[7] == true then wh845() end
+if MASBAN[8] == true then wh855() end
+if MASBAN[9] == true then wh855v2() end
+if MASBAN[10] == true then bc855() end
+if MASBAN[11] == true then kuning855() end
+if MASBAN[12] == true then kuning845() end
+if MASBAN[13] == true then kuning845v2() end
+if MASBAN[14] == true then hijau845() end
+if MASBAN[15] == true then kuning710() end
+if MASBAN[16] == true then warna675() end
+if MASBAN[17] == true then kuning660() end
+if MASBAN[18] == true then kuning() end
+if MASBAN[19] == true then merah() end
+if MASBAN[20] == true then green675() end
+if MASBAN[21] == true then START() end
+end
+Volcano = -1
+end
+function kuning710()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.3912525e-19F;8200;96", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Charms Yellow 710")
+end
+
+function bc855()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD or gg.REGION_VIDEO)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("2A0")
+local MM2512 = gg.getResults(1)
+if MM2512[1] ~= nil then
+MM2512[1].address = MM2512[1].address
+MM2512[1].flags = 4
+MM2512[1].value = 7
+gg.setValues(MM2512)
+end
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD or gg.REGION_VIDEO)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("270")
+local MM2512 = gg.getResults(1)
+if MM2512[1] ~= nil then
+MM2512[1].address = MM2512[1].address
+MM2512[1].flags = 4
+MM2512[1].value = 7
+gg.setValues(MM2512)
+gg.toast("Charms HD 855 Red")
+end
+end
+
+function wh855v2()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD or gg.REGION_VIDEO)
+gg.searchNumber("1.33123354e-43;2;1.66231134e-19;9.21942286e-41:21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("WH 855 V2")
+end
+
+function wh625()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Telegram Channel BlackCatOfficial ")
+end
+
+function wh675()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("95D;2;9.2194229e-41::100", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(999)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(999)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.toast("Perspective 665")
+end
+
+function warna675()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8201",gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("8201",gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(15)
+gg.editAll("7",gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Colour Green SD665 activated!")
+end
+
+function wh710()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("1.4912565e-19;2.0;1.6623113e-19:9", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(20)
+gg.editAll("138", 16)
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::29", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(20)
+gg.editAll("138", 16)
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("1,081,081,865;8,200;1,446,128;348,401:21", 4, false, 536870912, 0, -1)
+gg.searchNumber("8200", 4, false, 536870912, 0, -1)
+gg.getResults(2)
+gg.editAll("7", 4)
+gg.clearResults()
+gg.toast("Perspective 710 Activated")
+end
+
+function less()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-2.2673448e24;-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.clearResults()
+gg.toast("Fix Less Recoil Activated\nTelegram Channel BlackCatOfficial")
+end
+
+function wh845()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0;0.24022650719;0.69314718246;0.00999999978::29",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(30)
+gg.editAll("120",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.4382593e-43;1.3312335e-43;2::",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(30)
+gg.editAll("120",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Telegram Channel BlackCatOfficial")
+end
+
+function wh855()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("95D;2;9.2194229e-41::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Perspective 855 V1")
+end
+
+
+function kuning855()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0A8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8198", gg.TYPE_DWORD)
+gg.clearResults()
+gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0B0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8199", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Yellow 855 Activated")
+end
+
+function wh835()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Telegram Channel BlackCatOfficial ")
+end
+
+function wh660()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Perspective 660 Activated")
+end
+
+function kuning660()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0B0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("8198", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Yellow Body Fix 660 Activated")
+end
+
+function hijau845()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8201",gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("8201",gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(15)
+gg.editAll("7",gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Green 845 V1")
+end
+ 
+
+function kuning845v2()
+  gg.searchNumber("8,196D;8,192D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Yellow 845 V2")
+  end
+  
+function kuning845()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0A8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8198", gg.TYPE_DWORD)
+gg.clearResults()
+gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0B0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8199", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Telegram Channel BlackCatOfficial ")
+end
+
+function kuning()
+gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("256;8200;13::150", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.clearResults()
+gg.toast("Telegram Channel BlackCatOfficial ")
+end
+
+
+function merah()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("8,196D;8,192D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("7", gg.TYPE_DWORD)
+  gg.clearResults()
+gg.toast("Telegram Channel BlackCatOfficial ")
+end
+
+
+function wh636()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Telegram Channel BlackCatOfficial ")
+end
+
+function a()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1,130,852,172;1,852,139,884", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("1,801,989,935;1,919,905,893;1,768,710,958;1,920,233,061", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.toast("Telegram Channel BlackCatOfficial")
+  gg.clearResults()
+end
+
+function bs()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.clearResults()
+gg.searchNumber("100F;1F;1,008,981,770D:99",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("100",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+gg.getResults(100)
+gg.editAll("-90",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Blacksy\nTelegram Channel BlackCatOfficial")
+end
+
+function C3()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("200", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Headshot 100%\nTelegram Channel BlackCatOfficial")
+end
+
+function C4()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("100", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Headshot 95%\nTelegram Channel BlackCatOfficial")
+end
+
+function mb()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("69.5;35;33", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(6)
+gg.editAll("160;140;230", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Magic bullet!\nTelegram Channel BlackCatOfficial")
+end
+
+function exit()
+print("Telegram : https://t.me/BlackCatOfficial")
+print("@BlackCatOfficial")
+gg.setVisible(true)
+os.exit()
+end
+
+function antena()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("88.50576019287F;87.27782440186F;-100.91194152832F;1F::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("88.50576019287F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6)
+  gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Antenna Activated\nTelegram Channel BlackCatOfficial")
+end
+
+function green675()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("69,897;147,457;69,739", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("7", gg.TYPE_DWORD)
+  gg.toast("Charms Green")
+  gg.clearResults()
+end
+
+START() 
+while true do
+  if gg.isVisible(true) then 
+     Volcano = 1
+    gg.setVisible(false)
+  end
+  if Volcano == 1 then
+    START()
+  end
+ end
