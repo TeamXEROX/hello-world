@@ -77,18 +77,18 @@ function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplit
 
 function START()
 Volcano = gg.choice({
-"🎇 Memory Bypass | Lobby 1x",
-"🎢 Fast On/Off Data | Stable",
-"🎢 Wallhack & Colors",
-"🌉 Cheat Menu | Lobby/Game",
-"🎢 OneClick Headshot & Blacksky",
+"🔰 Memory Bypass",
+"💉Fast On/Off Data",
+"🌈 Wallhack & Colors",
+"💥Cheat Menu | Lobby/Game",
+"🧨OneClick Headshot & Blacksky",
 "exit"
-},nil,"Telegram Channel : @BlackCatOfficial \n Coded by @BlackCatOfficial\n")
+},nil,"Telegram Channel : @))BlackCatOfficial \n Coded by @BlackCatOfficial\n")
 if Volcano == nil then else
 if Volcano == 1 then selectbypass() end
 if Volcano == 2 then data() end
 if Volcano == 3 then wh() end
-if Volcano == 4 then BlackCat() end
+if Volcano == 4 then CCA() end
 if Volcano == 5 then C4() bs() end
 if Volcano == 6 then exit() end
 end
@@ -97,20 +97,248 @@ end
 
 function selectbypass()
 Volcano69 = gg.choice({
-" Bypass All PUBG (𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝐥)",
-" Bypass All PUBG (𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝐥𝐥)",
-" Bypass All PUBG (𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝐥𝐥𝐥)",
+" Bypass All PUBG (𝐕𝐞𝐫𝐬𝐢𝐨𝐧 1)",
+" Bypass All PUBG (𝐕𝐞𝐫𝐬𝐢𝐨𝐧 2)",
+" Bypass All PUBG (𝐕𝐞𝐫𝐬𝐢𝐨𝐧 3)",
+" Bypass All PUBG (𝐕𝐞𝐫𝐬𝐢𝐨𝐧 4)",
+" Bypass All PUBG (𝐕𝐞𝐫𝐬𝐢𝐨𝐧 5)",
 " Back",
 },nil,"Telegram Channel : @BlackCatOfficial \n Coded by @BlackCatOfficial\n")
 if Volcano69 == nil then else
 if Volcano69 == 1 then bypass() end
 if Volcano69 == 2 then bypass2() end
 if Volcano69 == 3 then bypass3() end
-if Volcano69 == 4 then START() end
+if Volcano69 == 4 then bypass4() end
+if Volcano69 == 5 then bypass5() end
+if Volcano69 == 6 then START() end
 end
 Volcano = -1
 end
 
+function bypass5()
+------// Team | CCA //-------
+os.remove("/.iacovnfld.")
+os.remove("/storage/emulated/0/Android/.system_android_l2")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.fff")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.system_android_l2")
+------// Team | CCA //-------
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.fff")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.system_android_l2")
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber('"67109633"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('"67109633"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+
+revert = gg.getResults(11084001, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(11084001, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = '"0"'
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+  gg.clearResults()
+gg.sleep(6000)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109633", gg.TYPE_DWORD)
+gg.getResults(50000)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.sleep(6000)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377;12547::100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0;0~20;131586::9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("131586", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377;12547::100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+------// Team | CCA //-------
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0;0~20;131586::9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("131586", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377;12547::100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+------// Team | CCA //-------
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0;0~20;131586::9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("131586", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377;12547::100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0;0~20;131586::9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("131586", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+jg = gg.getResults(100)
+sl = gg.getResultCount()
+if 50 < sl then
+  sl = 50
+end
+for i = 1, sl do
+  dzy = jg[i].address
+  gg.addListItems({
+    [1] = {
+      address = dzy,
+      flags = gg.TYPE_DWORD,
+      freeze = true,
+      value = 0
+    }
+  })
+end
+------// Team | CCA //-------
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377", gg.TYPE_DWORD)
+gg.getResults(50000)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+------// Team | CCA //-------
+os.remove("/.iacovnfld.")
+os.remove("/storage/emulated/0/Android/.system_android_l2")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.fff")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.system_android_l2")
+------// Team | CCA //-------
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.fff")
+os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/.system_android_l2")
+gg.alert("Bypass All Version Activated\n @BlackCatOfficial")
+end
+
+function bypass4()
+gg.clearResults()
+gg.clearList()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+local NotXRapz = gg.getResults(140701)
+for i, v in ipairs(NotXRapz) do
+    NotXRapz[i].value = '0'
+    NotXRapz[i].freeze = true
+end
+gg.addListItems(NotXRapz)
+gg.alert('Latest Bypass Succesfully Activated...\n @BlackCatOfficial')
+gg.clearResults()
+gg.clearList()
+gg.clearResults()
+end
 
 function bypass3()
  function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) break end nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len(szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end function xgxc(szpy, qmxg) for x = 1, #(qmxg) do xgpy = szpy + qmxg[x]["offset"] xglx = qmxg[x]["type"] xgsz = qmxg[x]["value"] gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) xgsl = xgsl + 1 end end function xqmnb(qmnb) gg.clearResults() gg.setRanges(qmnb[1]["memory"]) gg.searchNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "开启失败") else gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "开启失败") else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(qmnb) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + qmnb[v]["offset"] pysz[1].flags = qmnb[v]["type"] szpy = gg.getValues(pysz) pdpd = qmnb[v]["lv"] .. ";" .. szpy[1].value szpd = split(pdpd, ";") tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, qmxg) xgjg = true end end if xgjg == true then gg.toast(qmnb[2]["name"] .. "开启成功,共修改" .. xgsl .. "条数据") else gg.toast(qmnb[2]["name"] .. "开启失败") end end end end
@@ -368,7 +596,7 @@ gg.addListItems(t)
 t = nil
 gg.clearResults()
 gg.toast("Coded by @BlackCatOfficial")
-gg.alert("Bypass Activated by BlackCat")
+gg.alert("Bypass Activated by @BlackCatOfficial")
 end
 
 
@@ -391,11 +619,11 @@ end
 getMemCpp()
 if mem == 0 then
 		gg.alert("PUBG Mobile is not running")
-		gg.toast("Carbine Cheating Arena ™")
+		gg.toast("BLACK CAT OFFICIAL™")
 		print("www.t.me/BlackCatOfficial")
 		os.exit()
 end
--- Volcano BlackCat
+-- Volcano CCA
 
 SVG(false)
 gg.setRanges(gg.REGION_C_ALLOC)
@@ -438,7 +666,7 @@ end
 gg.addListItems((gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)))
 gg.clearResults()
 gg.toast("Coded by @BlackCatOfficial")
-gg.alert("Bypass Activated by BlackCat")
+gg.alert("Bypass Activated by @BlackCatOfficial")
 end
 
 function bypass2()
@@ -464,13 +692,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -478,11 +706,11 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_QWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_QWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
 gg.clearResults()
 SVG(false)
@@ -491,13 +719,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -505,13 +733,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -519,11 +747,11 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
 gg.clearResults()
 SVG(false)
@@ -532,13 +760,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -546,11 +774,11 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_QWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_QWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
 gg.clearResults()
 SVG(false)
@@ -559,13 +787,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -573,13 +801,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -591,13 +819,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -605,11 +833,11 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_QWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_QWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
 gg.clearResults()
 SVG(false)
@@ -618,13 +846,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -632,13 +860,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -646,11 +874,11 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
 gg.clearResults()
 SVG(false)
@@ -659,13 +887,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -673,11 +901,11 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_QWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_QWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
 gg.clearResults()
 SVG(false)
@@ -686,13 +914,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -700,13 +928,13 @@ gg.setRanges(gg.REGION_C_ALLOC)
 SN("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 SN("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-local BlackCatxVOLCANO = gg.getResults(140701)
-for i, v in ipairs(BlackCatxVOLCANO) do
-    BlackCatxVOLCANO[i].flags = gg.TYPE_DWORD
-    BlackCatxVOLCANO[i].value = '0'
-    BlackCatxVOLCANO[i].freeze = true
+local CCAxVOLCANO = gg.getResults(140701)
+for i, v in ipairs(CCAxVOLCANO) do
+    CCAxVOLCANO[i].flags = gg.TYPE_DWORD
+    CCAxVOLCANO[i].value = '0'
+    CCAxVOLCANO[i].freeze = true
 end
-gg.addListItems(BlackCatxVOLCANO)
+gg.addListItems(CCAxVOLCANO)
 gg.clearResults()
 SVG(false)
 gg.clearResults()
@@ -717,7 +945,7 @@ gg.clearResults()
 SVG(false)
 gg.clearResults()
 gg.toast("Coded by @BlackCatOfficial")
-gg.alert("Bypass v2 Activated by BlackCat")
+gg.alert("Bypass v2 Activated by @BlackCatOfficial")
 end
 
 function net()
@@ -766,17 +994,19 @@ SN("2", 16, false, 536870912, 0, -1)
 gg.getResults(1)
 EA("99999", 16)
 gg.clearResults()
-gg.toast("Fix Blink\nTelegram Channel BlackCatOfficial")
+gg.toast("Fix Blink\nTelegram Channel BLACK CAT OFFICIAL")
 end
 
 function bidik()
 gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-  SN("360;0.0001;1478828288", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  SN("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  AIMLOCKOFF1=gg.getResults(100)
-  EA("9999", gg.TYPE_FLOAT)
-gg.toast('Aimbot Active\nTelegram Channel BlackCatOfficial')
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1228926272664220957", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1228926272664220957", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("E00", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1228926272664220957", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1401)
+gg.editAll("-1228926276669014016", gg.TYPE_QWORD)
+gg.toast('Aimbot Active\nTelegram Channel BLACK CAT OFFICIAL')
 end
 
 function item()
@@ -807,18 +1037,22 @@ end
 end
 
 function less()
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-SN("-1327407162645804543", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-SN("-1327407162645804543", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineAddress("A28", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
-NL50OFF=gg.getResults(1401)
-EA("-1327407166641930240", gg.TYPE_QWORD)
 gg.clearResults() 
-SN("-1 387 800 265 460 020 720", 32, false, gg.SIGN_EQUAL, 0, -1) 
-gg.refineAddress("6F8", -1, 32) 
-NL100OFF2=gg.getResults(1337) 
-EA("-1 387 800 268 364 578 816", 32) 
+gg.setRanges(16384) 
+gg.searchNumber("-1 331 928 324 405 720 525", 32, false, gg.SIGN_EQUAL, 0, -1) 
+gg.refineAddress("AF8", -1, 32, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(10) 
+gg.editAll("-1 331 928 328 390 574 080", 32) 
+gg.clearResults() 
+gg.searchNumber("-1 387 800 265 460 020 720", 32, false, gg.SIGN_EQUAL, 0, -1) 
+gg.refineAddress("7B8", -1, 32) 
+gg.getResults(10) 
+gg.editAll("-1 387 800 268 364 578 816", 32) 
+gg.clearResults()
+gg.searchNumber("4 827 858 804 535 200 272", 32, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(10) 
+gg.editAll("4 827 858 800 541 171 712", 32) 
+gg.clearResults()
 gg.toast("Less Activate\nTelegram : @BlackCatOfficial")
 end
 
@@ -861,15 +1095,15 @@ end
   EDC = {}
   
 
-function BlackCat()
+function CCA()
 Volcano90 = gg.multiChoice({
-" Magic Bullet Only No HS | Spawn 1x",
-" Headshot 𝟏𝟎𝟎% | Spawn 1x",
-" Headshot 𝟗𝟓% | Spawn 1x",
-" AimLock | Spawn 1x",
-" Less Recoil | Lobby 1x",
-" BlackSky | Spawn Island (𝐄𝐯𝐞𝐫𝐲 𝐌𝐚𝐭𝐜𝐡)",
-" Antenna | Spawn Island",
+" Magic Bullet Only No HS",
+" Headshot 𝟏𝟎𝟎%[Game]",
+" Headshot 𝟗𝟓%[Game]",
+" AimLock[Game]",
+" Less Recoil [Lobby]",
+" BlackSky [Game] (𝐄𝐯𝐞𝐫𝐲 𝐌𝐚𝐭𝐜𝐡)",
+" Antenna [Game]",
 " Fix Blink Wallhack",
 " Wallhack Item",
 " No Grass",
@@ -916,11 +1150,13 @@ xqmnb(qmnb)
 end
 function nofog()
 gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-SN(":Default__ExponentialHeightFog", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(500)
-EA("0", gg.TYPE_BYTE)
-gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1759781550398895551", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1759781550398895551", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("098", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1759781550398895551", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1401)
+gg.editAll("-1759781554395021312", gg.TYPE_QWORD)
 gg.toast("️ɴᴏ ғᴏɢ ᴀᴄᴛɪᴠᴀᴛᴇᴅ...")
 end
 
@@ -1081,7 +1317,7 @@ gg.clearResults()
   gg.getResults(30)
   EA("100", gg.TYPE_FLOAT)
   gg.clearResults()
-gg.toast("Blacksy\nTelegram Channel BlackCatOfficial")
+gg.toast("Blacksy\nTelegram Channel BLACK CAT OFFICIAL")
 end
 
 function C3()
@@ -1098,7 +1334,7 @@ qmxg = {
 
 }
 xqmnb(qmnb)
-gg.toast("Headshot 100%\nTelegram Channel BlackCatOfficial")
+gg.toast("Headshot 100%\nTelegram Channel BLACK CAT OFFICIAL")
 end
 
 function C4()
@@ -1115,7 +1351,7 @@ qmxg = {
 
 }
 xqmnb(qmnb)
-gg.toast("Headshot 95%\nTelegram Channel BlackCatOfficial")
+gg.toast("Headshot 95%\nTelegram Channel BLACK CAT OFFICIAL")
 end
 
 function mb()
@@ -1130,11 +1366,11 @@ qmxg = {
 {["value"] = 100, ["offset"] = 12, ["type"] = 16},
 }
 xqmnb(qmnb)
-gg.toast("Magic bullet!\nTelegram Channel BlackCatOfficial")
+gg.toast("Magic bullet!\nTelegram Channel BLACK CAT OFFICIAL")
 end
 
 function exit()
-print("Telegram : https://t.me/BlackCatOfficial")
+print("Telegram : https://t.me/blackcatofficial")
 print("@BlackCatOfficial")
 SVG(true)
 os.exit()
@@ -1155,7 +1391,7 @@ qmxg = {
 
 }
 xqmnb(qmnb)
-  gg.toast("Antenna Activated\nTelegram Channel BlackCatOfficial")
+  gg.toast("Antenna Activated\nTelegram Channel BLACK CAT OFFICIAL")
 end
 
 
@@ -1184,7 +1420,7 @@ function wh()
     " Wallhack & Colors 𝐒𝐃 𝟒𝟑𝟓-𝟕𝟎𝟎",
     " Wallhack & Colors 𝐒𝐃 𝟕𝟎𝟎-𝟖𝟓𝟓",
     " Back"
-}, nil, "Telegram : BlackCatOfficial\nUse In Spawn Island\nMake Sure Graphic Set To Smooth")
+}, nil, "Telegram : BLACK CAT OFFICIAL\nUse In Spawn Island\nMake Sure Graphic Set To Smooth")
 if VolcanoXS == nil then else
 if VolcanoXS[1] == true then wh625() end
 if VolcanoXS[2] == true then wh636() end
@@ -1280,7 +1516,7 @@ function wh625()
   gg.getResults(10)
   gg.editAll("130", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Telegram Channel : BlackCatOfficial ")
+  gg.toast("Telegram Channel : BLACK CAT OFFICIAL ")
 end
 
 function wh675()
@@ -1341,7 +1577,7 @@ gg.getResults(99)
 gg.editAll("0", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.clearResults()
-gg.toast("Fix Less Recoil Activated\nTelegram Channel : BlackCatOfficial")
+gg.toast("Fix Less Recoil Activated\nTelegram Channel : BLACK CAT OFFICIAL")
 end
 
 function wh845()
@@ -1357,7 +1593,7 @@ gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
 gg.getResults(30)
 gg.editAll("120",gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("Telegram Channel : BlackCatOfficial")
+gg.toast("Telegram Channel : BLACK CAT OFFICIAL")
 end
 
 function wh855()
@@ -1406,7 +1642,7 @@ gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("Telegram Channel : BlackCatOfficial ")
+gg.toast("Telegram Channel : BLACK CAT OFFICIAL ")
 end
 
 function wh660()
@@ -1469,7 +1705,7 @@ gg.refineAddress("0B0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1000)
 gg.editAll("8199", gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("Telegram Channel : BlackCatOfficial ")
+gg.toast("Telegram Channel : BLACK CAT OFFICIAL ")
 end
 
 function kuning()
@@ -1480,7 +1716,7 @@ gg.clearResults()
   gg.getResults(10)
   gg.editAll("6", gg.TYPE_DWORD)
   gg.clearResults()
-gg.toast("Telegram Channel : BlackCatOfficial ")
+gg.toast("Telegram Channel : BLACK CAT OFFICIAL ")
 end
 
 
@@ -1492,7 +1728,7 @@ gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
   gg.getResults(10)
   gg.editAll("7", gg.TYPE_DWORD)
   gg.clearResults()
-gg.toast("Telegram Channel : BlackCatOfficial ")
+gg.toast("Telegram Channel : BLACK CAT OFFICIAL ")
 end
 
 
@@ -1510,7 +1746,7 @@ function wh636()
   gg.getResults(10)
   gg.editAll("130", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Telegram Channel : BlackCatOfficial ")
+  gg.toast("Telegram Channel : BLACK CAT OFFICIAL")
 end
 function green675()
   gg.clearResults()
