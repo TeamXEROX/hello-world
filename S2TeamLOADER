@@ -1,4 +1,3 @@
-
 function split(szFullString, szSeparator, ...) 
   local nFindStartIndex = 1 
   local nSplitIndex = 1 
@@ -213,7 +212,8 @@ end
 function ABAN(...)
   TENMINMN = gg.choice({
     "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ1 』",
-    "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ2 』",
+    "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ2 』32 Bit",
+    "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ3 』64 Bit",
     "⁦➡️⁩ 『 رجوع 』"
   }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if TENMINMN == nil then
@@ -225,6 +225,9 @@ function ABAN(...)
       AABAN1()
     end
     if TENMINMN == 3 then
+      AABAN5()
+    end
+    if TENMINMN == 4 then
       HOME1()
     end
   end
@@ -234,7 +237,8 @@ end
 function ABAN2(...)
   TENMIN2MN = gg.choice({
     "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ1 』",
-    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ2 』",
+    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ2 』 32 Bit",
+    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ3 』 64 Bit",       
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
   }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if TENMIN2MN == nil then
@@ -246,141 +250,219 @@ function ABAN2(...)
       AABAN1()
     end
     if TENMIN2MN == 3 then
+      AABAN5()
+    end
+        if TENMIN2MN == 4 then
       HOME2()
     end
   end
   PUBGMH = -1
 end
 
+function AABAN5(...) 
+-- cca GG Memory Utils
+local cca = {} local JAVA_HEAP = 2 local C_HEAP = 1 local C_ALLOC = 4 local C_DATA = 8 local C_BSS = 10 local A_ANONYMOUS = 32 local JAVA = 65536 local STACK = 64 local ASHMEM = 524288 local V_VIDEO = 1048576
+local B_BAD = 131072
+local CODE_APP = 16384
+local CODE_SYSTEM = 32768
+local BYTE = 1
+local WORD = 2
+local DWORD = 4
+local XOR = 8
+local FLOAT = 16
+local QWORD = 32
+local DOUBLE = 64
+local AUTO = 127
+function cca.memoryUtils(succesMessage, notSuccessMessage, memoryRanges, memorySearch, memoryWrite, clearResults)
+    gg.clearResults()
+    gg.setVisible(false)
+    gg.setRanges(memoryRanges)
+    local valueType = memorySearch[1][3]
+    local valueTypeModify = memoryWrite[1][3]
+    gg.searchNumber(memorySearch[1][1], valueType)
+    local valueCount = gg.getResultCount()
+    local valueResult = gg.getResults(valueCount)
+    gg.clearResults()
+    local valueData = {} 
+    local valueBase = memorySearch[1][2]
+    if (valueCount > 0) then
+        for i, v in ipairs(valueResult) do
+            v.isUseful = true 
+        end
+        for k=2, #memorySearch do
+            local valueTmp = {}
+            local valueOffset = memorySearch[k][2] - valueBase 
+            local valueNum = memorySearch[k][1] 
+            for i, v in ipairs(valueResult) do
+                valueTmp[#valueTmp+1] = {} 
+                valueTmp[#valueTmp].address = v.address + valueOffset
+                valueTmp[#valueTmp].flags = v.flags  
+            end       
+            valueTmp = gg.getValues(valueTmp)  
+            for i, v in ipairs(valueTmp) do
+                if ( tostring(v.value) ~= tostring(valueNum) ) then 
+                    valueResult[i].isUseful = false 
+                end
+            end
+        end
+        for i, v in ipairs(valueResult) do
+            if (v.isUseful) then 
+                valueData[#valueData+1] = v.address
+            end
+        end
+        if (#valueData > 0) then    
+           local t = {}
+           local valueBase = memorySearch[1][2]
+           for i=1, #valueData do
+               for k, w in ipairs(memoryWrite) do
+                   valueOffset = w[2] - valueBase
+                   t[#t+1] = {}
+                   t[#t].address = valueData[i] + valueOffset
+                   t[#t].flags = valueTypeModify
+                   t[#t].value = w[1]           
+                   if (w[4] == true) then
+                       local valueItem = {}
+                       valueItem[#valueItem+1] = t[#t]
+                       valueItem[#valueItem].freeze = true
+                       gg.addListItems(valueItem)
+                   end         
+               end
+           end
+           gg.setValues(t)
+           gg.clearResults()
+           if (succesMessage == nil ) then
+           else
+           Alert(succesMessage)
+           end
+        else
+            if (notSuccessMessage == nil ) then
+            else
+            Alert(notSuccessMessage, false)
+            end
+            return false
+        end
+    else
+            if (notSuccessMessage == nil ) then
+            else
+            Alert(notSuccessMessage)
+            end
+        return false
+    end
+end
+function Toast(msg)
+gg.toast(tostring(msg))
+end
+function Alert(msg)
+gg.alert(tostring(msg))
+end
+function cca.setMemoryRanges(ranges)
+return ranges
+end
+function cca.memorySearch(valueSearch)
+return valueSearch
+end
+function cca.memoryWrite(valueWrite)
+return valueWrite
+end
+function cca.clearResults()
+gg.clearResults()
+end
+function succesMessage(msg)
+return msg
+end
+function notSuccessMessage(msg)
+return msg
+end
+-- cca GG Memory Utils
+local mem = 0
+function getMemCpp()
+	gg.setRanges(gg.REGION_CODE_APP)
+	local alloc = gg.getRangesList("libUE4.so")
+	for i in ipairs(alloc) do
+		if alloc[i].type == "r-xp" and alloc[i].state == "Xa" then
+			if mem == 0 then
+				mem = alloc[i].start
+				break
+			end
+		end
+	end
+end
+
+getMemCpp()
+if mem == 0 then
+		gg.alert("PUBG Mobile is not running")
+		gg.alert("www.t.me/S2Team")
+		os.exit()
+end
+-- cca GG Memory Utils
+print(os.date([[Time: %H:%M:%S%p
+Today: %A, %d %B %Y]]))
+-- cca GG Memory Utils
+gg.clearResults()
+gg.setRanges(4)
+gg.searchNumber("67109633", 4, false, 536870912, 0, -1)
+gg.refineNumber("67109633", 4, false, 536870912, 0, -1)
+if gg.getResultCount() == 0 then
+gg.alert("www.t.me/S2Team\ntry again!")
+else
+local searchCount = gg.getResultCount()
+local searchResults = gg.getResults(searchCount)
+for i, v in ipairs(searchResults) do
+  v.freeze = true
+  v.flags = 4
+  v.value = 0
+end
+gg.addListItems(searchResults)
+gg.clearResults()
+gg.setRanges(4)
+gg.searchNumber("12547", 4, false, 536870912, 0, -1)
+gg.refineNumber("12547", 4, false, 536870912, 0, -1)
+if gg.getResultCount() == 0 then
+gg.alert("www.t.me/S2Team\ntry again!")
+else
+local searchCount = gg.getResultCount()
+local searchResults = gg.getResults(searchCount)
+for i, v in ipairs(searchResults) do
+  v.freeze = true
+  v.flags = 4
+  v.value = 0
+end
+gg.addListItems(searchResults)
+gg.clearResults()
+gg.alert(os.date("%A, %d %B %Y %H:%M %p")) 
+gg.toast("www.t.me/S2Team")
+end
+end
+end
+
 function AABAN1(...)
-  gg.clearResults()
+    gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
   gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() == 0 then
-    gg.alert("Failed Restart Game And Try , لم يتم التفعيل !! ❌")
-    gg.setVisible(true)
-    gg.processKill()
+    gg.alert("⚠️ Activation failed \n Use 32 bit PUBG with this bypass⚡")
     os.exit()
   else
     gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     resultsCount = gg.getResultCount()
     results = gg.getResults(resultsCount)
     for i = 1, resultsCount do
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 252,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 236,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 232,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 72,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 72,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 68,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 64,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 64,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 68,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 100,
-          flags = 4,
-          freeze = true,
-          value = 4451
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 512,
-          flags = 4,
-          freeze = true,
-          value = 0
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 540,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 544,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 548,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.alert("تم تفعيل الحماية بنجاح ✔")
+      gg.addListItems({[1] = {address = results[i].address + 48,flags = 4,freeze = true,value = 70032}})
+      gg.addListItems({[1] = {address = results[i].address + 100,flags = 4,freeze = true,value = 4451}})
     end
   end
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("16610;8388646;8388805", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50)
+  gg.editAll("30", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.searchNumber("257D;0~99999F;1D;0D::300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("0~9999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.clearResults()
+  gg.alert("🔰 Successfully Activated Bypass 🔰")
 end
 
 function ABAN3(...)
