@@ -127,7 +127,7 @@ function HOME1(...)
     "⚠️ 『 قائمة الخصائص الغير آمنة 🔥』",
     "🛰️ 『 ترسيت سريع / ᴏɴ - ᴏғғ 』",
     "⛔ 『 خروج 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MN == nil then
   else
     if MN == 1 then
@@ -164,7 +164,7 @@ function HOME2(...)
     "⚠️ 『 ɴᴏᴛ sᴀғᴇ ᴍᴇɴᴜ  💥 』",
     "🛰️ 『 ᴅᴀᴛᴀ ᴏɴ - ᴏғғ ғᴀsᴛ 』",
     "⛔ 『 ᴇ x ɪ ᴛ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MN2 == nil then
   else
     if MN2 == 1 then
@@ -213,8 +213,10 @@ function ABAN(...)
   TENMINMN = gg.choice({
     "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ1 』",
     "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ2 』",
+    "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ3 』",
+    "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ4 』🆕",    
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if TENMINMN == nil then
   else
     if TENMINMN == 1 then
@@ -224,8 +226,14 @@ function ABAN(...)
       AABAN1()
     end
     if TENMINMN == 3 then
-      HOME1()
+      AABAN5()
     end
+    if TENMINMN == 4 then
+      AABAN6()
+    end
+    if TENMINMN == 5 then
+      HOME1()
+    end    
   end
   PUBGMH = -1
 end
@@ -234,8 +242,10 @@ function ABAN2(...)
   TENMIN2MN = gg.choice({
     "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ1 』",
     "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ2 』",
+    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ3 』",       
+    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ4 』🆕",     
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if TENMIN2MN == nil then
   else
     if TENMIN2MN == 1 then
@@ -245,141 +255,483 @@ function ABAN2(...)
       AABAN1()
     end
     if TENMIN2MN == 3 then
-      HOME2()
+      AABAN5()
     end
+        if TENMIN2MN == 4 then
+      AABAN6()
+    end
+        if TENMIN2MN == 5 then
+      HOME2()
+    end    
   end
   PUBGMH = -1
 end
 
+AABAN6(...)
+-- volcano GG Memory Utils
+local volcano = {} local JAVA_HEAP = 2 local C_HEAP = 1 local C_ALLOC = 4 local C_DATA = 8 local C_BSS = 10 local A_ANONYMOUS = 32 local JAVA = 65536 local STACK = 64 local ASHMEM = 524288 local V_VIDEO = 1048576
+local B_BAD = 131072
+local CODE_APP = 16384
+local CODE_SYSTEM = 32768
+local BYTE = 1
+local WORD = 2
+local DWORD = 4
+local XOR = 8
+local FLOAT = 16
+local QWORD = 32
+local DOUBLE = 64
+local AUTO = 127
+function volcano.memoryUtils(succesMessage, notSuccessMessage, memoryRanges, memorySearch, memoryWrite, clearResults)
+    gg.clearResults()
+    gg.setVisible(false)
+    gg.setRanges(memoryRanges)
+    local valueType = memorySearch[1][3]
+    local valueTypeModify = memoryWrite[1][3]
+    gg.searchNumber(memorySearch[1][1], valueType)
+    local valueCount = gg.getResultCount()
+    local valueResult = gg.getResults(valueCount)
+    gg.clearResults()
+    local valueData = {} 
+    local valueBase = memorySearch[1][2]
+    if (valueCount > 0) then
+        for i, v in ipairs(valueResult) do
+            v.isUseful = true 
+        end
+        for k=2, #memorySearch do
+            local valueTmp = {}
+            local valueOffset = memorySearch[k][2] - valueBase 
+            local valueNum = memorySearch[k][1] 
+            for i, v in ipairs(valueResult) do
+                valueTmp[#valueTmp+1] = {} 
+                valueTmp[#valueTmp].address = v.address + valueOffset
+                valueTmp[#valueTmp].flags = v.flags  
+            end       
+            valueTmp = gg.getValues(valueTmp)  
+            for i, v in ipairs(valueTmp) do
+                if ( tostring(v.value) ~= tostring(valueNum) ) then 
+                    valueResult[i].isUseful = false 
+                end
+            end
+        end
+        for i, v in ipairs(valueResult) do
+            if (v.isUseful) then 
+                valueData[#valueData+1] = v.address
+            end
+        end
+        if (#valueData > 0) then    
+           local t = {}
+           local valueBase = memorySearch[1][2]
+           for i=1, #valueData do
+               for k, w in ipairs(memoryWrite) do
+                   valueOffset = w[2] - valueBase
+                   t[#t+1] = {}
+                   t[#t].address = valueData[i] + valueOffset
+                   t[#t].flags = valueTypeModify
+                   t[#t].value = w[1]           
+                   if (w[4] == true) then
+                       local valueItem = {}
+                       valueItem[#valueItem+1] = t[#t]
+                       valueItem[#valueItem].freeze = true
+                       gg.addListItems(valueItem)
+                   end         
+               end
+           end
+           gg.setValues(t)
+           gg.clearResults()
+           if (succesMessage == nil ) then
+           else
+           Alert(succesMessage)
+           end
+        else
+            if (notSuccessMessage == nil ) then
+            else
+            Alert(notSuccessMessage, false)
+            end
+            return false
+        end
+    else
+            if (notSuccessMessage == nil ) then
+            else
+            Alert(notSuccessMessage)
+            end
+        return false
+    end
+end
+function Toast(msg)
+gg.toast(tostring(msg))
+end
+function Alert(msg)
+gg.alert(tostring(msg))
+end
+function volcano.setMemoryRanges(ranges)
+return ranges
+end
+function volcano.memorySearch(valueSearch)
+return valueSearch
+end
+function volcano.memoryWrite(valueWrite)
+return valueWrite
+end
+function volcano.clearResults()
+gg.clearResults()
+end
+function succesMessage(msg)
+return msg
+end
+function notSuccessMessage(msg)
+return msg
+end
+-- volcano GG Memory Utils
+local mem = 0
+function getMemCpp()
+	gg.setRanges(gg.REGION_CODE_APP)
+	local alloc = gg.getRangesList("libUE4.so")
+	for i in ipairs(alloc) do
+		if alloc[i].type == "r-xp" and alloc[i].state == "Xa" then
+			if mem == 0 then
+				mem = alloc[i].start
+				break
+			end
+		end
+	end
+end
+
+getMemCpp()
+if mem == 0 then
+		gg.alert("PUBG Mobile is not running")
+		gg.toast("www.t.me/Cn-Hax")
+		os.exit()
+end
+-- volcano GG Memory Utils
+gg.searchNumber("RRC377",gg.TYPE_WORD,false,gg.SIGN_EQUAL,0, -1)
+gg.getResults(50000)
+gg.editAll("67109633",gg.TYPE_DWORD)
+gg.clearResults()
+-- GG
+gg.clearResults()
+gg.setVisible(false)
+gg.searchNumber("67109633", gg.TYPE_DWORD)
+revert = gg.getResults(99999)
+local t = gg.getResults(99999)
+for i, v in ipairs(t) do
+if v.flags == gg.TYPE_DWORD then
+v.value = "67109633"
+v.freeze = true
+end
+end
+gg.addListItems(t)
+t = nil
+gg.editAll("67109633",gg.TYPE_DWORD)
+
+gg.clearResults()
+gg.setVisible(false)
+gg.searchNumber("67109377", gg.TYPE_DWORD)
+revert = gg.getResults(99999)
+local t = gg.getResults(99999)
+for i, v in ipairs(t) do
+if v.flags == gg.TYPE_DWORD then
+v.value = "67109377"
+v.freeze = true
+end
+end
+gg.addListItems(t)
+t = nil
+gg.editAll("67109377",gg.TYPE_DWORD)
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.fff")
+os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.system_android_l2")
+gg.clearResults()
+gg.alert(os.date("www.t.me/Cn-Hax\n%A, %d %B %Y %H:%M %p")) 
+end
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("579451217772544", gg.TYPE_DWORD)
+revert = gg.getResults(50000)
+local t = gg.getResults(50000)
+for i, v in ipairs(t) do
+if v.flags == gg.TYPE_DWORD then
+v.value = "0"
+v.freeze = true
+end
+end
+gg.addListItems(t)
+t = nil
+gg.editAll("0",gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("www.t.me/Cn-Hax")
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("67109377", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(11082001, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(11082001, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = "4451"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+gg.toast("www.t.me/Cn-Hax")
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("134914", gg.TYPE_DWORD)
+revert = gg.getResults(99999)
+local t = gg.getResults(99999)
+for i, v in ipairs(t) do
+if v.flags == gg.TYPE_DWORD then
+v.value = "0"
+v.freeze = true
+end
+end
+gg.addListItems(t)
+t = nil
+gg.editAll("0",gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("www.t.me/Cn-Hax")
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("12547", gg.TYPE_DWORD)
+revert = gg.getResults(50000)
+local t = gg.getResults(50000)
+for i, v in ipairs(t) do
+if v.flags == gg.TYPE_DWORD then
+v.value = "0"
+v.freeze = true
+end
+end
+gg.addListItems(t)
+t = nil
+gg.editAll("0",gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("www.t.me/Cn-Hax")
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("135682", gg.TYPE_DWORD)
+revert = gg.getResults(99999)
+local t = gg.getResults(99999)
+for i, v in ipairs(t) do
+if v.flags == gg.TYPE_DWORD then
+v.value = "0"
+v.freeze = true
+end
+end
+gg.addListItems(t)
+t = nil
+gg.editAll("0",gg.TYPE_DWORD)
+gg.clearResults()
+gg.alert(os.date("%A, %d %B %Y %H:%M %p")) 
+gg.toast("www.t.me/Cn-Hax")
+
+-------------------------------END-------------------------------
+end
+
+
+
+function AABAN5(...) 
+-- cca GG Memory Utils
+local cca = {} local JAVA_HEAP = 2 local C_HEAP = 1 local C_ALLOC = 4 local C_DATA = 8 local C_BSS = 10 local A_ANONYMOUS = 32 local JAVA = 65536 local STACK = 64 local ASHMEM = 524288 local V_VIDEO = 1048576
+local B_BAD = 131072
+local CODE_APP = 16384
+local CODE_SYSTEM = 32768
+local BYTE = 1
+local WORD = 2
+local DWORD = 4
+local XOR = 8
+local FLOAT = 16
+local QWORD = 32
+local DOUBLE = 64
+local AUTO = 127
+function cca.memoryUtils(succesMessage, notSuccessMessage, memoryRanges, memorySearch, memoryWrite, clearResults)
+    gg.clearResults()
+    gg.setVisible(false)
+    gg.setRanges(memoryRanges)
+    local valueType = memorySearch[1][3]
+    local valueTypeModify = memoryWrite[1][3]
+    gg.searchNumber(memorySearch[1][1], valueType)
+    local valueCount = gg.getResultCount()
+    local valueResult = gg.getResults(valueCount)
+    gg.clearResults()
+    local valueData = {} 
+    local valueBase = memorySearch[1][2]
+    if (valueCount > 0) then
+        for i, v in ipairs(valueResult) do
+            v.isUseful = true 
+        end
+        for k=2, #memorySearch do
+            local valueTmp = {}
+            local valueOffset = memorySearch[k][2] - valueBase 
+            local valueNum = memorySearch[k][1] 
+            for i, v in ipairs(valueResult) do
+                valueTmp[#valueTmp+1] = {} 
+                valueTmp[#valueTmp].address = v.address + valueOffset
+                valueTmp[#valueTmp].flags = v.flags  
+            end       
+            valueTmp = gg.getValues(valueTmp)  
+            for i, v in ipairs(valueTmp) do
+                if ( tostring(v.value) ~= tostring(valueNum) ) then 
+                    valueResult[i].isUseful = false 
+                end
+            end
+        end
+        for i, v in ipairs(valueResult) do
+            if (v.isUseful) then 
+                valueData[#valueData+1] = v.address
+            end
+        end
+        if (#valueData > 0) then    
+           local t = {}
+           local valueBase = memorySearch[1][2]
+           for i=1, #valueData do
+               for k, w in ipairs(memoryWrite) do
+                   valueOffset = w[2] - valueBase
+                   t[#t+1] = {}
+                   t[#t].address = valueData[i] + valueOffset
+                   t[#t].flags = valueTypeModify
+                   t[#t].value = w[1]           
+                   if (w[4] == true) then
+                       local valueItem = {}
+                       valueItem[#valueItem+1] = t[#t]
+                       valueItem[#valueItem].freeze = true
+                       gg.addListItems(valueItem)
+                   end         
+               end
+           end
+           gg.setValues(t)
+           gg.clearResults()
+           if (succesMessage == nil ) then
+           else
+           Alert(succesMessage)
+           end
+        else
+            if (notSuccessMessage == nil ) then
+            else
+            Alert(notSuccessMessage, false)
+            end
+            return false
+        end
+    else
+            if (notSuccessMessage == nil ) then
+            else
+            Alert(notSuccessMessage)
+            end
+        return false
+    end
+end
+function Toast(msg)
+gg.toast(tostring(msg))
+end
+function Alert(msg)
+gg.alert(tostring(msg))
+end
+function cca.setMemoryRanges(ranges)
+return ranges
+end
+function cca.memorySearch(valueSearch)
+return valueSearch
+end
+function cca.memoryWrite(valueWrite)
+return valueWrite
+end
+function cca.clearResults()
+gg.clearResults()
+end
+function succesMessage(msg)
+return msg
+end
+function notSuccessMessage(msg)
+return msg
+end
+-- cca GG Memory Utils
+local mem = 0
+function getMemCpp()
+	gg.setRanges(gg.REGION_CODE_APP)
+	local alloc = gg.getRangesList("libUE4.so")
+	for i in ipairs(alloc) do
+		if alloc[i].type == "r-xp" and alloc[i].state == "Xa" then
+			if mem == 0 then
+				mem = alloc[i].start
+				break
+			end
+		end
+	end
+end
+
+getMemCpp()
+if mem == 0 then
+		gg.alert("PUBG Mobile is not running")
+		gg.alert("www.t.me/S2Team")
+		os.exit()
+end
+-- cca GG Memory Utils
+print(os.date([[Time: %H:%M:%S%p
+Today: %A, %d %B %Y]]))
+-- cca GG Memory Utils
+gg.clearResults()
+gg.setRanges(4)
+gg.searchNumber("67109633", 4, false, 536870912, 0, -1)
+gg.refineNumber("67109633", 4, false, 536870912, 0, -1)
+if gg.getResultCount() == 0 then
+gg.alert("www.t.me/S2Team\ntry again!")
+else
+local searchCount = gg.getResultCount()
+local searchResults = gg.getResults(searchCount)
+for i, v in ipairs(searchResults) do
+  v.freeze = true
+  v.flags = 4
+  v.value = 0
+end
+gg.addListItems(searchResults)
+gg.clearResults()
+gg.setRanges(4)
+gg.searchNumber("12547", 4, false, 536870912, 0, -1)
+gg.refineNumber("12547", 4, false, 536870912, 0, -1)
+if gg.getResultCount() == 0 then
+gg.alert("www.t.me/S2Team\ntry again!")
+else
+local searchCount = gg.getResultCount()
+local searchResults = gg.getResults(searchCount)
+for i, v in ipairs(searchResults) do
+  v.freeze = true
+  v.flags = 4
+  v.value = 0
+end
+gg.addListItems(searchResults)
+gg.clearResults()
+gg.alert(os.date("%A, %d %B %Y %H:%M %p")) 
+gg.toast("www.t.me/S2Team")
+end
+end
+end
+
 function AABAN1(...)
-  gg.clearResults()
+    gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
   gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() == 0 then
-    gg.alert("Failed Restart Game And Try , لم يتم التفعيل !! ❌")
-    gg.setVisible(true)
-    gg.processKill()
+    gg.alert("⚠️ Activation failed \n Use 32 bit PUBG with this bypass⚡")
     os.exit()
   else
     gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     resultsCount = gg.getResultCount()
     results = gg.getResults(resultsCount)
     for i = 1, resultsCount do
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 252,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 236,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 232,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 72,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 72,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 68,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address - 64,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 64,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 68,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 100,
-          flags = 4,
-          freeze = true,
-          value = 4451
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 512,
-          flags = 4,
-          freeze = true,
-          value = 0
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 540,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 544,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = results[i].address + 548,
-          flags = 4,
-          freeze = true,
-          value = 70086
-        }
-      })
-      gg.alert("تم تفعيل الحماية بنجاح ✔")
+      gg.addListItems({[1] = {address = results[i].address + 48,flags = 4,freeze = true,value = 70032}})
+      gg.addListItems({[1] = {address = results[i].address + 100,flags = 4,freeze = true,value = 4451}})
     end
   end
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("16610;8388646;8388805", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50)
+  gg.editAll("30", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.searchNumber("257D;0~99999F;1D;0D::300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("0~9999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.clearResults()
+  gg.alert("🔰 Successfully Activated Bypass 🔰")
 end
 
 function ABAN3(...)
@@ -387,7 +739,7 @@ function ABAN3(...)
     "⚙️⁩ 『 الخطوة الاولى ( تدريب ) 』",
     "⚙️⁩ 『 الخطوة الثانية ( لوبي ) 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if KOREANTENMN == nil then
   else
     if KOREANTENMN == 1 then
@@ -408,7 +760,7 @@ function ABAN4(...)
     "⚙️⁩ 『 sᴛᴇᴘ 1 [ ᴛʀᴀɪɴɪɴɢ ] 』",
     "⚙️⁩ 『 sᴛᴇᴘ 2 [ ʟᴏᴏʙʏ ] 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if KOREANTEN2MN == nil then
   else
     if KOREANTEN2MN == 1 then
@@ -824,7 +1176,7 @@ function BDY(...)
     "🎨 『 قائمة الألوان 』",
     "📱 『 قائمة معالج الأكسينوس 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if BDYMN == nil then
   else
     if BDYMN == 1 then
@@ -849,7 +1201,7 @@ function BDY2(...)
     "🎨 『 ᴄᴏʟᴏʀ ᴍᴇɴᴜ 』",
     "📱 『 ᴇxʏɴᴏs ᴍᴇɴᴜ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if BDYMN2 == nil then
   else
     if BDYMN2 == 1 then
@@ -890,7 +1242,7 @@ function WH(...)
     "🛠️ 『 إصلاح التقطيع 430-835 』",
     "🛠️ 『 إصلاح التقطيع 845-855 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if WHMN == nil then
   else
     if WHMN == 1 then
@@ -979,7 +1331,7 @@ function WH2(...)
     "🛠️ 『 ғɪx ʙʟɪɴᴋ 430-835 』",
     "🛠️ 『 ғɪx ʙʟɪɴᴋ 845-855 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if WHMN2 == nil then
   else
     if WHMN2 == 1 then
@@ -1450,7 +1802,7 @@ function CLR425(...)
     "🔴 『 لون أحمر  425 』",
     "☣️ 『 لون أصفر  425 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN425 == nil then
   else
     if CLRMN425 == 1 then
@@ -1471,7 +1823,7 @@ function CLR4252(...)
     "🔴 『 ʀᴇᴅ ʙᴏᴅʏ 425 』",
     "☣️ 『 ʏᴇʟʟᴏᴡ ʙᴏᴅʏ 425 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN4252 == nil then
   else
     if CLRMN4252 == 1 then
@@ -1519,7 +1871,7 @@ function CLR675(...)
     "🔵 『 لون أزرق  675 』",
     "♎ 『 لون أخضر  675 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN675 == nil then
   else
     if CLRMN675 == 1 then
@@ -1544,7 +1896,7 @@ function CLR6752(...)
     "🔵 『 ʙʟᴜᴇ ʙᴏᴅʏ 675 』",
     "♎ 『 ɢʀᴇᴇɴ ʙᴏᴅʏ 675 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN6752 == nil then
   else
     if CLRMN6752 == 1 then
@@ -1606,7 +1958,7 @@ function CLR845(...)
     "⚪ 『 لون أبيض  845 』",
     "🔵 『 لون أزرق  845 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN845 == nil then
   else
     if CLRMN845 == 1 then
@@ -1639,7 +1991,7 @@ function CLR8452(...)
     "⚪ 『 ᴡʜɪᴛᴇ ʙᴏᴅʏ 845 』",
     "🔵 『 ʙʟᴜᴇ ʙᴏᴅʏ 845 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN8452 == nil then
   else
     if CLRMN8452 == 1 then
@@ -1721,7 +2073,7 @@ function CLR855(...)
     "⚪ 『 لون أبيض  855 』",
     "🔴 『 لون أحمر  855 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN855 == nil then
   else
     if CLRMN855 == 1 then
@@ -1754,7 +2106,7 @@ function CLR8552(...)
     "⚪ 『 ᴡʜɪᴛᴇ ʙᴏᴅʏ 855 』",
     "🔴 『 ʀᴇᴅ ʙᴏᴅʏ 855 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN8552 == nil then
   else
     if CLRMN8552 == 1 then
@@ -1832,7 +2184,7 @@ function CLR(...)
     "⚪ 『 لون أبيض لجميع الأجهزة 』",
     "⚫ 『 لون أسود لجميع الأجهزة 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN == nil then
   else
     if CLRMN == 1 then
@@ -1893,7 +2245,7 @@ function CLR2(...)
     "⚪ 『 ᴡʜɪᴛᴇ ʙᴏᴅʏ ᴀʟʟ 』",
     "⚫ 『 ʙʟᴀᴄᴋ ʙᴏᴅʏ ᴀʟʟ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN2 == nil then
   else
     if CLRMN2 == 1 then
@@ -2038,7 +2390,7 @@ function INLOOBY(...)
     "📍 『 انتينا 』",
     "🌱 『 إزاله العشب 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNINLOOBY == nil then
   else
     if MNINLOOBY == 1 then
@@ -2079,7 +2431,7 @@ function INLOOBY2(...)
     "📍 『 ᴀɴᴛᴇɴɴᴀ 』",
     "🌱 『 ɴᴏ ɢʀᴀss 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNINLOOBY2 == nil then
   else
     if MNINLOOBY2 == 1 then
@@ -2252,7 +2604,7 @@ function INGAME(...)
     "🏃 『 سرعة لاعب ( تشغيل ) 』",
     "🚶 『 سرعة لاعب ( ايقاف ) 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNINGAME == nil then
   else
     if MNINGAME == 1 then
@@ -2325,7 +2677,7 @@ function INGAME2(...)
     "🏃 『 ᴍɪᴄʀᴏ sᴘᴇᴇᴅ (ᴏɴ) 』",
     "🚶 『 ᴍɪᴄʀᴏ sᴘᴇᴇᴅ (ᴏғғ) 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNINGAME2 == nil then
   else
     if MNINGAME2 == 1 then
@@ -2651,7 +3003,7 @@ function NOTSAFE(...)
     "☂️ 『 نزول برشوت سريع v² 』",
     "💀 『 سبيد نوك 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNNOTSAFE == nil then
   else
     if MNNOTSAFE == 1 then
@@ -2720,7 +3072,7 @@ function NOTSAFE2(...)
     "☂️ 『 ғᴀsᴛ ᴘᴀʀᴀᴄʜᴜᴛᴇ v² 』",
     "💀 『 sᴘᴇᴇᴅ ᴋɴᴏᴄᴋ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNNOTSAFE2 == nil then
   else
     if MNNOTSAFE2 == 1 then
@@ -2946,7 +3298,7 @@ function FLASHSPD(...)
     "🚙 『 تسريع الجيب 』",
     "🚗 『 تسريع الداسيا 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNFLASHSPD == nil then
   else
     if MNFLASHSPD == 1 then
@@ -2991,7 +3343,7 @@ function FLASHSPD2(...)
     "🚙 『 sᴘᴇᴇᴅ ᴊᴇᴇᴘ 』",
     "🚗 『 sᴘᴇᴇᴅ ᴅᴀᴄɪᴀ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNFLASHSPD2 == nil then
   else
     if MNFLASHSPD2 == 1 then
@@ -3154,7 +3506,7 @@ function FLASHDMG(...)
     "🔧 『 M249 اصلاح دمج الـ 』",
     "🔧 『 DP-28 اصلاح دمج الـ 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNFLASHDMG == nil then
   else
     if MNFLASHDMG[1] == true then
@@ -3247,7 +3599,7 @@ function FLASHDMG2(...)
     "🔧 『 M249 ғɪx ᴅᴀᴍᴀɢᴇ 』",
     "🔧 『 DP-28 ғɪx ᴅᴀᴍᴀɢᴇ 』",
     "↩️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNFLASHDMG2 == nil then
   else
     if MNFLASHDMG2[1] == true then
@@ -3559,7 +3911,7 @@ function SITSTAND(...)
     "➡️ 『 ستاند سكوب يمين 』",
     "⬅️ 『 ستاند سكوب يسار 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNSITSTAND == nil then
   else
     if MNSITSTAND == 1 then
@@ -3600,7 +3952,7 @@ function SITSTAND2(...)
     "➡️ 『 sᴛᴀɴᴅ sᴄᴏᴘᴇ ʀɪɢʜᴛ 』",
     "⬅️ 『 sᴛᴀɴᴅ sᴄᴏᴘᴇ ʟᴇғᴛ 』",
     "↩️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNSITSTAND2 == nil then
   else
     if MNSITSTAND2 == 1 then
@@ -3720,7 +4072,7 @@ function SITSTANDOFF(...)
     "⛔ 『 إيقاف الستاند سكوب لليمين 』",
     "⛔ 『 إيقاف الستاند سكوب لليسار 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNSITSTANDOFF == nil then
   else
     if MNSITSTANDOFF == 1 then
@@ -3757,7 +4109,7 @@ function SITSTANDOFF2(...)
     "⛔ 『 sᴛᴀɴᴅ sᴄᴏᴘᴇ ʀɪɢʜᴛ ( ᴏғғ ) 』",
     "⛔ 『 sᴛᴀɴᴅ sᴄᴏᴘᴇ ʟᴇғᴛ ( ᴏғғ ) 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNSITSTANDOFF2 == nil then
   else
     if MNSITSTANDOFF2 == 1 then
@@ -3872,7 +4224,7 @@ function EXY1(...)
     "⚪ 『 لون أبيض لجميع الأجهزة 』",
     "⚫ 『 لون أسود لجميع الأجهزة 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if EXY1MN == nil then
   else
     if EXY1MN == 1 then
@@ -3901,7 +4253,7 @@ function EXY2(...)
     "⚪ 『 ᴡʜɪᴛᴇ ʙᴏᴅʏ ᴀʟʟ 』",
     "⚫ 『 ʙʟᴀᴄᴋ ʙᴏᴅʏ ᴀʟʟ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if EXY2MN == nil then
   else
     if EXY2MN == 1 then
@@ -3950,7 +4302,7 @@ function EXYYELL(...)
 end
 
 function CLOSE(...)
-  print("╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n\n             ♔🔸〘 CN-HAX 〙🔸♔\n🔸 Telegram ⟮ @CN-HAX ⟯  🔸 \n\n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  print("╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n\n             ♔🔸〘 Cn-Hax 〙🔸♔\n🔸 Telegram ⟮ @Cn-Hax ⟯  🔸 \n\n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   gg.skipRestoreState()
   gg.setVisible(true)
   os.exit()
