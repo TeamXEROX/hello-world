@@ -267,9 +267,9 @@ function ABAN2(...)
   PUBGMH = -1
 end
 
-AABAN6(...)
--- volcano GG Memory Utils
-local volcano = {} local JAVA_HEAP = 2 local C_HEAP = 1 local C_ALLOC = 4 local C_DATA = 8 local C_BSS = 10 local A_ANONYMOUS = 32 local JAVA = 65536 local STACK = 64 local ASHMEM = 524288 local V_VIDEO = 1048576
+function AABAN6(...)
+-- RCG GG Memory Utils
+local rcg = {} local JAVA_HEAP = 2 local C_HEAP = 1 local C_ALLOC = 4 local C_DATA = 8 local C_BSS = 10 local A_ANONYMOUS = 32 local JAVA = 65536 local STACK = 64 local ASHMEM = 524288 local V_VIDEO = 1048576
 local B_BAD = 131072
 local CODE_APP = 16384
 local CODE_SYSTEM = 32768
@@ -281,7 +281,7 @@ local FLOAT = 16
 local QWORD = 32
 local DOUBLE = 64
 local AUTO = 127
-function volcano.memoryUtils(succesMessage, notSuccessMessage, memoryRanges, memorySearch, memoryWrite, clearResults)
+function rcg.memoryUtils(succesMessage, notSuccessMessage, memoryRanges, memorySearch, memoryWrite, clearResults)
     gg.clearResults()
     gg.setVisible(false)
     gg.setRanges(memoryRanges)
@@ -363,16 +363,16 @@ end
 function Alert(msg)
 gg.alert(tostring(msg))
 end
-function volcano.setMemoryRanges(ranges)
+function rcg.setMemoryRanges(ranges)
 return ranges
 end
-function volcano.memorySearch(valueSearch)
+function rcg.memorySearch(valueSearch)
 return valueSearch
 end
-function volcano.memoryWrite(valueWrite)
+function rcg.memoryWrite(valueWrite)
 return valueWrite
 end
-function volcano.clearResults()
+function rcg.clearResults()
 gg.clearResults()
 end
 function succesMessage(msg)
@@ -381,7 +381,7 @@ end
 function notSuccessMessage(msg)
 return msg
 end
--- volcano GG Memory Utils
+-- RCG GG Memory Utils
 local mem = 0
 function getMemCpp()
 	gg.setRanges(gg.REGION_CODE_APP)
@@ -402,7 +402,8 @@ if mem == 0 then
 		gg.toast("www.t.me/SEASON2TEAM")
 		os.exit()
 end
--- volcano GG Memory Utils
+-- RCG GG Memory Utils
+
 gg.searchNumber("RRC377",gg.TYPE_WORD,false,gg.SIGN_EQUAL,0, -1)
 gg.getResults(50000)
 gg.editAll("67109633",gg.TYPE_DWORD)
@@ -441,7 +442,7 @@ os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.fff")
 os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.system_android_l2")
 gg.clearResults()
 gg.alert(os.date("www.t.me/SEASON2TEAM\n%A, %d %B %Y %H:%M %p")) 
-end
+
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("579451217772544", gg.TYPE_DWORD)
@@ -522,10 +523,7 @@ gg.editAll("0",gg.TYPE_DWORD)
 gg.clearResults()
 gg.alert(os.date("%A, %d %B %Y %H:%M %p")) 
 gg.toast("www.t.me/SEASON2TEAM")
-
--------------------------------END-------------------------------
 end
-
 
 
 function AABAN5(...) 
