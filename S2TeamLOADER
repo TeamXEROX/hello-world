@@ -1,19 +1,19 @@
-function split(szFullString, szSeparator, ...) 
-  local nFindStartIndex = 1 
-  local nSplitIndex = 1 
-  local nSplitArray = {} 
-  while true do 
-    local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) 
-    if not nFindLastIndex then 
-      nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) 
-      break 
-    end 
-    nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) 
-    nFindStartIndex = nFindLastIndex + string.len(szSeparator) 
-    nSplitIndex = nSplitIndex + 1 
-  end 
-  return nSplitArray 
-end 
+function split(szFullString, szSeparator, ...)
+  local nFindStartIndex = 1
+  local nSplitIndex = 1
+  local nSplitArray = {}
+  while true do
+    local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex)
+    if not nFindLastIndex then
+      nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString))
+      break
+    end
+    nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1)
+    nFindStartIndex = nFindLastIndex + string.len(szSeparator)
+    nSplitIndex = nSplitIndex + 1
+  end
+  return nSplitArray
+end
 
 function xgxc(szpy, qmxg, ...)
   for i = 1, #qmxg do
@@ -99,6 +99,42 @@ function xqmnb(qmnb, ...)
   end
 end
 
+function SearchWrite(Search, Write, Type, ...)
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.searchNumber(Search[1][1], Type)
+  local t = gg.getResults(9999)
+  gg.clearResults()
+  if t ~= nil then
+    local r = {}
+    for j=2, #Search do
+      for i, v in ipairs(t) do
+        r[i] = {}
+        r[i].address = v.address + Search[j][2] - Search[1][2]
+        r[i].flags = v.flags
+      end
+      r = gg.getValues(r)
+      for i = #t, 1, -1 do
+        if (tostring(r[i].value) ~= tostring(Search[j][1]) ) then
+          table.remove(t, i)
+          table.remove(r, i)
+        end
+      end       
+    end
+    local r = {}
+    for i=1, #t do
+      for j=1, #Write do
+        r[#r+1] = {}
+        r[#r].address = t[i].address + Write[j][2] - Search[1][2]
+        r[#r].flags = t[i].flags
+        r[#r].value = Write[j][1]
+        r[#r].freeze = true
+      end
+    end
+    gg.setValues(r)
+  end
+end
+
 HOME1 = 1
 BYPDONE = 0
 CMENU = 0
@@ -127,7 +163,7 @@ function HOME1(...)
     "⚠️ 『 قائمة الخصائص الغير آمنة 🔥』",
     "🛰️ 『 ترسيت سريع / ᴏɴ - ᴏғғ 』",
     "⛔ 『 خروج 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MN == nil then
   else
     if MN == 1 then
@@ -164,7 +200,7 @@ function HOME2(...)
     "⚠️ 『 ɴᴏᴛ sᴀғᴇ ᴍᴇɴᴜ  💥 』",
     "🛰️ 『 ᴅᴀᴛᴀ ᴏɴ - ᴏғғ ғᴀsᴛ 』",
     "⛔ 『 ᴇ x ɪ ᴛ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MN2 == nil then
   else
     if MN2 == 1 then
@@ -211,12 +247,11 @@ end
 
 function ABAN(...)
   TENMINMN = gg.choice({
-    "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ1 』",
-    "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ2 』",
-    "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ3 』",
-    "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ4 』🆕",    
+    "⚙️⁩ 『 حماية لوبي لجميع النسخ ( خطوتين ) 🛡️⁩』",
+    "⚙️⁩ 『 حماية لوبي لكل النسخ v1 ( لوبي ) 🛡️⁩』",
+    "⚙️⁩ 『 حماية لوبي لكل النسخ v2 ( لوبي ) 🛡️⁩』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if TENMINMN == nil then
   else
     if TENMINMN == 1 then
@@ -226,26 +261,22 @@ function ABAN(...)
       AABAN1()
     end
     if TENMINMN == 3 then
-      AABAN5()
+      AABAN2()
     end
     if TENMINMN == 4 then
-      AABAN6()
-    end
-    if TENMINMN == 5 then
       HOME1()
-    end    
+    end
   end
   PUBGMH = -1
 end
 
 function ABAN2(...)
   TENMIN2MN = gg.choice({
-    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ1 』",
-    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ2 』",
-    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ3 』",       
-    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ4 』🆕",     
+    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ( 2 sᴛᴘᴇs ) 』",
+    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ1 ( ʟᴏᴏʙʏ ) 』",
+    "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ2 ( ʟᴏᴏʙʏ ) 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if TENMIN2MN == nil then
   else
     if TENMIN2MN == 1 then
@@ -255,481 +286,437 @@ function ABAN2(...)
       AABAN1()
     end
     if TENMIN2MN == 3 then
-      AABAN5()
+      AABAN2()
     end
-        if TENMIN2MN == 4 then
-      AABAN6()
-    end
-        if TENMIN2MN == 5 then
+    if TENMIN2MN == 4 then
       HOME2()
-    end    
+    end
   end
   PUBGMH = -1
 end
 
-function AABAN6(...)
--- RCG GG Memory Utils
-local rcg = {} local JAVA_HEAP = 2 local C_HEAP = 1 local C_ALLOC = 4 local C_DATA = 8 local C_BSS = 10 local A_ANONYMOUS = 32 local JAVA = 65536 local STACK = 64 local ASHMEM = 524288 local V_VIDEO = 1048576
-local B_BAD = 131072
-local CODE_APP = 16384
-local CODE_SYSTEM = 32768
-local BYTE = 1
-local WORD = 2
-local DWORD = 4
-local XOR = 8
-local FLOAT = 16
-local QWORD = 32
-local DOUBLE = 64
-local AUTO = 127
-function rcg.memoryUtils(succesMessage, notSuccessMessage, memoryRanges, memorySearch, memoryWrite, clearResults)
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.setRanges(memoryRanges)
-    local valueType = memorySearch[1][3]
-    local valueTypeModify = memoryWrite[1][3]
-    gg.searchNumber(memorySearch[1][1], valueType)
-    local valueCount = gg.getResultCount()
-    local valueResult = gg.getResults(valueCount)
-    gg.clearResults()
-    local valueData = {} 
-    local valueBase = memorySearch[1][2]
-    if (valueCount > 0) then
-        for i, v in ipairs(valueResult) do
-            v.isUseful = true 
-        end
-        for k=2, #memorySearch do
-            local valueTmp = {}
-            local valueOffset = memorySearch[k][2] - valueBase 
-            local valueNum = memorySearch[k][1] 
-            for i, v in ipairs(valueResult) do
-                valueTmp[#valueTmp+1] = {} 
-                valueTmp[#valueTmp].address = v.address + valueOffset
-                valueTmp[#valueTmp].flags = v.flags  
-            end       
-            valueTmp = gg.getValues(valueTmp)  
-            for i, v in ipairs(valueTmp) do
-                if ( tostring(v.value) ~= tostring(valueNum) ) then 
-                    valueResult[i].isUseful = false 
-                end
-            end
-        end
-        for i, v in ipairs(valueResult) do
-            if (v.isUseful) then 
-                valueData[#valueData+1] = v.address
-            end
-        end
-        if (#valueData > 0) then    
-           local t = {}
-           local valueBase = memorySearch[1][2]
-           for i=1, #valueData do
-               for k, w in ipairs(memoryWrite) do
-                   valueOffset = w[2] - valueBase
-                   t[#t+1] = {}
-                   t[#t].address = valueData[i] + valueOffset
-                   t[#t].flags = valueTypeModify
-                   t[#t].value = w[1]           
-                   if (w[4] == true) then
-                       local valueItem = {}
-                       valueItem[#valueItem+1] = t[#t]
-                       valueItem[#valueItem].freeze = true
-                       gg.addListItems(valueItem)
-                   end         
-               end
-           end
-           gg.setValues(t)
-           gg.clearResults()
-           if (succesMessage == nil ) then
-           else
-           Alert(succesMessage)
-           end
-        else
-            if (notSuccessMessage == nil ) then
-            else
-            Alert(notSuccessMessage, false)
-            end
-            return false
-        end
-    else
-            if (notSuccessMessage == nil ) then
-            else
-            Alert(notSuccessMessage)
-            end
-        return false
-    end
-end
-function Toast(msg)
-gg.toast(tostring(msg))
-end
-function Alert(msg)
-gg.alert(tostring(msg))
-end
-function rcg.setMemoryRanges(ranges)
-return ranges
-end
-function rcg.memorySearch(valueSearch)
-return valueSearch
-end
-function rcg.memoryWrite(valueWrite)
-return valueWrite
-end
-function rcg.clearResults()
-gg.clearResults()
-end
-function succesMessage(msg)
-return msg
-end
-function notSuccessMessage(msg)
-return msg
-end
--- RCG GG Memory Utils
-local mem = 0
-function getMemCpp()
-	gg.setRanges(gg.REGION_CODE_APP)
-	local alloc = gg.getRangesList("libUE4.so")
-	for i in ipairs(alloc) do
-		if alloc[i].type == "r-xp" and alloc[i].state == "Xa" then
-			if mem == 0 then
-				mem = alloc[i].start
-				break
-			end
-		end
-	end
-end
-
-getMemCpp()
-if mem == 0 then
-		gg.alert("PUBG Mobile is not running")
-		gg.toast("www.t.me/SEASON2TEAM")
-		os.exit()
-end
--- RCG GG Memory Utils
-
-gg.searchNumber("RRC377",gg.TYPE_WORD,false,gg.SIGN_EQUAL,0, -1)
-gg.getResults(50000)
-gg.editAll("67109633",gg.TYPE_DWORD)
-gg.clearResults()
--- GG
-gg.clearResults()
-gg.setVisible(false)
-gg.searchNumber("67109633", gg.TYPE_DWORD)
-revert = gg.getResults(99999)
-local t = gg.getResults(99999)
-for i, v in ipairs(t) do
-if v.flags == gg.TYPE_DWORD then
-v.value = "67109633"
-v.freeze = true
-end
-end
-gg.addListItems(t)
-t = nil
-gg.editAll("67109633",gg.TYPE_DWORD)
-
-gg.clearResults()
-gg.setVisible(false)
-gg.searchNumber("67109377", gg.TYPE_DWORD)
-revert = gg.getResults(99999)
-local t = gg.getResults(99999)
-for i, v in ipairs(t) do
-if v.flags == gg.TYPE_DWORD then
-v.value = "67109377"
-v.freeze = true
-end
-end
-gg.addListItems(t)
-t = nil
-gg.editAll("67109377",gg.TYPE_DWORD)
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.fff")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/.system_android_l2")
-gg.clearResults()
-gg.alert(os.date("www.t.me/SEASON2TEAM\n%A, %d %B %Y %H:%M %p")) 
-
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("579451217772544", gg.TYPE_DWORD)
-revert = gg.getResults(50000)
-local t = gg.getResults(50000)
-for i, v in ipairs(t) do
-if v.flags == gg.TYPE_DWORD then
-v.value = "0"
-v.freeze = true
-end
-end
-gg.addListItems(t)
-t = nil
-gg.editAll("0",gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("www.t.me/SEASON2TEAM")
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("67109377", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-revert = gg.getResults(11082001, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(11082001, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_DWORD then
-		v.value = "4451"
-		v.freeze = true
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.clearResults()
-gg.toast("www.t.me/SEASON2TEAM")
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("134914", gg.TYPE_DWORD)
-revert = gg.getResults(99999)
-local t = gg.getResults(99999)
-for i, v in ipairs(t) do
-if v.flags == gg.TYPE_DWORD then
-v.value = "0"
-v.freeze = true
-end
-end
-gg.addListItems(t)
-t = nil
-gg.editAll("0",gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("www.t.me/SEASON2TEAM")
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("12547", gg.TYPE_DWORD)
-revert = gg.getResults(50000)
-local t = gg.getResults(50000)
-for i, v in ipairs(t) do
-if v.flags == gg.TYPE_DWORD then
-v.value = "0"
-v.freeze = true
-end
-end
-gg.addListItems(t)
-t = nil
-gg.editAll("0",gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("www.t.me/SEASON2TEAM")
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("135682", gg.TYPE_DWORD)
-revert = gg.getResults(99999)
-local t = gg.getResults(99999)
-for i, v in ipairs(t) do
-if v.flags == gg.TYPE_DWORD then
-v.value = "0"
-v.freeze = true
-end
-end
-gg.addListItems(t)
-t = nil
-gg.editAll("0",gg.TYPE_DWORD)
-gg.clearResults()
-gg.alert(os.date("%A, %d %B %Y %H:%M %p")) 
-gg.toast("www.t.me/SEASON2TEAM")
-end
-
-
-function AABAN5(...) 
--- cca GG Memory Utils
-local cca = {} local JAVA_HEAP = 2 local C_HEAP = 1 local C_ALLOC = 4 local C_DATA = 8 local C_BSS = 10 local A_ANONYMOUS = 32 local JAVA = 65536 local STACK = 64 local ASHMEM = 524288 local V_VIDEO = 1048576
-local B_BAD = 131072
-local CODE_APP = 16384
-local CODE_SYSTEM = 32768
-local BYTE = 1
-local WORD = 2
-local DWORD = 4
-local XOR = 8
-local FLOAT = 16
-local QWORD = 32
-local DOUBLE = 64
-local AUTO = 127
-function cca.memoryUtils(succesMessage, notSuccessMessage, memoryRanges, memorySearch, memoryWrite, clearResults)
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.setRanges(memoryRanges)
-    local valueType = memorySearch[1][3]
-    local valueTypeModify = memoryWrite[1][3]
-    gg.searchNumber(memorySearch[1][1], valueType)
-    local valueCount = gg.getResultCount()
-    local valueResult = gg.getResults(valueCount)
-    gg.clearResults()
-    local valueData = {} 
-    local valueBase = memorySearch[1][2]
-    if (valueCount > 0) then
-        for i, v in ipairs(valueResult) do
-            v.isUseful = true 
-        end
-        for k=2, #memorySearch do
-            local valueTmp = {}
-            local valueOffset = memorySearch[k][2] - valueBase 
-            local valueNum = memorySearch[k][1] 
-            for i, v in ipairs(valueResult) do
-                valueTmp[#valueTmp+1] = {} 
-                valueTmp[#valueTmp].address = v.address + valueOffset
-                valueTmp[#valueTmp].flags = v.flags  
-            end       
-            valueTmp = gg.getValues(valueTmp)  
-            for i, v in ipairs(valueTmp) do
-                if ( tostring(v.value) ~= tostring(valueNum) ) then 
-                    valueResult[i].isUseful = false 
-                end
-            end
-        end
-        for i, v in ipairs(valueResult) do
-            if (v.isUseful) then 
-                valueData[#valueData+1] = v.address
-            end
-        end
-        if (#valueData > 0) then    
-           local t = {}
-           local valueBase = memorySearch[1][2]
-           for i=1, #valueData do
-               for k, w in ipairs(memoryWrite) do
-                   valueOffset = w[2] - valueBase
-                   t[#t+1] = {}
-                   t[#t].address = valueData[i] + valueOffset
-                   t[#t].flags = valueTypeModify
-                   t[#t].value = w[1]           
-                   if (w[4] == true) then
-                       local valueItem = {}
-                       valueItem[#valueItem+1] = t[#t]
-                       valueItem[#valueItem].freeze = true
-                       gg.addListItems(valueItem)
-                   end         
-               end
-           end
-           gg.setValues(t)
-           gg.clearResults()
-           if (succesMessage == nil ) then
-           else
-           Alert(succesMessage)
-           end
-        else
-            if (notSuccessMessage == nil ) then
-            else
-            Alert(notSuccessMessage, false)
-            end
-            return false
-        end
-    else
-            if (notSuccessMessage == nil ) then
-            else
-            Alert(notSuccessMessage)
-            end
-        return false
-    end
-end
-function Toast(msg)
-gg.toast(tostring(msg))
-end
-function Alert(msg)
-gg.alert(tostring(msg))
-end
-function cca.setMemoryRanges(ranges)
-return ranges
-end
-function cca.memorySearch(valueSearch)
-return valueSearch
-end
-function cca.memoryWrite(valueWrite)
-return valueWrite
-end
-function cca.clearResults()
-gg.clearResults()
-end
-function succesMessage(msg)
-return msg
-end
-function notSuccessMessage(msg)
-return msg
-end
--- cca GG Memory Utils
-local mem = 0
-function getMemCpp()
-	gg.setRanges(gg.REGION_CODE_APP)
-	local alloc = gg.getRangesList("libUE4.so")
-	for i in ipairs(alloc) do
-		if alloc[i].type == "r-xp" and alloc[i].state == "Xa" then
-			if mem == 0 then
-				mem = alloc[i].start
-				break
-			end
-		end
-	end
-end
-
-getMemCpp()
-if mem == 0 then
-		gg.alert("PUBG Mobile is not running")
-		gg.alert("www.t.me/S2Team")
-		os.exit()
-end
--- cca GG Memory Utils
-print(os.date([[Time: %H:%M:%S%p
-Today: %A, %d %B %Y]]))
--- cca GG Memory Utils
-gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber("67109633", 4, false, 536870912, 0, -1)
-gg.refineNumber("67109633", 4, false, 536870912, 0, -1)
-if gg.getResultCount() == 0 then
-gg.alert("www.t.me/S2Team\ntry again!")
-else
-local searchCount = gg.getResultCount()
-local searchResults = gg.getResults(searchCount)
-for i, v in ipairs(searchResults) do
-  v.freeze = true
-  v.flags = 4
-  v.value = 0
-end
-gg.addListItems(searchResults)
-gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber("12547", 4, false, 536870912, 0, -1)
-gg.refineNumber("12547", 4, false, 536870912, 0, -1)
-if gg.getResultCount() == 0 then
-gg.alert("www.t.me/S2Team\ntry again!")
-else
-local searchCount = gg.getResultCount()
-local searchResults = gg.getResults(searchCount)
-for i, v in ipairs(searchResults) do
-  v.freeze = true
-  v.flags = 4
-  v.value = 0
-end
-gg.addListItems(searchResults)
-gg.clearResults()
-gg.alert(os.date("%A, %d %B %Y %H:%M %p")) 
-gg.toast("www.t.me/S2Team")
-end
-end
-end
-
-function AABAN1(...)
-    gg.clearResults()
+function AABAN2(...)
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations/concurrent")
+  os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
+  gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
   gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() == 0 then
-    gg.alert("⚠️ Activation failed \n Use 32 bit PUBG with this bypass⚡")
+    gg.alert("Failed Restart Game And Try , لم يتم التفعيل !! ❌")
+    gg.setVisible(true)
+    gg.processKill()
     os.exit()
   else
     gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     resultsCount = gg.getResultCount()
     results = gg.getResults(resultsCount)
     for i = 1, resultsCount do
-      gg.addListItems({[1] = {address = results[i].address + 48,flags = 4,freeze = true,value = 70032}})
-      gg.addListItems({[1] = {address = results[i].address + 100,flags = 4,freeze = true,value = 4451}})
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 252,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 236,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 232,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 72,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 72,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 68,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 64,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 64,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 68,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 100,
+          flags = 4,
+          freeze = true,
+          value = 4451
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 512,
+          flags = 4,
+          freeze = true,
+          value = 0
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 540,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 544,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 548,
+          flags = 4,
+          freeze = true,
+          value = 70086
+        }
+      })
+      os.remove("src/main/java/com/google/errorprone/annotations")
+      os.remove("src/main/java/com/google/errorprone/annotations")
+      os.remove("src/main/java/com/google/errorprone/annotations/concurrent")
+      os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
+      gg.alert("Bypass Done ~ تم تفعيل الحماية بنجاح ✔")
     end
   end
+end
+
+function AABAN1(...)
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations/concurrent")
+  os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("16610;8388646;8388805", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(50)
-  gg.editAll("30", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.searchNumber("257D;0~99999F;1D;0D::300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResultsCount()
-  gg.searchNumber("0~9999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.clearResults()
-  gg.alert("🔰 Successfully Activated Bypass 🔰")
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("2.2IIIIII95IIIIIIII88IIIIII74e-41;1638IIII4D;16384ID;16384IIIID;16IIIIIIIIIIII384D;1IIIIIIII6384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() == 0 then
+    gg.alert("Failed Restart Game And Try , لم يتم التفعيل !! ❌")
+    gg.setVisible(true)
+    gg.processKill()
+    os.exit()
+  else
+    gg.searchNumber("2.IIIIIIIIIII29588IIIIIIIIIIIIII74e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    resultsCount = gg.getResultCount()
+    results = gg.getResults(resultsCount)
+    for i = 1, resultsCount do
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 16384,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 65536,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 252,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 236,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 232,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 72,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 68,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 64,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 48,
+          flags = 4,
+          freeze = true,
+          value = 119
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 64,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 68,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 100,
+          flags = 4,
+          freeze = true,
+          value = 4451
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 512,
+          flags = 4,
+          freeze = true,
+          value = 0
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 540,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 544,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 548,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 252,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 236,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 232,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 72,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 68,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 64,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 48,
+          flags = 4,
+          freeze = true,
+          value = 119
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 64,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 68,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 100,
+          flags = 4,
+          freeze = true,
+          value = 4451
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 512,
+          flags = 4,
+          freeze = true,
+          value = 0
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 540,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 544,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 548,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 65536,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 16384,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+    end
+    gg.clearResults()
+  end
+  gg.sleep(1300)
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations/concurrent")
+  os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
+  gg.alert("Bypass Done ~ تم تفعيل الحماية بنجاح ✔")
 end
 
 function ABAN3(...)
@@ -737,7 +724,7 @@ function ABAN3(...)
     "⚙️⁩ 『 الخطوة الاولى ( تدريب ) 』",
     "⚙️⁩ 『 الخطوة الثانية ( لوبي ) 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if KOREANTENMN == nil then
   else
     if KOREANTENMN == 1 then
@@ -758,7 +745,7 @@ function ABAN4(...)
     "⚙️⁩ 『 sᴛᴇᴘ 1 [ ᴛʀᴀɪɴɪɴɢ ] 』",
     "⚙️⁩ 『 sᴛᴇᴘ 2 [ ʟᴏᴏʙʏ ] 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if KOREANTEN2MN == nil then
   else
     if KOREANTEN2MN == 1 then
@@ -774,22 +761,22 @@ function ABAN4(...)
   PUBGMH = -1
 end
 
-function NotXSplit(szFullString, szSeparator, ...) 
-  local nFindStartIndex = 1 
-  local nSplitIndex = 1 
-  local nSplitArray = {} 
-  while true do 
-    local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) 
-    if not nFindLastIndex then 
-      nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) 
-      break 
-    end 
-    nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) 
-    nFindStartIndex = nFindLastIndex + string.len(szSeparator) 
-    nSplitIndex = nSplitIndex + 1 
-  end 
-  return nSplitArray 
-end 
+function NotXSplit(szFullString, szSeparator, ...)
+  local nFindStartIndex = 1
+  local nSplitIndex = 1
+  local nSplitArray = {}
+  while true do
+    local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex)
+    if not nFindLastIndex then
+      nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString))
+      break
+    end
+    nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1)
+    nFindStartIndex = nFindLastIndex + string.len(szSeparator)
+    nSplitIndex = nSplitIndex + 1
+  end
+  return nSplitArray
+end
 
 function NotXGC(NotXSZ, xXNotXx, ...)
   for i = 1, #xXNotXx do
@@ -876,6 +863,42 @@ function XNotX(A0_575, ...)
   end
 end
 
+function SearchWrite(Search, Write, Type, ...)
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.searchNumber(Search[1][1], Type)
+  local t = gg.getResults(9999)
+  gg.clearResults()
+  if t ~= nil then
+    local r = {}
+    for j=2, #Search do
+      for i, v in ipairs(t) do
+        r[i] = {}
+        r[i].address = v.address + Search[j][2] - Search[1][2]
+        r[i].flags = v.flags
+      end
+      r = gg.getValues(r)
+      for i = #t, 1, -1 do
+        if (tostring(r[i].value) ~= tostring(Search[j][1]) ) then
+          table.remove(t, i)
+          table.remove(r, i)
+        end
+      end       
+    end
+    local r = {}
+    for i=1, #t do
+      for j=1, #Write do
+        r[#r+1] = {}
+        r[#r].address = t[i].address + Write[j][2] - Search[1][2]
+        r[#r].flags = t[i].flags
+        r[#r].value = Write[j][1]
+        r[#r].freeze = true
+      end
+    end
+    gg.setValues(r)
+  end
+end
+
 function TRAIN1(...)
   gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
@@ -899,7 +922,7 @@ function TRAIN2(...)
   gg.refineNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
+  for i, v in ipairs((gg.getResults(140701))) do
     gg.getResults(140701)[i].flags = gg.TYPE_QWORD
     gg.getResults(140701)[i].value = "0"
     gg.getResults(140701)[i].freeze = true
@@ -910,262 +933,321 @@ function TRAIN2(...)
 end
 
 function L3(...)
-  gg.clearResults()
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache/GCloud.ini")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/tbslog")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/ca-bundle.pem")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/ProgramBinaryCache")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.13.0.11098_20190617165748_1981158817_cures.ifs.res")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir")
+  os.remove("/data/data/com.tencent.ig/app_appcache")
+  os.remove("/data/data/com.tencent.ig/app_bugly")
+  os.remove("/data/data/com.tencent.ig/app_crashrecord")
+  os.remove("/data/data/com.tencent.ig/cache")
+  os.remove("/data/data/com.tencent.ig/code_cache")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache")
+  os.remove("/storage/emulated/0/tencent")
+  os.remove("/storage/emulated/0/MidasOverse")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/tbslog")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini")
+  os.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini")
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations/concurrent")
+  os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
   gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("1401", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("1401", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("1401", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
+  gg.searchNumber("2.2IIIIII95IIIIIIII88IIIIII74e-41;1638IIII4D;16384ID;16384IIIID;16IIIIIIIIIIII384D;1IIIIIIII6384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() == 0 then
+    gg.alert("Failed Restart Game And Try , لم يتم التفعيل !! ❌")
+    gg.setVisible(true)
+    gg.processKill()
+    os.exit()
+  else
+    gg.searchNumber("2.IIIIIIIIIII29588IIIIIIIIIIIIII74e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    resultsCount = gg.getResultCount()
+    results = gg.getResults(resultsCount)
+    for i = 1, resultsCount do
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 16384,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 65536,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 252,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 236,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 232,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 72,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 68,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 64,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 48,
+          flags = 4,
+          freeze = true,
+          value = 119
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 64,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 68,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 100,
+          flags = 4,
+          freeze = true,
+          value = 4451
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 512,
+          flags = 4,
+          freeze = true,
+          value = 0
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 540,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 544,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 548,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 252,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 236,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 232,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 72,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 68,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address - 64,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 48,
+          flags = 4,
+          freeze = true,
+          value = 119
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 64,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 68,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 100,
+          flags = 4,
+          freeze = true,
+          value = 4451
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 512,
+          flags = 4,
+          freeze = true,
+          value = 0
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 540,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 544,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 548,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 65536,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = results[i].address + 16384,
+          flags = 4,
+          freeze = true,
+          value = -1
+        }
+      })
+    end
+    gg.clearResults()
   end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_QWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_QWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.sleep(1401)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_QWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("70658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("133378", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("67109633", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_QWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("134658", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("134914", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  for i, i in ipairs((gg.getResults(140701))) do
-    gg.getResults(140701)[i].flags = gg.TYPE_DWORD
-    gg.getResults(140701)[i].value = "0"
-    gg.getResults(140701)[i].freeze = true
-  end
-  gg.addListItems((gg.getResults(140701)))
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.alert("تم تفعيل الحماية بنجاح 👍🏻")
+  gg.sleep(1300)
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations/concurrent")
+  os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
+  gg.alert("Bypass Done ~ تم تفعيل الحماية بنجاح ✔")
 end
 
 function BDY(...)
@@ -1174,7 +1256,7 @@ function BDY(...)
     "🎨 『 قائمة الألوان 』",
     "📱 『 قائمة معالج الأكسينوس 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if BDYMN == nil then
   else
     if BDYMN == 1 then
@@ -1199,7 +1281,7 @@ function BDY2(...)
     "🎨 『 ᴄᴏʟᴏʀ ᴍᴇɴᴜ 』",
     "📱 『 ᴇxʏɴᴏs ᴍᴇɴᴜ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if BDYMN2 == nil then
   else
     if BDYMN2 == 1 then
@@ -1240,7 +1322,7 @@ function WH(...)
     "🛠️ 『 إصلاح التقطيع 430-835 』",
     "🛠️ 『 إصلاح التقطيع 845-855 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if WHMN == nil then
   else
     if WHMN == 1 then
@@ -1329,7 +1411,7 @@ function WH2(...)
     "🛠️ 『 ғɪx ʙʟɪɴᴋ 430-835 』",
     "🛠️ 『 ғɪx ʙʟɪɴᴋ 845-855 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if WHMN2 == nil then
   else
     if WHMN2 == 1 then
@@ -1593,18 +1675,25 @@ end
 function WH636(...)
   gg.clearResults()
   gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
-  gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(30)
   gg.editAll("120", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(30)
   gg.editAll("120", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("WALLHACK [SnapDragon 636] Activated")
-  CLR()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("8,192D;256D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.toast("Body Color [SnapDragon 636] Activated")
+  gg.clearResults()
 end
 
 function WH660(...)
@@ -1800,7 +1889,7 @@ function CLR425(...)
     "🔴 『 لون أحمر  425 』",
     "☣️ 『 لون أصفر  425 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN425 == nil then
   else
     if CLRMN425 == 1 then
@@ -1821,7 +1910,7 @@ function CLR4252(...)
     "🔴 『 ʀᴇᴅ ʙᴏᴅʏ 425 』",
     "☣️ 『 ʏᴇʟʟᴏᴡ ʙᴏᴅʏ 425 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN4252 == nil then
   else
     if CLRMN4252 == 1 then
@@ -1869,7 +1958,7 @@ function CLR675(...)
     "🔵 『 لون أزرق  675 』",
     "♎ 『 لون أخضر  675 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN675 == nil then
   else
     if CLRMN675 == 1 then
@@ -1894,7 +1983,7 @@ function CLR6752(...)
     "🔵 『 ʙʟᴜᴇ ʙᴏᴅʏ 675 』",
     "♎ 『 ɢʀᴇᴇɴ ʙᴏᴅʏ 675 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN6752 == nil then
   else
     if CLRMN6752 == 1 then
@@ -1956,7 +2045,7 @@ function CLR845(...)
     "⚪ 『 لون أبيض  845 』",
     "🔵 『 لون أزرق  845 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN845 == nil then
   else
     if CLRMN845 == 1 then
@@ -1989,7 +2078,7 @@ function CLR8452(...)
     "⚪ 『 ᴡʜɪᴛᴇ ʙᴏᴅʏ 845 』",
     "🔵 『 ʙʟᴜᴇ ʙᴏᴅʏ 845 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN8452 == nil then
   else
     if CLRMN8452 == 1 then
@@ -2071,7 +2160,7 @@ function CLR855(...)
     "⚪ 『 لون أبيض  855 』",
     "🔴 『 لون أحمر  855 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN855 == nil then
   else
     if CLRMN855 == 1 then
@@ -2104,7 +2193,7 @@ function CLR8552(...)
     "⚪ 『 ᴡʜɪᴛᴇ ʙᴏᴅʏ 855 』",
     "🔴 『 ʀᴇᴅ ʙᴏᴅʏ 855 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN8552 == nil then
   else
     if CLRMN8552 == 1 then
@@ -2182,7 +2271,7 @@ function CLR(...)
     "⚪ 『 لون أبيض لجميع الأجهزة 』",
     "⚫ 『 لون أسود لجميع الأجهزة 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN == nil then
   else
     if CLRMN == 1 then
@@ -2243,7 +2332,7 @@ function CLR2(...)
     "⚪ 『 ᴡʜɪᴛᴇ ʙᴏᴅʏ ᴀʟʟ 』",
     "⚫ 『 ʙʟᴀᴄᴋ ʙᴏᴅʏ ᴀʟʟ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if CLRMN2 == nil then
   else
     if CLRMN2 == 1 then
@@ -2388,7 +2477,7 @@ function INLOOBY(...)
     "📍 『 انتينا 』",
     "🌱 『 إزاله العشب 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNINLOOBY == nil then
   else
     if MNINLOOBY == 1 then
@@ -2429,7 +2518,7 @@ function INLOOBY2(...)
     "📍 『 ᴀɴᴛᴇɴɴᴀ 』",
     "🌱 『 ɴᴏ ɢʀᴀss 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNINLOOBY2 == nil then
   else
     if MNINLOOBY2 == 1 then
@@ -2487,29 +2576,51 @@ function HSHOT95(...)
   gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(10)
-  gg.editAll("245", gg.TYPE_FLOAT)
+  gg.editAll("250", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Headshot 95% Activated")
 end
 
 function HSHOT75(...)
   gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-460", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-560", gg.TYPE_FLOAT)
+  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("250;300", gg.TYPE_FLOAT)
+  gg.getResults(10)
+  gg.editAll("175", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Headshot 75% Activated")
 end
 
 function HSHOT50(...)
   gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-460", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-560", gg.TYPE_FLOAT)
+  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("200;205", gg.TYPE_FLOAT)
+  gg.getResults(10)
+  gg.editAll("125", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Headshot 50% Activated")
 end
@@ -2588,6 +2699,7 @@ function INGAME(...)
   MNINGAME = gg.choice({
     "💥 『 هيدشوت %100 』",
     "🎯 『 ثبات سلاح %100 』",
+    "☄️ 『 ماجك بوليت 』",
     "💢 『 تصغير مؤشر التصويب 』",
     "🎯 『 ايم بوت 』",
     "📍 『 انتينا 』",
@@ -2602,7 +2714,7 @@ function INGAME(...)
     "🏃 『 سرعة لاعب ( تشغيل ) 』",
     "🚶 『 سرعة لاعب ( ايقاف ) 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNINGAME == nil then
   else
     if MNINGAME == 1 then
@@ -2612,45 +2724,48 @@ function INGAME(...)
       NOREC100()
     end
     if MNINGAME == 3 then
-      SMALLCROSS()
+      MAGICB2()
     end
     if MNINGAME == 4 then
-      AIMBOT()
+      SMALLCROSS()
     end
     if MNINGAME == 5 then
-      ANTEENA()
+      AIMBOT()
     end
     if MNINGAME == 6 then
-      FRONTJUMP()
+      ANTEENA()
     end
     if MNINGAME == 7 then
-      JEEPJUMP()
+      FRONTJUMP()
     end
     if MNINGAME == 8 then
-      BLACKSKY()
+      JEEPJUMP()
     end
     if MNINGAME == 9 then
-      REDSKY()
+      BLACKSKY()
     end
     if MNINGAME == 10 then
-      NOFOG()
+      REDSKY()
     end
     if MNINGAME == 11 then
-      IPADVIEW()
+      NOFOG()
     end
     if MNINGAME == 12 then
-      NOGRASS()
+      IPADVIEW()
     end
     if MNINGAME == 13 then
-      NOGRASS2()
+      NOGRASS()
     end
     if MNINGAME == 14 then
-      SPEEDON()
+      NOGRASS2()
     end
     if MNINGAME == 15 then
-      SPEEDOFF()
+      SPEEDON()
     end
     if MNINGAME == 16 then
+      SPEEDOFF()
+    end
+    if MNINGAME == 17 then
       HOME1()
     end
   end
@@ -2661,6 +2776,7 @@ function INGAME2(...)
   MNINGAME2 = gg.choice({
     "💥 『 ʜᴇᴀᴅsʜᴏᴛ 100% 』",
     "🎯 『 ɴᴏ ʀᴇᴄᴏɪʟ 100% 』",
+    "☄️ 『 ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ 』",
     "💢 『 sᴍᴀʟʟ ᴄʀᴏssʜᴀɪʀ 』",
     "🎯 『 ᴀɪᴍʙᴏᴛ 』",
     "📍 『 ᴀɴᴛᴇɴɴᴀ 』",
@@ -2675,7 +2791,7 @@ function INGAME2(...)
     "🏃 『 ᴍɪᴄʀᴏ sᴘᴇᴇᴅ (ᴏɴ) 』",
     "🚶 『 ᴍɪᴄʀᴏ sᴘᴇᴇᴅ (ᴏғғ) 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNINGAME2 == nil then
   else
     if MNINGAME2 == 1 then
@@ -2685,49 +2801,82 @@ function INGAME2(...)
       NOREC100()
     end
     if MNINGAME2 == 3 then
-      SMALLCROSS()
+      MAGICB2()
     end
     if MNINGAME2 == 4 then
-      AIMBOT()
+      SMALLCROSS()
     end
     if MNINGAME2 == 5 then
-      ANTEENA()
+      AIMBOT()
     end
     if MNINGAME2 == 6 then
-      FRONTJUMP()
+      ANTEENA()
     end
     if MNINGAME2 == 7 then
-      JEEPJUMP()
+      FRONTJUMP()
     end
     if MNINGAME2 == 8 then
-      BLACKSKY()
+      JEEPJUMP()
     end
     if MNINGAME2 == 9 then
-      REDSKY()
+      BLACKSKY()
     end
     if MNINGAME2 == 10 then
-      NOFOG()
+      REDSKY()
     end
     if MNINGAME2 == 11 then
-      IPADVIEW()
+      NOFOG()
     end
     if MNINGAME2 == 12 then
-      NOGRASS()
+      IPADVIEW()
     end
     if MNINGAME2 == 13 then
-      NOGRASS2()
+      NOGRASS()
     end
     if MNINGAME2 == 14 then
-      SPEEDON()
+      NOGRASS2()
     end
     if MNINGAME2 == 15 then
-      SPEEDOFF()
+      SPEEDON()
     end
     if MNINGAME2 == 16 then
+      SPEEDOFF()
+    end
+    if MNINGAME2 == 17 then
       HOME2()
     end
   end
   PUBGMH = -1
+end
+
+function MAGICB2(...)
+  gg.clearResults()
+  qmnb = {
+    {
+      ["memory"] = 32
+    },
+    {
+      ["name"] = "ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ"
+    },
+    {
+      ["value"] = -4645122389274493952,
+      ["type"] = 32
+    },
+    {
+      ["lv"] = 7.5,
+      ["offset"] = 12,
+      ["type"] = 16
+    }
+  }
+  qmxg = {
+    {
+      ["value"] = 100,
+      ["offset"] = 12,
+      ["type"] = 16
+    }
+  }
+  xqmnb(qmnb)
+  gg.toast("Magic Bullet activated!")
 end
 
 function JEEPJUMP(...)
@@ -2875,10 +3024,10 @@ function HSHOT500(...)
   gg.editAll("900;925", gg.TYPE_FLOAT)
   gg.clearResults()
   revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-  for i, i in ipairs((gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil))) do
-    if i.flags == gg.TYPE_FLOAT then
-      i.value = "200"
-      i.freeze = true
+  for i, v in ipairs((gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil))) do
+    if v.flags == gg.TYPE_FLOAT then
+      v.value = "200"
+      v.freeze = true
     end
   end
   gg.addListItems((gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)))
@@ -2991,7 +3140,6 @@ function NOTSAFE(...)
     "💥 『 طلقة سريعة !! 』",
     "💥 『 دمج عالي !! 』",
     "🔥 『 ماجك بوليت 』",
-    "☄️ 『 ماجك بوليت v² 』",
     "💣 『 ايم بوت  •360°• 』",
     "⬆️ 『 تشغيل السيت سكوب 』",
     "⛔ 『 إيقاف السيت سكوب 』",
@@ -3001,7 +3149,7 @@ function NOTSAFE(...)
     "☂️ 『 نزول برشوت سريع v² 』",
     "💀 『 سبيد نوك 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNNOTSAFE == nil then
   else
     if MNNOTSAFE == 1 then
@@ -3020,33 +3168,30 @@ function NOTSAFE(...)
       MAGICB()
     end
     if MNNOTSAFE == 6 then
-      MAGICB2()
-    end
-    if MNNOTSAFE == 7 then
       AIMBOT360()
     end
-    if MNNOTSAFE == 8 then
+    if MNNOTSAFE == 7 then
       SITSCOPEON()
     end
-    if MNNOTSAFE == 9 then
+    if MNNOTSAFE == 8 then
       SITSCOPEOFF()
     end
-    if MNNOTSAFE == 10 then
+    if MNNOTSAFE == 9 then
       STANDSCOPEON()
     end
-    if MNNOTSAFE == 11 then
+    if MNNOTSAFE == 10 then
       STANDSCOPEOFF()
     end
-    if MNNOTSAFE == 12 then
+    if MNNOTSAFE == 11 then
       FASTPARA()
     end
-    if MNNOTSAFE == 13 then
+    if MNNOTSAFE == 12 then
       FASTPARA2()
     end
-    if MNNOTSAFE == 14 then
+    if MNNOTSAFE == 13 then
       KNOCKSPEED()
     end
-    if MNNOTSAFE == 15 then
+    if MNNOTSAFE == 14 then
       HOME1()
     end
   end
@@ -3060,7 +3205,6 @@ function NOTSAFE2(...)
     "💥 『 ɪɴsᴛᴀɴᴛ ʜɪᴛ !! 』",
     "💥 『 ʜɪɢʜ ᴅᴀᴍᴀɢᴇ !! 』",
     "🔥 『 ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ 』",
-    "☄️ 『 ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ v² 』",
     "💣 『 ᴀɪᴍʙᴏᴛ  •360°• 』",
     "⬆️ 『 sɪᴛ sᴄᴏᴘᴇ (ᴏɴ) 』",
     "⛔ 『 sɪᴛ sᴄᴏᴘᴇ (ᴏғғ) 』",
@@ -3070,7 +3214,7 @@ function NOTSAFE2(...)
     "☂️ 『 ғᴀsᴛ ᴘᴀʀᴀᴄʜᴜᴛᴇ v² 』",
     "💀 『 sᴘᴇᴇᴅ ᴋɴᴏᴄᴋ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNNOTSAFE2 == nil then
   else
     if MNNOTSAFE2 == 1 then
@@ -3089,33 +3233,30 @@ function NOTSAFE2(...)
       MAGICB()
     end
     if MNNOTSAFE2 == 6 then
-      MAGICB2()
-    end
-    if MNNOTSAFE2 == 7 then
       AIMBOT360()
     end
-    if MNNOTSAFE2 == 8 then
+    if MNNOTSAFE2 == 7 then
       SITSCOPEON()
     end
-    if MNNOTSAFE2 == 9 then
+    if MNNOTSAFE2 == 8 then
       SITSCOPEOFF()
     end
-    if MNNOTSAFE2 == 10 then
+    if MNNOTSAFE2 == 9 then
       STANDSCOPEON()
     end
-    if MNNOTSAFE2 == 11 then
+    if MNNOTSAFE2 == 10 then
       STANDSCOPEOFF()
     end
-    if MNNOTSAFE2 == 12 then
+    if MNNOTSAFE2 == 11 then
       FASTPARA()
     end
-    if MNNOTSAFE2 == 13 then
+    if MNNOTSAFE2 == 12 then
       FASTPARA2()
     end
-    if MNNOTSAFE2 == 14 then
+    if MNNOTSAFE2 == 13 then
       KNOCKSPEED()
     end
-    if MNNOTSAFE2 == 15 then
+    if MNNOTSAFE2 == 14 then
       HOME2()
     end
   end
@@ -3124,11 +3265,11 @@ end
 
 function HIGHDAM(...)
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("0;7.0064923e-45;1;100;1;2,500,000,000.0;0.10000000149;88", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setRanges(32)
+  gg.searchNumber("16000~99999;3D;0.1;1D::40", 16, false, 536870912, 0, -1)
+  gg.searchNumber("16000~99999", 16, false, 536870912, 0, -1)
   gg.getResults(100)
-  gg.editAll("9999", gg.TYPE_FLOAT)
+  gg.editAll("500000", 16)
   gg.clearResults()
   gg.toast("High Damage activated!")
 end
@@ -3167,46 +3308,11 @@ end
 function MAGICB(...)
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("189", gg.TYPE_FLOAT)
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.clearResults()
-  gg.searchNumber("15;28;16;26;8;18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(56)
-  gg.editAll("-1339", gg.TYPE_FLOAT)
+  gg.searchNumber("69.5;35;33", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6)
+  gg.editAll("160;140;230", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Magic Bullet Activated")
-end
-
-function MAGICB2(...)
-  gg.clearResults()
-  qmnb = {
-    {
-      ["memory"] = 32
-    },
-    {
-      ["name"] = "ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ"
-    },
-    {
-      ["value"] = -4645122389274493952,
-      ["type"] = 32
-    },
-    {
-      ["lv"] = 7.5,
-      ["offset"] = 12,
-      ["type"] = 16
-    }
-  }
-  qmxg = {
-    {
-      ["value"] = 100,
-      ["offset"] = 12,
-      ["type"] = 16
-    }
-  }
-  xqmnb(qmnb)
-  gg.toast("Magic Bullet activated!")
 end
 
 function INSTAHIT(...)
@@ -3260,13 +3366,14 @@ function FASTPARA2(...)
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("0.75;150;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(999)
-  gg.editAll("30", gg.TYPE_FLOAT)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1000)
+  gg.editAll("300", gg.TYPE_FLOAT)
   gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("0.75;150;30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("0.75", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(999)
+  gg.searchNumber("0.75", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(200)
   gg.editAll("0", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Fast Parachute activated!")
@@ -3296,7 +3403,7 @@ function FLASHSPD(...)
     "🚙 『 تسريع الجيب 』",
     "🚗 『 تسريع الداسيا 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNFLASHSPD == nil then
   else
     if MNFLASHSPD == 1 then
@@ -3341,7 +3448,7 @@ function FLASHSPD2(...)
     "🚙 『 sᴘᴇᴇᴅ ᴊᴇᴇᴘ 』",
     "🚗 『 sᴘᴇᴇᴅ ᴅᴀᴄɪᴀ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNFLASHSPD2 == nil then
   else
     if MNFLASHSPD2 == 1 then
@@ -3385,8 +3492,6 @@ function FIXDMG(...)
     gg.searchNumber("50000~100000", 16, false, 536870912, 0, -1)
     RFSSMG1 = gg.getResults(210)
     gg.editAll("32465", 16)
-    for i = 1, 0 do
-    end
     gg.clearResults()
     gg.toast("تم إصلاح دمج الأسلحة")
   end
@@ -3405,6 +3510,12 @@ function FLASHNEW1(...)
 end
 
 function FLASHNEW2(...)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("20000;750;0.0001;0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("0.0005", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("20000;750;0.0001;0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -3504,7 +3615,7 @@ function FLASHDMG(...)
     "🔧 『 M249 اصلاح دمج الـ 』",
     "🔧 『 DP-28 اصلاح دمج الـ 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNFLASHDMG == nil then
   else
     if MNFLASHDMG[1] == true then
@@ -3597,7 +3708,7 @@ function FLASHDMG2(...)
     "🔧 『 M249 ғɪx ᴅᴀᴍᴀɢᴇ 』",
     "🔧 『 DP-28 ғɪx ᴅᴀᴍᴀɢᴇ 』",
     "↩️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNFLASHDMG2 == nil then
   else
     if MNFLASHDMG2[1] == true then
@@ -3909,7 +4020,7 @@ function SITSTAND(...)
     "➡️ 『 ستاند سكوب يمين 』",
     "⬅️ 『 ستاند سكوب يسار 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNSITSTAND == nil then
   else
     if MNSITSTAND == 1 then
@@ -3950,7 +4061,7 @@ function SITSTAND2(...)
     "➡️ 『 sᴛᴀɴᴅ sᴄᴏᴘᴇ ʀɪɢʜᴛ 』",
     "⬅️ 『 sᴛᴀɴᴅ sᴄᴏᴘᴇ ʟᴇғᴛ 』",
     "↩️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNSITSTAND2 == nil then
   else
     if MNSITSTAND2 == 1 then
@@ -4070,7 +4181,7 @@ function SITSTANDOFF(...)
     "⛔ 『 إيقاف الستاند سكوب لليمين 』",
     "⛔ 『 إيقاف الستاند سكوب لليسار 』",
     "➡️ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNSITSTANDOFF == nil then
   else
     if MNSITSTANDOFF == 1 then
@@ -4107,7 +4218,7 @@ function SITSTANDOFF2(...)
     "⛔ 『 sᴛᴀɴᴅ sᴄᴏᴘᴇ ʀɪɢʜᴛ ( ᴏғғ ) 』",
     "⛔ 『 sᴛᴀɴᴅ sᴄᴏᴘᴇ ʟᴇғᴛ ( ᴏғғ ) 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if MNSITSTANDOFF2 == nil then
   else
     if MNSITSTANDOFF2 == 1 then
@@ -4222,7 +4333,7 @@ function EXY1(...)
     "⚪ 『 لون أبيض لجميع الأجهزة 』",
     "⚫ 『 لون أسود لجميع الأجهزة 』",
     "⁦➡️⁩ 『 رجوع 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if EXY1MN == nil then
   else
     if EXY1MN == 1 then
@@ -4251,7 +4362,7 @@ function EXY2(...)
     "⚪ 『 ᴡʜɪᴛᴇ ʙᴏᴅʏ ᴀʟʟ 』",
     "⚫ 『 ʙʟᴀᴄᴋ ʙᴏᴅʏ ᴀʟʟ 』",
     "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
-  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   if EXY2MN == nil then
   else
     if EXY2MN == 1 then
@@ -4279,10 +4390,10 @@ function EXY8895(...)
   gg.searchNumber("3.9236357e-43F;2.24207754e-44F;4.31599927e-43F;2.24207754e-44F;1.79366203e-43F;3.58732407e-43F;0.5F:489", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   revert = gg.getResults(25, nil, nil, nil, nil, nil, nil, nil, nil)
-  for i, i in ipairs((gg.getResults(25, nil, nil, nil, nil, nil, nil, nil, nil))) do
-    if i.flags == gg.TYPE_FLOAT then
-      i.value = "2"
-      i.freeze = true
+  for i, v in ipairs((gg.getResults(25, nil, nil, nil, nil, nil, nil, nil, nil))) do
+    if v.flags == gg.TYPE_FLOAT then
+      v.value = "2"
+      v.freeze = true
     end
   end
   gg.addListItems((gg.getResults(25, nil, nil, nil, nil, nil, nil, nil, nil)))
@@ -4300,7 +4411,7 @@ function EXYYELL(...)
 end
 
 function CLOSE(...)
-  print("╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n\n             ♔🔸〘 SEASON2TEAM 〙🔸♔\n🔸 Telegram ⟮ @SEASON2TEAM ⟯  🔸 \n\n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+  print("╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n\n             ♔🔸〘 S2Team 〙🔸♔\n🔸 Telegram ⟮ @S2Team ⟯  🔸 \n\n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
   gg.skipRestoreState()
   gg.setVisible(true)
   os.exit()
