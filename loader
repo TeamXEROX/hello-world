@@ -1,0 +1,1243 @@
+
+
+HOME = 1
+function HOME()
+MN = gg.choice({
+" BYPASS ALL PUBG\n╰〖Lobby/Lobby〗\n",
+" MENU WALLHACK\n╰〖Training/Island〗\n",
+" MENU HACK WEAPON\n╰〖Training/Game〗\n",
+" ONE CLICK SAFE\n╰〖Island/Game〗\n",
+"EXIT"
+}, nil, 'C A R B I N E   x  C H E A T I N G  x  A R E N A™)
+    if MN == nil then
+    else
+    if MN == 1 then
+        BypasRed()
+      end
+      if MN == 2 then
+        whclr()
+      end
+      if MN == 3 then
+        MENUWEAPON153()
+      end
+      if MN == 4 then
+        SATUKLIK()
+      end
+      if MN == 5 then
+        CLOSE()
+      end
+    end
+    PUBGMH = -1
+  end
+  
+function BypasRed()
+ gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, ggSIGN_EQUAL, 0, -1)
+if gg.getResultCount() == 0 then
+gg.alert("ғᴀɪʟᴇᴅ, ʀᴇsᴛᴀʀᴛ ɢᴀᴍᴇ & ʀᴇᴛʀʏ.")
+else
+gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, ggSIGN_EQUAL, 0, -1)
+n = gg.getResultCount()
+jz = gg.getResults(n)
+for i = 1, n do
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address - 252,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address - 236,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address - 232,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address - 72,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address - 68,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address - 64,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address + 48,flags = 4,freeze = true,value = 119
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address + 64,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address + 68,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address + 100,flags = 4,freeze = true,value = 4451
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address + 512,flags = 4,freeze = true,value = 0
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address + 540,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address + 544,flags = 4,freeze = true,value = 70086
+}})
+gg.addListItems({[1] = {
+                                                                                                                                                                                                                               address = jz[i].address + 548,flags = 4,freeze = true,value = 70086
+}})
+end
+gg.alert("Bypass Activated")
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+end
+
+
+function whclr()
+WALL11 = gg.multiChoice({
+    "Snapdragon 435-700 + Color",
+    "Snapdragon 700-855 + Color",
+    "Back"
+  }, nil, "C A R B I N E  C H E A T I N G  A R E N A™")
+  if WALL11 == nil then
+  else
+    if WALL11[1] == true then
+      wh1()
+    end
+    if WALL11[2] == true then
+      wh2()
+    end
+    if WALL11[3] == true then
+      START()
+    end
+    end
+    
+Volcano = -1
+end
+
+function wh1()
+  gg.clearResults()
+    if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+gg.searchNumber("-2147086191", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("4C8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1337)
+gg.editAll("1168777216", gg.TYPE_DWORD)
+gg.clearResults()
+   if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+gg.searchNumber("-2145644352", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("7E0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1337)
+gg.editAll("1168777216", gg.TYPE_DWORD)
+gg.clearResults()
+    if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+gg.searchNumber("7,41529732e-29", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1337)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+    if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0B0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1337)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.clearResults()
+end
+
+
+
+
+function wh2()
+  gg.clearResults()
+ if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+gg.searchNumber("-2145644340", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("7E0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("1168777216", gg.TYPE_DWORD)
+gg.clearResults()
+ if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+gg.searchNumber("-2147483636", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("4F8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("1168777216", gg.TYPE_DWORD)
+gg.clearResults()
+ if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0B8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1337)
+gg.editAll("8199", gg.TYPE_DWORD)
+gg.clearResults()
+ if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("120", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1337)
+gg.editAll("8199", gg.TYPE_DWORD)
+gg.clearResults()
+ if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("128", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1337)
+gg.editAll("8200", gg.TYPE_DWORD)
+gg.clearResults()
+if gg.REGION_VIDEO == nil then
+    VB = gg.REGION_BAD
+  else
+    VB = gg.REGION_VIDEO
+  end
+  gg.setRanges(VB)
+  gg.searchNumber("1 078 984 714", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+KARARWALL3=gg.getResults(100) 
+gg.editAll("-1", gg.TYPE_DWORD) 
+gg.clearResults()
+end
+
+
+
+
+
+
+  function WALLHACK()
+  WALL11 = gg.multiChoice({
+      ' Wallhack Snap 625',
+      ' Wallhack Snap 626',
+      ' Wallhack Snap 630',
+      ' Wallhack Snap 636',
+      ' Wallhack Snap 650',
+      ' Wallhack Snap 660',
+      ' Wallhack Snap 665',
+      ' Wallhack Snap 710',
+      ' Wallhack Snap 712',
+      ' Wallhack Snap 800',
+      ' Wallhack Snap 820',
+      ' Wallhack Snap 835',
+      ' Wallhack Snap 845',
+      ' Wallhack Snap 855',
+      ' Red All Snap',
+      ' Yellow All Snap',
+      ' Red Snap 625/636/660',
+      ' Yellow Snap 625/636/660',
+      ' Green Snap 625/636/660',
+      ' Blue Snap 625/636/660',
+      ' Mix Snap 625/636/660',
+      ' Yellow Snap 650',
+      ' Yellow Snap 665',
+      ' Red Snap 665',
+      ' Green Snap 710/712',
+      ' Red Snap 710/712',
+      ' Green Snap 835/845/855',
+      ' Yellow Snap 835/845/855',
+      ' Green Senap 845',
+      ' Yellow Senap 855',
+      '↩️BACK'
+}, nil, 'C A R B I N E   x  C H E A T I N G  x  A R E N A™)
+    if WALL11 == nil then
+    else
+      if WALL11[1] == true then
+        wh1()
+      end
+      if WALL11[2] == true then
+        wh2()
+      end
+      if WALL11[3] == true then
+        wh3()
+      end
+      if WALL11[4] == true then
+        wh4()
+      end
+      if WALL11[5] == true then
+        wh5()
+      end
+      if WALL11[6] == true then
+        wh6()
+      end
+      if WALL11[7] == true then
+        wh7()
+      end
+      if WALL11[8] == true then
+        wh8()
+      end
+      if WALL11[9] == true then
+        wh9()
+      end
+      if WALL11[10] == true then
+        wh10()
+      end
+      if WALL11[11] == true then
+        wh11()
+      end
+      if WALL11[12] == true then
+        wh12()
+      end
+      if WALL11[13] == true then
+        wh13()
+      end
+      if WALL11[14] == true then
+        wh14()
+      end
+   if WALL11[15] == true then
+        wh15()
+      end
+      if WALL11[16] == true then
+        wh16()
+      end
+      if WALL11[17] == true then
+        wh17()
+      end
+      if WALL11[18] == true then
+        wh18()
+      end
+      if WALL11[19] == true then
+        wh19()
+      end
+      if WALL11[20] == true then
+        wh20()
+      end
+      if WALL11[21] == true then
+        wh21()
+      end
+      if WALL11[22] == true then
+        wh22()
+      end
+      if WALL11[23] == true then
+        wh23()
+      end
+      if WALL11[24] == true then
+        wh24()
+      end
+      if WALL11[25] == true then
+        wh25()
+      end
+      if WALL11[26] == true then
+        wh26()
+      end
+      if WALL11[27] == true then
+        wh27()
+      end
+        if WALL11[28] == true then
+        wh28()
+      end
+       if WALL11[29] == true then
+        wh29()
+      end
+             if WALL11[30] == true then
+        wh30()
+      end
+      if WALL11[31] == true then
+        HOME()
+      end
+    end
+    PUBGMH = -1
+  end      
+   
+  function wh1()
+ gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("130", 16)
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("130", 16)
+gg.clearResults()
+gg.toast('Wallhack Snap 625 Active✓')
+gg.setVisible(false)
+  end
+  
+  function wh2()
+    gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("32769D;32770D;2.0F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(9)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.1202013e-19;1.1202017e-19;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(3)
+  gg.editAll("9999", gg.TYPE_FLOAT)
+    gg.toast('Wallhack Snap 626 Active✓')
+  end
+  
+  function wh3()
+    gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("504")
+  gg.getResults(20)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("900")
+  gg.getResults(20)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+    gg.toast('Wallhack Snap 630 Active✓')
+  end
+  
+  function wh4()
+    gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("130", 16)
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("130", 16)
+gg.clearResults()
+    gg.toast('Wallhack Snap 636 Active✓')
+  end
+  
+  function wh5()
+    gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+    gg.toast('Wallhack Snap 650 Active✓')
+  end
+  
+  function wh6()
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("2;1.8947657e-40;5.8013756e-42", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.toast('Wallhack Snap 660 Active✓')
+gg.setVisible(false)
+  end
+  
+  function wh7()
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("95D;2;9.2194229e-41::100", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(999)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(999)
+gg.editAll("120", 16)
+gg.clearResults()
+    gg.toast('Wallhack Snap 665 Active✓')
+  end
+  
+  function wh8()
+    gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("1.4912565e-19;2.0;1.6623113e-19:9", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(20)
+gg.editAll("138", 16)
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::29", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(20)
+gg.editAll("138", 16)
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("1,081,081,865;8,200;1,446,128;348,401:21", 4, false, 536870912, 0, -1)
+gg.searchNumber("8200", 4, false, 536870912, 0, -1)
+gg.getResults(2)
+gg.editAll("7", 4)
+gg.clearResults()
+    gg.toast('Wallhack Snap 710 Active✓')
+  end
+  
+  function wh9()
+    gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("218D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("95D;2;9.2194229e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(15)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("206D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+    gg.toast('Wallhack Snap 712 Active✓')
+  end
+  
+  function wh10()
+    gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+    gg.toast('Wallhack Snap 800 Active✓')
+  end
+  
+  function wh11()
+    gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+    gg.toast('Wallhack Snap 820 Active✓')
+  end
+  
+  function wh12()
+    gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("2;1.8947657e-40;5.8013756e-42", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", 16, false, 536870912, 0, -1)
+gg.refineNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("120", 16)
+gg.clearResults()
+    gg.toast('Wallhack Snap 835 Active✓')
+  end
+  
+  function wh13()
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0;0.24022650719;0.69314718246;0.00999999978::29", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(30)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.searchNumber("2.4382593e-43;1.3312335e-43;2::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(30)
+gg.editAll("120", 16)
+gg.clearResults()
+    gg.toast('Wallhack Snap 845 Active✓')
+  end
+  
+  function wh14()
+ gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("95D;2;9.2194229e-41::100", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", 16, false, 536870912, 0, -1)
+gg.searchNumber("2", 16, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("120", 16)
+gg.clearResults()
+gg.toast("Wallhack Snap 855 Active✓")
+  end
+  
+  function wh15()
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1)
+gg.searchNumber("8200", 4, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("7", 4)
+gg.clearResults()
+gg.toast(" Color Red All SD")
+gg.setVisible(false)
+  end
+  
+  function wh16()
+ gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("1.14906474e-41;1.14920487e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(69)
+gg.editAll("1.14892461e-41", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast(" Color Yellow All SD")
+end
+
+function wh17()
+        gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1)
+gg.searchNumber("8200", 4, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("7", 4)
+gg.clearResults()
+gg.toast(" Color Red All SD")
+  end
+  
+  function wh18()
+    gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("256;8200;13::150", 4, false, 536870912, 0, -1)
+gg.searchNumber("8200", 4, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("6", 4)
+gg.clearResults()
+gg.toast(" Color Yellow All SD")
+  end
+  
+  function wh19()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("69,897;147,457;69,739", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("7", gg.TYPE_DWORD)
+  gg.toast("Color Green")
+  gg.clearResults()
+  end
+  
+  function wh20()
+    gg.clearResults()
+    gg.setRanges(131072)
+    gg.searchNumber('32768;-2134900726;32769;-2134900725;32770;-2134900724::', 4, false, 536870912, 0, -1)
+    gg.searchNumber('32769;32770::', 4, false, 536870912, 0, -1)
+    gg.getResults(100)
+    gg.editAll('4', 4)
+    gg.toast('Blur Snap 625/636/660 Active✓')
+  end
+  
+  function wh21()
+    gg.clearResults()
+    gg.setRanges(131072)
+    gg.searchNumber('1,661,337,615D;8,200D;1,194,380,049D:9', 4, false, 536870912, 0, -1)
+    gg.searchNumber('8200', 4, false, 536870912, 0, -1)
+    gg.getResults(30)
+    gg.editAll('70', 4)
+    gg.toast('Mix Snap 625/636/660 Active✓')
+  end
+  
+  function wh22()
+    gg.clearResults()
+    gg.setRanges(131072)
+    gg.searchNumber('256;8200;13::150', 4, false, 536870912, 0, -1)
+    gg.searchNumber('8200', 4, false, 536870912, 0, -1)
+    gg.getResults(10)
+    gg.editAll('6', 4)
+    gg.toast('Yellow All Snap Active✓')
+  end
+  
+  function wh23()
+    gg.clearResults()
+    gg.setRanges(131072)
+    gg.searchNumber('256;8200;13::150', 4, false, 536870912, 0, -1)
+    gg.searchNumber('8200', 4, false, 536870912, 0, -1)
+    gg.getResults(10)
+    gg.editAll('6', 4)
+    gg.toast('Yellow 665 Active✓')
+  end
+  
+  function wh24()
+    gg.clearResults()
+    gg.setRanges(131072)
+    gg.searchNumber('8,196D;8,192D;8,200D::', 4, false, 536870912, 0, -1)
+    gg.searchNumber('8200', 4, false, 536870912, 0, -1)
+    gg.getResults(10)
+    gg.editAll('7', 4)
+    gg.toast('Red 665 Active✓')
+  end
+  
+  function wh25()
+    gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1,194,344,475D;8,201D;1,194,379,806D:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("7", gg.TYPE_DWORD)
+  gg.clearResults()
+    gg.toast('✓ Color 710 - 712 Green ✓')
+  end
+  
+  function wh26()
+    gg.clearResults()
+    gg.setRanges(131072)
+    gg.searchNumber('1703959D;8200D;8201D:17', 4, false, 536870912, 0, -1)
+    gg.refineNumber('8200', 4, false, 536870912, 0, -1)
+    gg.getResults(10)
+    gg.editAll('7', 4)
+    gg.toast('✓ Color 710 - 712Red ✓')
+  end
+  
+  function wh27()
+    gg.clearResults()
+    gg.setRanges(131072)
+    gg.searchNumber('8201', 4, false, 536870912, 0, -1)
+    gg.refineAddress('0A0')
+    gg.getResults(999)
+    gg.editAll('8199', 4)
+    gg.toast('Grenn Snap 835/845/855 Active✓')
+  end
+  
+  function wh28()
+    gg.clearResults()
+    gg.setRanges(131072)
+    gg.searchNumber('256;8200;13::150', 4, false, 536870912, 0, -1)
+    gg.searchNumber('8200', 4, false, 536870912, 0, -1)
+    gg.getResults(10)
+    gg.editAll('6', 4)
+    gg.toast('Yellow Snap 835/845/855 Active✓')
+  end
+  
+  function wh29()
+ gg.setRanges(131072)
+gg.searchNumber("8201", 4, false, 536870912, 0, -1)
+gg.searchNumber("8201", 4, false, 536870912, 0, -1)
+gg.getResults(15)
+gg.editAll("7", 4)
+gg.clearResults()
+  end
+  
+  function wh30()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0A8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8198", gg.TYPE_DWORD)
+gg.clearResults()
+gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0B0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("8199", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast(" Color Smooth Yellow SD 855")
+  end
+  
+  function MENUWEAPON153()
+  MENUWEAPON1 = gg.multiChoice({
+    " Less Recoil",
+    " Menu HS Magic",
+    " Antena Player",
+   "↩️BACK"
+}, nil, 'C A R B I N E   x  C H E A T I N G  x  A R E N A™)
+  if MENUWEAPON1 == nil then
+  else
+    if MENUWEAPON1[1] == true then
+      wp1()
+    end
+    if MENUWEAPON1[2] == true then
+      wp2()
+    end
+    if MENUWEAPON1[3] == true then
+      wp3()
+    end
+    if MENUWEAPON1[4] == true then
+      HOME()
+    end
+  end
+  CarbineCheatingArenaOfficial = -1
+end
+
+
+function wp1()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("1.5584387e28", 16, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("0", 16)
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("1D;0.05000000075F;0.10000000149F;0.55000001192F;9.5F;15.0F", 16, false, 536870912, 0, -1)
+gg.searchNumber("1", 4, false, 536870912, 0, -1)
+gg.getResults(800)
+gg.editAll("0", 4)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficialOFFICIAL")
+gg.clearResults()
+gg.setVisible(false)
+end
+
+function wp2()
+MENUWEAPONR1 = gg.multiChoice({
+    " Headshot 100%",
+    " Headshot 50%",
+    " Headshot 30%",
+    " Magic Bullet 100%", 
+    " AimLockEasy", 
+   "↩️BACK"
+}, nil, 'C A R B I N E   x  C H E A T I N G  x  A R E N A™)
+  if MENUWEAPONR1 == nil then
+  else
+    if MENUWEAPONR1[1] == true then
+      wpR1()
+    end
+    if MENUWEAPONR1[2] == true then
+      wpR2()
+    end
+    if MENUWEAPONR1[3] == true then
+      wpR3()
+    end
+    if MENUWEAPONR1[4] == true then
+      wpR4()
+    end
+     if MENUWEAPONR1[5] == true then
+      wpR5()
+    end
+    if MENUWEAPONR1[6] == true then
+      HOME()
+    end
+  end
+  CarbineCheatingArenaOfficial = -1
+end
+
+function wpR1()
+ gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("25;30.5", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("999999", 16)
+gg.clearResults()
+gg.toast("Headshoot 100% Activated")
+end
+
+function wpR2()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("9.20161819458;23;25;30.5", 16, false, 536870912, 0, -1)
+gg.searchNumber("25;30.5", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("200", 16)
+gg.clearResults()
+gg.toast("Headshoot 50% Activated")
+gg.setVisible(false)
+end
+
+function wpR3()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("9.20161819458;23;25;30.5", 16, false, 536870912, 0, -1)
+gg.searchNumber("25;30.5", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("100", 16)
+gg.clearResults()
+gg.toast("Headshoot 30% Activated")
+gg.setVisible(false)
+end
+
+function wpR4()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("25;30.5", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("999999", 16)
+gg.clearResults()
+gg.toast(" Magic Bullet Activated")
+end
+
+function wpR5()
+gg.clearResults()
+gg.setRanges(16384)
+gg.searchNumber("-285787648;-290174237;-286131696;-286131696", 4, false, 536870912, 0, -1)
+gg.refineNumber("-290174237", 4, false, 536870912, 0, -1)
+gg.getResultsCount()
+gg.getResults(1)
+gg.addListItems({ -- table(3a68062)
+	[1] = { -- table(6ceb5f3)
+		['address'] = 0xb0beae00,
+		['flags'] = 4, -- gg.TYPE_DWORD
+		['freeze'] = true,
+		['value'] = 0,
+	},
+})
+gg.toast(" Easy AimLock Activated")
+gg.clearResults()
+gg.setVisible(false)
+end
+
+function wp3()
+ ANTENAHC1 = gg.multiChoice({
+" Antena Player",
+" New Antena Pro",
+" Antena Ghillie [Game]",
+" Antena Ammo 5.56mm",
+" Antena Box",
+" Antena For VMOS",
+" Antena Flare Gun",
+" Antena Items Level 3",
+" Antena M416/Scar-L",
+" Antena Scope 6x/8x",
+" Antena Stand",
+"↩️BACK"
+}, nil, 'C A R B I N E   x  C H E A T I N G  x  A R E N A™)
+if ANTENAHC1 == nil then
+else
+if ANTENAHC1[1] == true then
+atnh1()
+end
+if ANTENAHC1[2] == true then
+atnh2()
+end
+if ANTENAHC1[3] == true then
+atnh3()
+end
+if ANTENAHC1[4] == true then
+atnh4()
+end
+if ANTENAHC1[5] == true then
+atnh5()
+end
+if ANTENAHC1[6] == true then
+atnh6()
+end
+if ANTENAHC1[7] == true then
+atnh7()
+end
+if ANTENAHC1[8] == true then
+atnh8()
+end
+if ANTENAHC1[9] == true then
+atnh9()
+end
+if ANTENAHC1[10] == true then
+atnh10()
+end
+if ANTENAHC1[11] == true then
+atnh11()
+end
+if ANTENAHC1[12] == true then
+HOME()
+end
+end
+CarbineCheatingArenaOfficial = -1
+end
+
+function atnh1()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("88.50576019287F;87.27782440186F;-100.91194152832F;1F::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("88.50576019287F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(6)
+gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function atnh2()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.98900693655~0.98900723457;0.14786802232~0.14786840975;1.1920926e-7::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultsCount()
+gg.searchNumber("0.98900693655~0.98900723457", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("16000", gg.TYPE_FLOAT)
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function atnh3()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.98900693655~0.98900723457;0.14786802232~0.14786840975;1.1920926e-7::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultCount()
+gg.searchNumber("0.98900693655~0.98900723457", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("16000", gg.TYPE_FLOAT)
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function atnh4()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("6.95975875854", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(999)
+gg.editAll("88996", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("0.88996", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("0.88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("88996", gg.TYPE_FLOAT)
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function atnh5()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("14.79005432129", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("14.79005432129", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("99999", gg.TYPE_FLOAT)
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function atnh6()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.98900693655~0.98900723457;0.14786802232~0.14786840975;1.1920926e-7::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultsCount()
+gg.searchNumber("0.98900693655~0.98900723457", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("16000", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.99626296759", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultsCount()
+gg.getResults(50)
+gg.editAll("150", gg.TYPE_FLOAT)
+gg.getResults(50)
+gg.searchNumber("0.9378669858F;1.0F;0.61365610361F::55", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(850)
+gg.editAll("9999", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function atnh7()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("99999", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function atnh8()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("7.1689529418945", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("88996", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("7.4993133544922", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("7.4993133544922", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("88996", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("18.46202087402", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("88996", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("6.95975875854", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(999)
+gg.editAll("88996", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("0.88996", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("0.88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("88996", gg.TYPE_FLOAT)
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function atnh9()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("0.7593~0.7594", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("99999", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficial")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("0.7636~0.7636", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("99999", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficial??")
+end
+
+function atnh10()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("0.7604~0.7605", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("99999", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficial")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("3.4779739379883;2.8345839977264;3.1967880725861;3.8841888904572;3.1528658866882::208", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("3.4779739379883", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("88996", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("0.88996", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("0.88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("88996", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function atnh11()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("7.13142681122;0.53447723389;22.6400718689", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("22.6400718689", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("9621", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.clearResults()
+gg.searchNumber("0.53446006775F;-1.68741035461F:501", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.68741035461", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1995)
+gg.editAll("19995", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1995)
+gg.editAll("19995", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficial")
+end
+
+function SATUKLIK()
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("-88.66608428955;26:512", 16, false, 536870912, 0, -1)
+gg.searchNumber("26", 16, false, 536870912, 0, -1)
+gg.getResults(2)
+gg.editAll("-460", 16)
+gg.clearResults()
+gg.searchNumber("-88.73961639404;28:512", 16, false, 536870912, 0, -1)
+gg.searchNumber("28", 16, false, 536870912, 0, -1)
+gg.getResults(2)
+gg.editAll("-560", 16)
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("9.201618;30.5;25", 16, false, 536870912, 0, -1)
+gg.searchNumber("25;30.5", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("250", 16)
+gg.clearResults()
+gg.toast("@CarbineCheatingArenaOfficial")
+gg.clearResults()
+gg.setRanges(131072)
+gg.clearResults()
+gg.searchNumber("100F;1F;1,008,981,770D:99", 16, false, 536870912, 0, -1)
+gg.searchNumber("100", 16, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("-90", 16)
+gg.clearResults()
+gg.toast(" HS & BlackSky")
+end
+
+function CLOSE()
+print('C A R B I N E   x  C H E A T I N G  x  A R E N A™)
+os.exit()
+end
+
+while true do
+Time = os.date('%G-%m-%d | Date : %H:%M:%S')
+if gg.isVisible(true) then
+gg.setVisible(false)
+HOME()
+end
+if CarbineCheatingArenaOfficial == 1 then
+HOME()
+end
+end
