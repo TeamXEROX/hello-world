@@ -498,6 +498,7 @@ TENMINMN = gg.choice({
 "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ1 ( لوبي ) 』",
 "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ2 ( لوبي ) 』",
 "⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ3 ( لوبي ) 』",
+"⚙️⁩ 『 حماية لوبي جميع النسخ ᴠ4 ( لوبي ) 』🆕",
 "⁦➡️⁩ 『 رجوع 』"
 }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CCA Bypass 〙🔸♔\n🔸 Telegram ⟮ @CarbineCheatingArenaOfficial ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
 if TENMINMN == nil then
@@ -512,6 +513,9 @@ if TENMINMN == 3 then
 AABANGL3()
 end
 if TENMINMN == 4 then
+BAN1()
+end
+if TENMINMN == 5 then
 HOME1()
 end
 end
@@ -523,6 +527,7 @@ TENMIN2MN = gg.choice({
 "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ1 ( Lobby ) 』",
 "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ2 ( Lobby ) 』",
 "⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ3 ( Lobby ) 』",
+"⚙️⁩ 『 ᴀɴᴛɪʙᴀɴ ᴀʟʟ ᴠᴇʀsɪᴏɴs ᴠ4 ( Lobby ) 』🆕",
 "⬅️ 『 ʙ ᴀ ᴄ ᴋ 』"
 }, nil, "╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n             ♔🔸〘 CCA Bypass 〙🔸♔\n🔸 Telegram ⟮ @CarbineCheatingArenaOfficial ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
 if TENMIN2MN == nil then
@@ -537,12 +542,29 @@ if TENMIN2MN == 3 then
 AABANGL3()
 end
 if TENMIN2MN == 4 then
+BAN1()
+end
+if TENMIN2MN == 5 then
 HOME2()
 end
 end
 PUBGMH = -1
 end
 
+function BAN1() 
+gg.clearResults()
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.searchNumber("4.1765606E21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("4.1765606E21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.refineNumber("4.1765606E21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(50000)
+    gg.editAll("0", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.alert("Successfully Activated Bypass \n Check Saved Values for confirmation \n www.t.me/CarbineCheatingArenaOfficial ️")
+    gg.searchNumber("3U46m", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.clearResults()
+end    
+    
 function AABANGL1(...)
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
