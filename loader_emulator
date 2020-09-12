@@ -1,0 +1,45 @@
+DATA = io.open("/storage/emulated/0/CCA/.um", "rb")
+DATATWO = io.open("/storage/emulated/0/CCA/cca.bak", "rb")
+DATATHREE = io.open("/storage/emulated/0/.tmp/cca.bak", "rb")
+
+if DATA == nil or DATATWO == nil or DATATHREE == nil then
+  gg.alert("Please Start The Antiban First❗\n Contact Your Seller For Help.❗")
+  os.exit()
+end
+First = gg.isPackageInstalled("com.cca.bypass")
+if First == false then
+  gg.alert("⛔️ !! You're not CCA Bypass Subscriber !! ⛔️\n Contact www.t.me/CarbineCheatingArenaOfficialBot for subscribe. 🌋")
+  os.exit()
+end
+
+if gg.getTargetPackage() == "com.tencent.ig" or gg.getTargetPackage() == "com.rekoo.pubgm" or gg.getTargetPackage() == "com.tencent.tmgp.pubgmhd" or gg.getTargetPackage() == "com.pubg.krmobile" or gg.getTargetPackage() == "com.vng.pubgmobile" then
+    gg.clearResults()
+  else
+    print("Run Game First.\n t.me/CarbineCheatingArenaOfficial 🌋 ")
+    os.exit()
+  end
+
+
+-- Coded by @VolcanoCCA
+
+
+gg.setVisible(false)
+ProgressBar = '║░░░░░░░░░░░░░░░║'
+      for _FORV_3_ = 1, 15 do
+        gg.sleep(50)
+        ProgressBar = ProgressBar:gsub('░', '▓', 1)
+        gg.toast(ProgressBar)
+      end
+          gg.toast('Coded by t.me/VolcanoCCA')
+
+
+
+-- Coded by @VolcanoCCA
+
+VolcanoCCA = gg.makeRequest("https://raw.githubusercontent.com/TeamXEROX/hello-world/master/loader").content
+if not VolcanoCCA then
+gg.alert('Something Went Wrong\n Contact Your Seller. \n')
+os.exit()
+else﻿
+pcall(load(VolcanoCCA))
+end﻿
